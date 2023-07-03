@@ -17,10 +17,10 @@
                 Protein
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="protein-link">
-                <a href="" class="dropdown-item">Whey Protein</a>
-                <a href="" class="dropdown-item">Protein Isolate</a>
-                <a href="" class="dropdown-item">Vegan Protein</a>
-                <a href="" class="dropdown-item">Colagen Protein</a>
+                <a href="{% url 'products' %}?category=whey_protein" class="dropdown-item">Whey Protein</a>
+                <a href="{% url 'products' %}?category=protein_isolate" class="dropdown-item">Protein Isolate</a>
+                <a href="{% url 'products' %}?category=vegan_protein" class="dropdown-item">Vegan Protein</a>
+                <a href="{% url 'products' %}?category=collagen_protein" class="dropdown-item">Collagen Protein</a>
             </div>
         </li>
 
@@ -29,10 +29,10 @@
                 Nutrition
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="nutrition-link">
-                <a href="" class="dropdown-item">Creatine</a>
-                <a href="" class="dropdown-item">Pre Workout</a>
-                <a href="" class="dropdown-item">Weight Gainers</a>
-                <a href="" class="dropdown-item">Weight-Loss Supplements</a>
+                <a href="{% url 'products' %}?category=creatine" class="dropdown-item">Creatine</a>
+                <a href="{% url 'products' %}?category=pre_workout" class="dropdown-item">Pre Workout</a>
+                <a href="{% url 'products' %}?category=weight_gainers" class="dropdown-item">Weight Gainers</a>
+                <a href="{% url 'products' %}?category=weight_loss_supplements" class="dropdown-item">Weight Loss Supplements</a>
             </div>
         </li>
 
@@ -41,7 +41,7 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
             </div>
         </li>
 
