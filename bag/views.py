@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+
+from products.models import Product
 
 # Create your views here.
 
@@ -42,7 +44,6 @@ def adjust_bag(request, item_id):
 
 def remove_from_bag(request, item_id):
     """Remove the item from the shopping basket"""
-
     try:
         product = get_object_or_404(Product, pk=item_id)
         bag = request.session.get('bag', {})
@@ -53,4 +54,6 @@ def remove_from_bag(request, item_id):
         return HttpResponse(status=200)
 
     except Exception as e:
+        print(e)
         return HttpResponse(status=500)
+        
