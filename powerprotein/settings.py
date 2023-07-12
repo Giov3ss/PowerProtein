@@ -12,6 +12,12 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+if os.path.exists('env.py'):
+    import env
+    # can override local to False here if you want to test things like 404, 500 error
+    DEBUG = True
+else:
+    DEBUG = False
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
