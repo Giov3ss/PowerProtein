@@ -66,3 +66,29 @@ body {
     color: #050505;
     padding: 10px;
 }
+
+.text-secondary-blog {
+    font-weight: 400;
+}
+
+.text-secondary-blog i {
+    margin-right: 7px ;
+}
+
+.btn-like {
+    color: #e84610;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #e84610;
+    background: transparent;
+    border: none;
+}
+
+a.signup-blog-link {
+    color: #000 !important;
+    text-decoration: none !important;
+}
