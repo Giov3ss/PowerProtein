@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+{% block page_header %}
+{% endblock %}
+
+{% block content %}
+<div class="masthead">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-6 masthead-image d-flex align-items-center justify-content-center">
+                <img src="{{ post.featured_image.url }}" class="img-fluid" alt="{{ post.title }}">
+            </div>
+            <div class="col-md-8 masthead-text">
+                <h1 class="post-title">{{ post.title }}</h1>
+                <p class="post-subtitle">By: {{ post.author }} | {{ post.created_on }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 card mb-4 mt-3">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <p class="card-text">
+                            {{ post.content | safe}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <strong class="text-secondary"><i class="far fa-heart"></i> {{ post.number_of_likes }}
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
