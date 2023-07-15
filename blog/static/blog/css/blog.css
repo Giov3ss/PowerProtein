@@ -78,13 +78,13 @@ body {
 .btn-like {
     color: #e84610;
     border: none;
-    background: transparent;
+    background: transparent !important;
 }
 
 .btn-like:hover,
 .btn-like:active {
     color: #e84610;
-    background: transparent;
+    background: transparent !important;
     border: none;
 }
 
