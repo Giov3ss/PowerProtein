@@ -1,0 +1,14 @@
+body {
+    background: none;
+    background-color: white;
+}
+
+.text-black-expert {
+    color: #000 !important;
+    font-size: 40px;
+   
+}
+
+.container#form-container {
+    height: auto;
+}
