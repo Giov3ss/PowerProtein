@@ -11,16 +11,6 @@ class ExpertAdviceForm(forms.ModelForm):
             'message': forms.Textarea(attrs={'class': 'message-field'}),
         }
 
-    def clean_message(self):
-        cleaned_data = super().clean()
-        name = cleaned_data.get('name')
-        email = cleaned_data.get('email')
-        message = cleaned_data.get('message')
-
-        if not name or not email or not message:
-            raise forms.ValidationError('Please, fill in all the field.')
-        return cleaned_data
-
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['name'].label = 'Your Name'
