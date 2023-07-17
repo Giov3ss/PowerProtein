@@ -5,9 +5,33 @@ body {
 
 .text-black-expert {
     color: #000 !important;
-    font-size: 40px;
-   
+    font-size: 2rem;
+   font-weight: 400;
 }
+
+.lead-exp {
+    font-size: 1.15rem;
+    font-weight: 300;
+}
+
+.gif-exp {
+    width: 80%;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-container .btn {
+    color: #fff !important;
+    background-color: #000;;
+}
+
+.header-container .btn:hover {
+    background-color: #222 !important;
+    border-color: #222 !important;
+}
+
+/* -------------------------------- Form Style */
 
 .container#form-container {
     height: auto;
