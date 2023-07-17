@@ -6,6 +6,10 @@ class ExpertAdviceForm(forms.ModelForm):
         model = ExpertAdvice
         fields = ['name', 'email', 'message']
 
+        widgets = {
+            'message': forms.Textarea(attrs={'class': 'message-field'}),
+        }
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['name'].label = 'Your Name'

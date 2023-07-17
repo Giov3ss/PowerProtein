@@ -12,3 +12,20 @@ body {
 .container#form-container {
     height: auto;
 }
+
+#form-container .btn {
+    color: #fff !important;
+    background-color: #000;;
+}
+
+#form-container .btn:hover {
+    background-color: #222 !important;
+    border-color: #222 !important;
+}
+
+.message-field.textarea.form-control  {
+    color: #495057;
+    border: 1px solid #000;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-radius: 0;
+}
