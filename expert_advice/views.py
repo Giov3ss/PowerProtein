@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 from .forms import ExpertAdviceForm
 
 def expert_advice(request):
@@ -6,11 +7,14 @@ def expert_advice(request):
         form = ExpertAdviceForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('success')
+            messages.success(request, 'Your form was sent!')
+            return redirect('expert_advice:success.html')
+        else:
+            messages.erro(request, 'Please correct the errors!')
     else:
         form = ExpertAdviceForm()
 
     return render(request, 'expert_advice/expert_advice_form.html', {'form': form})
 
 def success(request):
-    return render(request, 'success.html')
+    return render(request, 'expert_advice/success.html')
