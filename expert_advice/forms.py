@@ -2,14 +2,28 @@ from django import forms
 from .models import ExpertAdvice
 from django.core.exceptions import ValidationError
 
+
 class ExpertAdviceForm(forms.ModelForm):
     class Meta:
         model = ExpertAdvice
         fields = ['name', 'email', 'message']
-
+        
         widgets = {
             'message': forms.Textarea(attrs={'class': 'message-field'}),
         }
+
+    def clean(self):
+        cleaned_data = super().clean()
+        name = cleaned_data.get('name')
+        email = cleaned_data.get('email')
+        message = cleaned_data.get('message')
+        if not name:
+            self.add_error('name', 'Please enter your name.')
+        if not email:
+            self.add_error('email', 'Please enter your email.')
+        if not message:
+            self.add_error('message', 'Please enter your message.')
+        return cleaned_data
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
