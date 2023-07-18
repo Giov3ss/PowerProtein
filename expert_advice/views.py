@@ -10,7 +10,7 @@ class ExpertAdviceView(CreateView):
     model = ExpertAdvice
     form_class = ExpertAdviceAddFrom
     template_name = 'expert_advice/expert_advice_form.html'
-    success_url = reverse_lazy('expert_advice:success.html')
+    success_url = reverse_lazy('expert_advice:success')
 
     def form_valid(self, form):
         return super().form_valid(form)

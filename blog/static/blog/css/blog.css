@@ -71,6 +71,11 @@ body {
     margin-top: 12rem;
 }
 
+.img-fluid {
+    max-width: 55%;
+    height: auto;
+}
+
 .masthead-text {
     background-color: #fff;
     color: #050505;
@@ -111,4 +116,20 @@ a.signup-blog-link {
     }
     
 }
-  
+
+@media (max-width: 769px) {
+    .masthead-image {
+        flex-direction: column;
+    }
+
+    .masthead-content {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+    
+}
