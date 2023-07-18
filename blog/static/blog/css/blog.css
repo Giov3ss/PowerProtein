@@ -46,6 +46,16 @@ body {
     color: #020202;
 }
 
+.page-link {
+    color: #fff !important;
+    background-color: #000;;
+}
+
+.page-link:hover {
+    background-color: #222 !important;
+    border-color: #222 !important;
+}
+
 /* -------------------------------- Post Detail */
 
 .masthead {
