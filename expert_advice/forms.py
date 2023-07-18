@@ -17,12 +17,14 @@ class ExpertAdviceForm(forms.ModelForm):
         name = cleaned_data.get('name')
         email = cleaned_data.get('email')
         message = cleaned_data.get('message')
+
+        
         if not name:
-            self.add_error('name', 'Please enter your name.')
+            raise forms.ValidationError('Please enter your name.')
         if not email:
-            self.add_error('email', 'Please enter your email.')
+            raise forms.ValidationError('Please enter your email.')
         if not message:
-            self.add_error('message', 'Please enter your message.')
+            raise forms.ValidationError('Please enter your message.')
         return cleaned_data
 
     def __init__(self, *args, **kwargs):
