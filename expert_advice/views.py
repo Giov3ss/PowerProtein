@@ -1,20 +1,20 @@
+from .forms import ExpertAdviceAddFrom
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from .forms import ExpertAdviceForm
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView  # noqa
+from .models import ExpertAdvice
+from django.urls import reverse_lazy
 
-def expert_advice(request):
-    if request.method == 'POST':
-        form = ExpertAdviceForm(request.POST)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Your form was sent!')
-            return redirect('expert_advice:success.html')
-        else:
-            messages.erro(request, 'Please correct the errors!')
-    else:
-        form = ExpertAdviceForm()
 
-    return render(request, 'expert_advice/expert_advice_form.html', {'form': form})
+class ExpertAdviceView(CreateView):
+    model = ExpertAdvice
+    form_class = ExpertAdviceAddFrom
+    template_name = 'expert_advice/expert_advice_form.html'
+    success_url = reverse_lazy('expert_advice:success.html')
+
+    def form_valid(self, form):
+        return super().form_valid(form)
+        messages.success = "Expert Advice request sent!"
 
 def success(request):
     return render(request, 'expert_advice/success.html')

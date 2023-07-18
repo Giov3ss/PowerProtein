@@ -3,14 +3,16 @@ from .models import ExpertAdvice
 from django.core.exceptions import ValidationError
 
 
-class ExpertAdviceForm(forms.ModelForm):
+class ExpertAdviceAddFrom(forms.ModelForm):
     class Meta:
         model = ExpertAdvice
         fields = ['name', 'email', 'message']
         
         widgets = {
-            'message': forms.Textarea(attrs={'class': 'message-field'}),
-        }
+        'name': forms.TextInput(attrs={'class': 'form-control'}),
+        'email': forms.EmailInput(attrs={'class': 'form-control'}),
+        'message': forms.Textarea(attrs={'class': 'message-field'}),
+    }
 
     def clean(self):
         cleaned_data = super().clean()
