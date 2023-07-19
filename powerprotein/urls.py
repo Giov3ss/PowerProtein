@@ -29,4 +29,5 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('expert-advice/', include('expert_advice.urls', namespace='expert_advice')),
     path('summernote/', include('django_summernote.urls')),
+    path('reviews/', include('reviews.urls', namespace='reviews')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
