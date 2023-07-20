@@ -2,9 +2,8 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import View
 from .models import Reviews
 from .forms import ReviewsForm
-from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse
 
 
 def reviews(request):
@@ -14,23 +13,22 @@ def reviews(request):
 
 @login_required
 def add_review(request):
-
+    
     if request.method == 'POST':
         form = ReviewsForm(request.POST, request.FILES)
         if form.is_valid():
-            review = form.save(commit=False)
-            review.name = request.user
-            review.save()
+            form.instance.name = request.user
+            form.save()
             messages.success(request, 'Your review was sent successfully!')
             return redirect('reviews:reviews')
-    else:
-        form.ReviewsForm()
+    else: 
+        form = ReviewsForm()
     return render(request, 'reviews/add_edit_review.html', {'form': form})
 
 
 @login_required
 def edit_review(request, pk):
-    
+    review = get_object_or_404(Reviews, id=review_id)
     if request.method == 'POST':
         form = ReviewsForm(request.POST, request.FILES, instance=review)
         if form.is_valid():

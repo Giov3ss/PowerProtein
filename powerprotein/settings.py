@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['8000-giov3ss-powerprotein-f9zpn21lgx9.ws-eu101.gitpod.io', 'powerprotein-cd417ed27158.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-giov3ss-powerprotein-f9zpn21lgx9.ws-eu102.gitpod.io', 'powerprotein-cd417ed27158.herokuapp.com', 'localhost']
 
 
 # Application definition
