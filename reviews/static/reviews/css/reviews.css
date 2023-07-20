@@ -4,5 +4,16 @@ body {
 }
 
 .review-img {
-    width: 25%;
+    width: 35%;
 }
+
+
+
+/* -------------------------------- Media Queries */
+
+@media only screen and (max-width: 991px) { 
+    .review-img  {
+        width: 50%;
+    } 
+}
+
