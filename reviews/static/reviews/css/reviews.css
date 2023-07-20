@@ -7,7 +7,9 @@ body {
     width: 35%;
 }
 
-
+.col-12.text-center h1 {
+    font-size: 37px;
+}
 
 /* -------------------------------- Media Queries */
 
@@ -17,3 +19,15 @@ body {
     } 
 }
 
+
+@media (max-width:352px) {
+    .col-12.text-center h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:345px) {
+    .col-md-8 h2 {
+        font-size: 28px;
+    }
+}
