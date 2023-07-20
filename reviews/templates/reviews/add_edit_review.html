@@ -1,10 +1,70 @@
 {% extends "base.html" %} 
 {% load static %} 
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'reviews/css/reviews.css' %}">
+{% endblock %}
+
 {% block page_header %}
 <!-- BLOCK PAGE HEADER -->
 <div class="container header-container">
    <div class="row">
       <div class="col"></div>
+   </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="add-review" class="edit-comments">
+   <div class="container">
+      <div class="row p-3">
+         <div class="col-12 text-center">
+            {% if review %}
+            <h1 class="subtitle mt-3">Edit Review As:</h1>
+            <p><i class="fas fa-user"></i> {{ user.username | slice:":10" }}</p>
+            {% else %}
+            <h1 class="subtitle mt-3">Add Review As:</h1>
+            <p><i class="fas fa-user"></i> {{ user.username | slice:":10" }}</p>
+            {% endif %}
+            
+         </div>
+         <div class="col-md-6 mt-5 p-2">
+            {% if reviews %}
+            <h2 class="subtitle">Change your review at <br> any time!</h2>
+            {% else %}
+            <h2 class="subtitle">Your Opinion Matters!</h2>
+            {% endif %}
+            <p class="p-1 text-justify">
+               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            </p>
+            <p class="p-1 text-justify">
+               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            </p>
+            <p class="p-1">
+               Thanks!
+            </p>
+            <p class="p-1">
+               PowerProtein
+            </p>
+         </div>
+         <div class="col-md-6 p-2">
+            <form method="post" enctype="multipart/form-data">
+               {% csrf_token %}
+               {% for field in form %}
+               {% if field.name != 'featured_image' %}
+               {{ field | as_crispy_field }}
+               {% else %}
+               {{ field }}
+               {% endif %}
+               {% endfor %}
+               <div class="text-center">
+                  <button class="btn btn-secondary" type="submit" value="Save" aria-label="Submit Review">Submit</button>
+               </div>
+            </form>
+         </div>
+      </div>
    </div>
 </div>
 {% endblock %}
