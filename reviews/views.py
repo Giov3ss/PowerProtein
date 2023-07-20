@@ -8,7 +8,10 @@ from django.contrib.auth.decorators import login_required
 
 def reviews(request):
     reviews_list = (Reviews.objects.filter(approved=True).order_by('-created_on'))
-    return render(request, 'reviews/reviews.html', {'reviews_list': reviews_list})
+    return render(request, 'reviews/reviews.html', {
+        'reviews_list': reviews_list,
+        'edit_review_url': reverse('reviews:edit_review', kwargs={'pk': 0}),
+    })
 
 
 @login_required
@@ -28,7 +31,7 @@ def add_review(request):
 
 @login_required
 def edit_review(request, pk):
-    review = get_object_or_404(Reviews, id=review_id)
+    review = get_object_or_404(Reviews, id=pk)
     if request.method == 'POST':
         form = ReviewsForm(request.POST, request.FILES, instance=review)
         if form.is_valid():
@@ -37,7 +40,7 @@ def edit_review(request, pk):
             return redirect('reviews:reviews')
     else:
         form = ReviewsForm(instance=review)
-    return render(request, 'reviews/add_edit_review.html', {'form': form})
+    return render(request, 'reviews/add_edit_review.html', {'form': form, 'review': review})
 
 
 @login_required
