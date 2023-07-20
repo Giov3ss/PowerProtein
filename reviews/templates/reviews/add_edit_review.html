@@ -20,36 +20,36 @@
       <div class="row p-3">
          <div class="col-12 text-center">
             {% if review %}
-            <h1 class="subtitle mt-3">Edit Review As:</h1>
+            <h1 class="subtitle mt-3 text-black">Edit Review As:</h1>
             <p><i class="fas fa-user"></i> {{ user.username | slice:":10" }}</p>
             {% else %}
-            <h1 class="subtitle mt-3">Add Review As:</h1>
+            <h1 class="subtitle mt-3 text-black">Add Review As:</h1>
             <p><i class="fas fa-user"></i> {{ user.username | slice:":10" }}</p>
             {% endif %}
             
          </div>
          <div class="col-md-6 mt-5 p-2">
-            {% if reviews %}
-            <h2 class="subtitle">Change your review at <br> any time!</h2>
-            {% else %}
-            <h2 class="subtitle">Your Opinion Matters!</h2>
-            {% endif %}
-            <p class="p-1 text-justify">
-               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-            </p>
-            <p class="p-1 text-justify">
-               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-            </p>
-            <p class="p-1">
-               Thanks!
-            </p>
-            <p class="p-1">
-               PowerProtein
-            </p>
+            <div class="mr-3">
+               {% if reviews %}
+               <h2 class="subtitle text-black">Your Opinion Matters!</h2>
+               {% endif %}
+               <p class="p-1 text-justify">
+                  At <strong class="text-black">PowerProtein</strong>, we strive to provide the best products and services to our customers.
+                  Your opnion matters greatly to us as it helps us understand how we can improve and better meet your needs.
+               </p>
+               <p class="p-1 text-justify">
+                  Please take a moment to share your thoughts about our company and products by leaving a Review. Your value
+                  feedback will guide us in enhancing the quality of our services and delivering an even better experience for you.
+               </p>
+               <p class="p-1">
+                  Thank you for being a part of our journey to excellence!
+               </p>
+               <p class="p-1">
+                  <strong class="text-black">PowerProtein</strong>
+               </p>
+            </div>
          </div>
-         <div class="col-md-6 p-2">
+         <div class="col-md-6 mt-5 p-2">
             <form method="post" enctype="multipart/form-data">
                {% csrf_token %}
                {% for field in form %}
@@ -59,8 +59,9 @@
                {{ field }}
                {% endif %}
                {% endfor %}
-               <div class="text-center">
-                  <button class="btn btn-secondary" type="submit" value="Save" aria-label="Submit Review">Submit</button>
+               <div class="text-right mt-4">
+                  <button class="btn btn-black rounded-0" type="submit" value="Save" aria-label="Submit Review">Submit</button>
+                  <a href="{% url 'reviews:reviews' %}" class="btn btn-outline-black rounded-0">Go back</a>
                </div>
             </form>
          </div>
