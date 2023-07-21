@@ -134,8 +134,11 @@
     {{ block.super }}
     <script type="text/javascript">
         $('.btt-link').click(function(e) {
-            window.scrollTo(0,0)
-        })
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1000);
+        });
     </script>
 
     <script type="text/javascript">

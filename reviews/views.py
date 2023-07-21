@@ -22,7 +22,7 @@ def add_review(request):
         if form.is_valid():
             form.instance.name = request.user
             form.save()
-            messages.success(request, 'Your review was sent successfully!')
+            messages.success(request, 'Your review was sent successfully and is awaiting approval! ')
             return redirect('reviews:reviews')
     else: 
         form = ReviewsForm()
