@@ -21,9 +21,9 @@
         {% for review in reviews_list %}
         <div class="review-box mt-5">
             <p><i class="fa-solid fa-user"> </i> {{ review.name | slice:":10" }}</p>
-            <p>"{{ review.review_title }}"</p>
+            <p><strong> "{{ review.review_title }}"</strong></p>
             <span>
-                {% if review.service_rating == 5 %}
+                {% if review.service_rating >= 5 %}
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -35,15 +35,33 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fa-regular fa-star"></i>
+                {% elif review.service_rating == 3 %}
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                {% elif review.service_rating == 2 %}
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                {% elif review.service_rating == 1 %}
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
                 {% else %}
+                <!-- if no valid rating is provided, show 5 starts -->
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
                 {% endif %}
             </span>
-            <p class="mt-2"><i class="fa fa-clock"></i> Reviewed on: {{ review.created_on | date:"D d M Y" }}</p>
             <div class="review-text">
                 <p class="mt-3">{{ review.service_review }}</p>
             </div>
@@ -56,6 +74,7 @@
                     alt="{{ review.name }} Review Image">
                 {% endif %}
             </div>
+            <p class="mt-2"><i class="fa fa-clock"></i> Reviewed on: {{ review.created_on | date:"D d M Y" }}</p>
             {% if user.is_authenticated and user.username == review.name or user.is_superuser %}
             <div class="mt-3">
                 <a href="{% url 'reviews:edit_review' review.id %}" aria-label="Go to edit review {{ review.id }} page"
