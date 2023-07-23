@@ -438,8 +438,8 @@ input[name='q']::placeholder {
 }
 
 @media (max-width:425px) {
-    #footer h3, a  {
-        font-size: 17px;
+    #footer h3 {
+        font-size: 20px;
     }
 
     .social a {
