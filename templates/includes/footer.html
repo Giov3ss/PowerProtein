@@ -1,0 +1,98 @@
+{% load static %}
+{% block content %}
+
+<footer id="footer" class="mt-5">
+    <div class="container-xl">
+        <span class="interactive-color">PowerProtein</span>
+        <p class="text-white">Best products in Europe</p>
+        <hr class="footer-line">
+        <div class="footer-content row row-reverse">
+            <div class="col-md-4 footer-item">
+                <h3 class="text-white mb-3">Products & Services</h3>
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="text-white" href="{% url 'products' %}">All Products</a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="{% url 'blog' %}">Blog</a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="{% url 'expert_advice:expert_advice' %}">Contact Nutritionist</a>
+                    </li>
+                </ul>
+                <h3 class="text-white mb-3 footer-item">Connect with us</h3>
+                <ul class="list-inline social">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f interactive-color"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram interactive-color"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter interactive-color"></i>
+                        </a>
+                    </li>
+                </ul> 
+            </div>
+            <div class="col-md-4 footer-item">
+                <h3 class="text-white mb-3">Contact Us</h3>
+                <ul class="list-unstyled text-white">
+                    <li><i class="fa-solid fa-phone text-white mr-2"></i> +903 089 7458</li>
+                    <li><i class="fa-solid fa-envelope text-white mr-2 mt-3"></i> info@powerprotein.ie</li>
+                    <li><i class="fa-solid fa-map-pin text-white mr-2 mt-3"></i> 1 Dublin Street Rd</li>
+                </ul>
+            </div>
+            <div class="col-md-4 footer-item">
+                <h3 class="text-white mb-3">Be the first to know </h3>
+                <p class="subtitle text-white">Subscribe to be the first to know about our latest offers and updates.</p>
+                <!-- MAILCHIMP FORM -->
+                <div id="mc_embed_shell">
+                    <div id="mc_embed_signup">
+                    <form action="https://herokuapp.us10.list-manage.com/subscribe/post?u=f654deb14176e78c4d9a6ceba&amp;id=2664770e21&amp;f_id=0034d4e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                        <div id="mc_embed_signup_scroll">
+                                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                                <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
+                            <div id="mce-responses" class="clear foot">
+                                <div class="response" id="mce-error-response" style="display: none;"></div>
+                                <div class="response" id="mce-success-response" style="display: none;"></div>
+                            </div>
+                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                            /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                            <input type="text" name="b_f654deb14176e78c4d9a6ceba_2664770e21" tabindex="-1" value="">
+                        </div>
+                            <div class="optionalParent">
+                                <div class="clear foot">
+                                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-black" value="Subscribe">
+                                    <p class="brandingLogo" style="margin: 0px auto;"><a href="http://eepurl.com/iv9gyY" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" alt="referral badge"></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
+
+{% block postloadjs %}
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script type="text/javascript">
+    (function($) {window.fnames = new Array(); 
+    window.ftypes = new Array();
+    fnames[0]=EMAIL;ftypes[0]=merge;
+    fnames[1]=FNAME;ftypes[1]=merge;
+    fnames[2]=LNAME;ftypes[2]=merge;
+    fnames[3]=ADDRESS;ftypes[3]=merge;
+    fnames[4]=PHONE;ftypes[4]=merge;
+    fnames[5]=BIRTHDAY;ftypes[5]=merge;
+    false}(jQuery));
+    var $mcj = jQuery.noConflict(true);
+</script>
+{% endblock %}
