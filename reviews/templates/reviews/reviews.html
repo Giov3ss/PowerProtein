@@ -21,7 +21,7 @@
         {% for review in reviews_list %}
         <div class="review-box mt-5">
             <p><i class="fa-solid fa-user"> </i> {{ review.name | slice:":10" }}</p>
-            <p><strong> "{{ review.review_title }}"</strong></p>
+            <p class="review-title"><strong> "{{ review.review_title }}"</strong></p>
             <span>
                 {% if review.service_rating >= 5 %}
                 <i class="fas fa-star"></i>

@@ -11,6 +11,10 @@ body {
     font-size: 37px;
 }
 
+.review-title {
+    font-family: "Gotham-Book",Helvetica,sans-serif;
+}
+
 /* -------------------------------- Media Queries */
 
 @media only screen and (max-width: 991px) { 
