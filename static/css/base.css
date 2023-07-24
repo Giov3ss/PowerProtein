@@ -462,3 +462,20 @@ input[name='q']::placeholder {
     }
 
 }
+
+/* -------------------------------- Footer Bottom */
+
+@media (max-width: 620px) {
+    .footer-bottom {
+        flex-direction: column-reverse;
+        align-items: baseline;
+    }
+
+    .footer-bottom p {
+        font-size: 14px;
+    }
+
+    .footer-bottom .copyright {
+        margin-top: 1.5rem;
+    }
+}
