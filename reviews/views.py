@@ -22,7 +22,7 @@ def add_review(request):
         if form.is_valid():
             form.instance.name = request.user
             form.save()
-            messages.success(request, 'Your review was sent successfully and is awaiting approval! ')
+            messages.success(request, 'Your review was sent successfully and is now awaiting approval!')
             return redirect('reviews:reviews')
     else: 
         form = ReviewsForm()
@@ -40,6 +40,7 @@ def edit_review(request, pk):
             return redirect('reviews:reviews')
     else:
         form = ReviewsForm(instance=review)
+        messages.info(request, f"You are editing {review.name} review's")
     return render(request, 'reviews/add_edit_review.html', {'form': form, 'review': review})
 
 
