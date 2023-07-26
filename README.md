@@ -36,11 +36,7 @@ Markdown's not all that easy so sometimes you may want to use some tools to make
 
 
 # PowerProtein
-
-*replace the **PROJECT NAME** header with your project's name*
-- Screenshot of logo/navigation of mobile deployed site
-- Include a link to deployed project with one line explanation of project
-
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/99d6984a-f7ea-4761-8eaf-0fc65922e052)
 
 ## Author
 DEVELOPER_NAME
