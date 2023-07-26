@@ -37,11 +37,10 @@ Markdown's not all that easy so sometimes you may want to use some tools to make
 
 # PowerProtein
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/99d6984a-f7ea-4761-8eaf-0fc65922e052)
-
-## Click [here](https://powerprotein-cd417ed27158.herokuapp.com/) to live site.
-
 ## Suplements E-commerce Store.
 > E-commerce website that provide a high quality products for sale as well as expert advice in your health & nutrition and a blog content to share tips to <strong>Elavate Your Health</strong>.
+
+## Click [here](https://powerprotein-cd417ed27158.herokuapp.com/) to live site.
 
 ## Author
 Giovani Fonseca
