@@ -38,18 +38,13 @@ Markdown's not all that easy so sometimes you may want to use some tools to make
 # PowerProtein
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/99d6984a-f7ea-4761-8eaf-0fc65922e052)
 
+## Click [here](https://powerprotein-cd417ed27158.herokuapp.com/) to live site.
+
+## Suplements E-commerce Store.
+> E-commerce website that provide a high quality products for sale as well as expert advice in your helth & nutrition and a blog content to share tips to your health journey.
+
 ## Author
-DEVELOPER_NAME
-
-
-## Project Overview
-🚨**Required**
-
-- Include a picture of site that shows it in responsive states and links to deployed
-  code: https://ui.dev/amiresponsive
-- One or two paragraphs providing an overview of your project.
-- Write this as a sales pitch or commercial making users want to purchase your website.
-- Include a link to your deployed website
+Giovani Fonseca
 
 # Table of Contents
 Copy your readme to http://ecotrust-canada.github.io/markdown-toc/ to make a table of contents.  This will help assessors to see the structure of your readme. Just test it out ast this tool isn't perfect. It tends to mess up with special characters like dashes.
