@@ -4,6 +4,11 @@ from django.shortcuts import get_object_or_404
 from products.models import Product
 
 def bag_contents(request):
+    """
+    Calculate the contents of the users shopping bag 
+    and return a context dictionary.
+    
+    """
 
     bag_items = []
     total = 0

@@ -12,7 +12,10 @@ RATING_CHOICES = [
 
 
 class ReviewsForm(forms.ModelForm):
-
+    """
+    A form used to handle the creation and editiing of service review.
+    It is associated with the 'Reviews' model.
+    """
     class Meta:
         model = Reviews
         fields = ('review_title', 'service_review', 'service_rating', 'featured_image')

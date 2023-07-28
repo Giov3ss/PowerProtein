@@ -7,6 +7,9 @@ from django.contrib.auth.decorators import login_required
 
 
 def reviews(request):
+    """
+    A view of approved reviews from the database
+    """
     reviews_list = (Reviews.objects.filter(approved=True).order_by('-created_on'))
     return render(request, 'reviews/reviews.html', {
         'reviews_list': reviews_list,
@@ -16,7 +19,9 @@ def reviews(request):
 
 @login_required
 def add_review(request):
-    
+    """
+    A view to add new reviews
+    """
     if request.method == 'POST':
         form = ReviewsForm(request.POST, request.FILES)
         if form.is_valid():
@@ -31,6 +36,9 @@ def add_review(request):
 
 @login_required
 def edit_review(request, pk):
+    """
+    A view that allow users to edit their own reviews.
+    """
     review = get_object_or_404(Reviews, id=pk)
     if review.name != request.user.username:
         messages.warning(request, 'You can only edit your own appointments!')
@@ -50,6 +58,9 @@ def edit_review(request, pk):
 
 @login_required
 def delete_review(request, review_id):
+    """
+    A view that allow users to delete their own review.
+    """
     reviews = get_object_or_404(Reviews, id=review_id)
     reviews.delete()
     messages.success(request, 'Your review was deleted successfully')

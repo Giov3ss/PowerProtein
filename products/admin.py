@@ -4,6 +4,9 @@ from .models import Product, Category
 # Register your models here.
 
 class ProductAdmin(admin.ModelAdmin):
+    """
+    Custom Admin configuration for the Product Model.
+    """
     list_display = (
         'sku',
         'name',
@@ -16,6 +19,9 @@ class ProductAdmin(admin.ModelAdmin):
     ordering = ('sku',)
 
 class CategoryAdmin(admin.ModelAdmin):
+    """
+    Custom Admin configuration for the Category Model
+    """
     list_display = (
         'friendly_name',
         'name',

@@ -15,6 +15,10 @@ import json
 
 @require_POST
 def cache_checkout_data(request):
+    """
+    View to handle the cache_checkout_data functionality which is used
+    by Stripe to modify the payment metadata.
+    """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -30,6 +34,10 @@ def cache_checkout_data(request):
         return HttpResponse(content=e, status=400)
 
 def checkout(request):
+    """
+    View to handle the chackout process when the user proceeds to checkout
+    from the shopping bag
+    """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -135,7 +143,8 @@ def checkout(request):
 
 def checkout_success(request, order_number):
     """
-    Handle successful checkouts
+    View to handle the chackout_success process, which is triggered when 
+    an order is successfully processed.
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)

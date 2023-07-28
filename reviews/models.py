@@ -4,7 +4,10 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 
 class Reviews(models.Model):
     """
-    Model for reviews
+    A model to represents service reviews provide by users.
+    This model allows the application to store and manaage 
+    user-submitted service reviews, such as review title, content,
+    rating and images.
     """
 
     class Meta:

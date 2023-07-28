@@ -3,7 +3,9 @@ from .models import Reviews
 
 @admin.register(Reviews)
 class ReviewsAdmin(admin.ModelAdmin):
-
+    """
+    Admin class Reviews
+    """
     list_display = (
         'name',
         'review_title',

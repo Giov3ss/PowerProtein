@@ -3,6 +3,11 @@ from .models import UserProfile
 
 
 class UserProfileForm(forms.ModelForm):
+    """
+    UserProfileForm is a modelform for UserProfile model, used to create
+    a form that allows user to update their profile info, excluding 'user'
+    field since it is automatically populated.
+    """
     class Meta:
         model = UserProfile
         exclude = ('user',)
