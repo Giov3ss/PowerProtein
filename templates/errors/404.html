@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="text-black">Oops! that a 404.</h2>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs col-md-4">
+                <h4>Sorry about that!</h4>
+                <h5>To return home please click <a href="{% url 'home %}">here</a></h5>
+            </div>
+        </div>
+    </div>
+{% endblock %}
