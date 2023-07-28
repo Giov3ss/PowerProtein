@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.shortcuts import redirect, reverse
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.conf import settings
@@ -33,6 +34,14 @@ class StripeWH_Handler:
             settings.DEFAULT_FROM_EMAIL,
             [cust_email],
         )
+
+    def email(self, order):
+        subject = 'Thank you for buy to our site'
+        message = ' it  means a world to us '
+        email_from = settings.EMAIL_HOST_USER
+        recipient_list = ['receiver@gmail.com',]
+        send_mail( subject, message, email_from, recipient_list )
+        return redirect(reverse('home'))
 
     def handle_event(self, event):
         """
@@ -154,6 +163,7 @@ class StripeWH_Handler:
             content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
             status=200)
 
+
     def handle_payment_intent_payment_failed(self, event):
         """
         Handle the payment_intent.payment_failed webhook from Stripe
@@ -161,3 +171,4 @@ class StripeWH_Handler:
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',
             status=200)
+

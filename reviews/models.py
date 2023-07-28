@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 class Reviews(models.Model):
     """
@@ -14,7 +15,7 @@ class Reviews(models.Model):
     featured_image = models.ImageField(blank=True, upload_to='review-images')
     created_on = models.DateTimeField(auto_now_add=True)
     service_review = models.TextField(null=True, max_length=400)
-    service_rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    service_rating = models.IntegerField(null=True, blank=True, validators=[MinValueValidator(1), MaxValueValidator(5)])
     approved = models.BooleanField(default=False)
     carousel_review = models.BooleanField(default=False)
 
