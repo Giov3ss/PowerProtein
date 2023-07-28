@@ -39,7 +39,7 @@ def order_history(request, order_number):
 
     if order.user_profile.user != request.user:
         messages.warning(request, 'You can only view your own order history!')
-        return redirect('home')
+        return render(request, '404.html')
 
     messages.info(request, (
         f'This is a past confirmation for order number {order_number}. '
