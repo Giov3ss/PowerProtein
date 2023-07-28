@@ -32,6 +32,10 @@ def add_review(request):
 @login_required
 def edit_review(request, pk):
     review = get_object_or_404(Reviews, id=pk)
+    if review.name != request.user.username:
+        messages.warning(request, 'You can only edit your own appointments!')
+        return redirect('home')
+
     if request.method == 'POST':
         form = ReviewsForm(request.POST, request.FILES, instance=review)
         if form.is_valid():
@@ -46,7 +50,6 @@ def edit_review(request, pk):
 
 @login_required
 def delete_review(request, review_id):
-
     reviews = get_object_or_404(Reviews, id=review_id)
     reviews.delete()
     messages.success(request, 'Your review was deleted successfully')
