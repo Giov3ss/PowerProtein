@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile
@@ -36,6 +36,10 @@ def profile(request):
 
 def order_history(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
+
+    if order.user_profile.user != request.user:
+        messages.warning(request, 'You can only view your own order history!')
+        return redirect('home')
 
     messages.info(request, (
         f'This is a past confirmation for order number {order_number}. '
