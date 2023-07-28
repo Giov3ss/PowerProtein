@@ -9,6 +9,7 @@ from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
 from bag.contexts import bag_contents
 from django.core.mail import send_mail
+from django.template.loader import render_to_string
 import stripe
 import json
 
@@ -161,15 +162,14 @@ def checkout_success(request, order_number):
                 user_profile_form.save()
 
             email_to = order.email
-            subject = 'Your order'
-            message = f'Hi {request.user.username},\n\n\
-                    Your order has been placed:\n\n\
-                    DATE:{order.date}\n\
-                    NUMBER:{order_number}\n\
-                    We look forward to seeing you again.!'
-            email_from = 'theescaperoomldn@gmail.com'
+            subject = render_to_string(
+                'checkout/confirmation_emails/confirmation_email_subject.txt',
+                {'order': order})
+            body = render_to_string(
+                'checkout/confirmation_emails/confirmation_email_body.txt',
+                {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
             recipient_list = [request.user.email, ]
-            send_mail(subject, message, email_from, recipient_list)
+            send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, recipient_list)
 
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
