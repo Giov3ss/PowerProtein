@@ -1,0 +1,3 @@
+User-agent: *
+Dissalow: /accounts/
+Sitemap: https://powerprotein-cd417ed27158.herokuapp.com/sitemap.xml 
