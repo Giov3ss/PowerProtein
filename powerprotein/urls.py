@@ -34,3 +34,6 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'powerprotein.views.handler404'
+handler403 = 'powerprotein.views.handler403'
+handler500 = 'powerprotein.views.handler500'
+handler400 = 'powerprotein.views.handler400'

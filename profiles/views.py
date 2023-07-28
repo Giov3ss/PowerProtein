@@ -39,17 +39,17 @@ def order_history(request, order_number):
 
     if order.user_profile.user != request.user:
         messages.warning(request, 'You can only view your own order history!')
-        return render(request, '404.html')
+        return render(request, '403.html')
+    else:
+        messages.info(request, (
+            f'This is a past confirmation for order number {order_number}. '
+            'A confirmation email was sent on the order date.'
+        ))
 
-    messages.info(request, (
-        f'This is a past confirmation for order number {order_number}. '
-        'A confirmation email was sent on the order date.'
-    ))
-
-    template = 'checkout/checkout_success.html'
-    context = {
-        'order': order,
-        'from_profile': True,
-    }
+        template = 'checkout/checkout_success.html'
+        context = {
+            'order': order,
+            'from_profile': True,
+        }
 
     return render(request, template, context)
