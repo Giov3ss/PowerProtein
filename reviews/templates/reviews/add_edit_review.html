@@ -2,6 +2,7 @@
 {% load static %} 
 
 {% block extra_css %}
+<!-- INCLUDE CUSTOM CSS FOR THE REVIEWS PAGE -->
 <link rel="stylesheet" href="{% static 'reviews/css/reviews.css' %}">
 {% endblock %}
 
@@ -15,14 +16,17 @@
 {% endblock %}
 
 {% block content %}
+<!-- CONTENT BLOCK FOR ADDING/EDITING REVIEWS -->
 <div id="add-review" class="edit-comments">
    <div class="container">
       <div class="row p-3">
          <div class="col-12 text-center">
             {% if review %}
+            <!-- DISPLAY 'EDIT REVIEW' HEADER IF EDITING EXISTING REVIEW -->
             <h1 class="subtitle mt-3 text-black">Edit Review As:</h1>
             <p><i class="fas fa-user"></i> {{ user.username | slice:":10" }}</p>
             {% else %}
+            <!-- DISPLAY 'ADD REVIEW' HEADER IF EDITING EXISTING REVIEW -->
             <h1 class="subtitle mt-3 text-black">Add Review As:</h1>
             <p><i class="fas fa-user"></i> {{ user.username | slice:":10" }}</p>
             {% endif %}
@@ -30,6 +34,7 @@
          <div class="col-md-6 mt-5 p-2">
             <div class="mr-3">
                {% if reviews %}
+               <!-- DISPLAY INFO ABOUT LEAVING A REVIEW -->
                <h2 class="subtitle text-black">Your Opinion Matters!</h2>
                {% endif %}
                <p class="p-1 text-justify">
@@ -50,6 +55,7 @@
          </div>
          <div class="col-md-6 mt-5 p-2">
             <form method="post" enctype="multipart/form-data">
+               <!-- FORM FOR ADDING/EDITING REVIEWS -->
                {% csrf_token %}
                {% for field in form %}
                {% if field.name != 'featured_image' %}
@@ -70,6 +76,7 @@
 {% endblock %}
 
 {% block postloadjs %}
+   <!-- CUSTOM JAVASCRIPT FOR THE SELECT IMAGE FILE -->
     {{ block.super }}
     <script type="text/javascript">
         $('#new-image').change(function() {

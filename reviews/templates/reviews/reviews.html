@@ -2,10 +2,12 @@
 {% load static %}
 
 {% block extra_css %}
+<!-- INCLUDE CUSTOM CSS FOR THE REVIEWS PAGE -->
 <link rel="stylesheet" href="{% static 'reviews/css/reviews.css' %}">
 {% endblock %}
 
 {% block page_header %}
+<!-- BLOCK PAGE HEADER -->
 <div class="container header-container">
     <div class="row">
         <div class="col"></div>
@@ -14,14 +16,17 @@
 {% endblock %}
 
 {% block content %}
+<!-- CONTENT BLOCK FOR DISPLAYING CUSTOMER REVIEWS -->
 <section id="reviews" class="container mt-5">
     <div class="col-md-8">
         <h2 class="subtitle text-black">Customer Reviews</h2>
         <hr>
         {% for review in reviews_list %}
+        <!-- REVIEW BOX FOR EACH REVIEW -->
         <div class="review-box mt-5">
             <p><i class="fa-solid fa-user"> </i> {{ review.name | slice:":10" }}</p>
             <p class="review-title"><strong> "{{ review.review_title }}"</strong></p>
+            <!-- DISPLAY SERVICE REATING BASED ON THE PROVIDE RATING -->
             <span>
                 {% if review.service_rating >= 5 %}
                 <i class="fas fa-star"></i>
@@ -54,7 +59,7 @@
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
                 {% else %}
-                <!-- if no valid rating is provided, show 5 starts -->
+                <!-- SHOW 5 STARTS BY DEFAULT, IF NOT VALIDA RATING -->
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -67,14 +72,17 @@
             </div>
             <div class="review-img">
                 {% if review.featured_image %}
+                <!-- DISPLAY THE REVIEW IMAGE -->
                 <img class="review-image card-img-top img-fluid mt-3" src="{{review.featured_image.url }}"
                     alt="{{ review.name }} Review Image">
                 {% else %}
+                <!-- SHOW A PLACEHOLDER IMAGE IF NO FEATURED IMAGE IS AVAILABLE -->
                 <img class="review-image card-img-top img-fluid mt-3" src="{{ MEDIA_URL }}noimage.png"
                     alt="{{ review.name }} Review Image">
                 {% endif %}
             </div>
             <p class="mt-2"><i class="fa fa-clock"></i> Reviewed on: {{ review.created_on | date:"D d M Y" }}</p>
+            <!-- DISPLAY EDIT AND DELETE BTN FOR THE REVIEW IF IT IS THE REVIEW AUTHOR OR SUPERUSER -->
             {% if user.is_authenticated and user.username == review.name or user.is_superuser %}
             <div class="mt-3">
                 <a href="{% url 'reviews:edit_review' review.id %}" aria-label="Go to edit review {{ review.id }} page"
@@ -82,6 +90,7 @@
                 <button type="button" class="btn btn-danger rounded-0 mb-3" data-toggle="modal"
                     data-target="#deleteModal-{{review.id}}" aria-label="Delete Review">Delete</button>
             </div>
+            <!-- MODAL FOR CONFIRMING REVIEW DELETION -->
             <div class="modal fade" id="deleteModal-{{review.id}}" tabindex="-1" role="dialog"
                 aria-labelledby="deleteModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -109,6 +118,7 @@
         {% endfor %}
     </div>
 </section>
+<!-- BACK-TO-TOP BUTTON -->
 <div class="btt-button shadow-sm rounded-0 border border-black">
     <a class="btt-link d-flex h-100">
         <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
@@ -117,6 +127,7 @@
 {% endblock %}
 
 {% block postloadjs %}
+    <!-- CUSTOM JS FOR BACK-TO-TOP BUTTON -->
     {{ block.super }}
     <script type="text/javascript">
         $('.btt-link').click(function(e) {
