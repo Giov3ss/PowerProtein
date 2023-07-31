@@ -1,40 +1,3 @@
-# OVERVIEW
-
-This template was made as a guide to ensure you cover assessment criteria in your fourth portfolio write up. It is specific to the **PORTFOLIO 5: Full-Stack Toolkit** project.
-
-## Helpful tools
-
-### Screenshots and Videos
-**Here’s a great video on how to add videos to your readme! no need to convert to gifs!!**
-
-https://www.youtube.com/watch?v=G3Cytlicv8Y
-
-> 1. record a video via slack
-> 2. download it
-> 3. in github, edit your readme via the pencil icon
-> 4. type a place holder word and highlight it
-> 5. drag and drop mp4 file over that text
-> 6. scroll down to the commit area
-> 7. update the default commit message
-> 8. click the green button
-> 9. ```git pull``` changes to your gitpod workspace
-
-**You can do the steps 3-9 for the image/screenshot uploads too!**
-
-### Cheatsheets and Auto Generation Tools
-
-Markdown's not all that easy so sometimes you may want to use some tools to make tables.
-
-- [Markdown Cheatsheet](https://guides.github.com/features/mastering-markdown/)
-- [markdown table generator](https://www.tablesgenerator.com/markdown_tables) - used to help with documentation table formatting
-- [markdown table of contents generator](https://ecotrust-canada.github.io/markdown-toc/) - used to create table of contents (be weary it does have some bugs if you have dashes or trailing spaces in your headers)
-- [readme.so](https://readme.so/) - if you don't want to learn markdown, this tool might help you
-
-
-
-====================================== The Sections you Fill in are below ==============================
-
-
 # PowerProtein
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/99d6984a-f7ea-4761-8eaf-0fc65922e052)
 ## Suplements E-commerce Store.
@@ -108,24 +71,21 @@ PowerProtein consists of fitness enthusiasts, athletes, gym-goers and health-con
 - <strong>Stay Informed & Inspired:</strong> Our regularly updated blog content will server as your source of inspiration, featuring workout routines, health tips and motivational stories to keep you informed and motivated on your health journey.
 
 **Business Goals:**
-- <strong>Enhance Customer Satisfaction:</strong> Providing expert nutrition advice showcases our commitment to customer well-being, ensuring their succ
-- <strong>Shopping Experience:</strong> User should enjoy a user-friendly and intuitive shopping experience, with simple navigation, clear product descriptions and secure payment options.
-- <strong>Expert Nutrition Advice:</strong> Through our user-friendly forms, User can provide your details and health preferences. Our tem of certified nutritionists from iHealthy will then carefully review your information and offer personalized nutrition advice to optimize your diet and fitness goals.
-- <strong>Stay Informed & Inspired:</strong> Our regularly updated blog content will server as your source of inspiration, featuring workout routines, health tips and motivational stories to keep you informed and motivated on your health journey.
+- <strong>Enhance Customer Satisfaction:</strong> Providing expert nutrition advice showcases our commitment to customer well-being, ensuring their success and satisfaction with our products.
+- <strong>Build Brand Authority:</strong> By collaborating with iHealthy's certified nutritionists, we establish ourselves as a credible and trutworthy authority in the fitness and nutrition domain.
+- <strong>Customer Loyalty:</strong> At our core, we focus on providing an exceptional user experience and fostering strong customer loyalty. This approach leads to repeat purchases and establishes long-term relationships with our customers.
+- <strong>Increase Social Presence:</strong> Engaging blog content and social media promotion are expected to attract more visitors, increasing overall website traffic and brand exposure.
+- <strong>Never Stop Improving:</strong> Through user's feedback and data analysis, we continually enhance our offerings and services to deliver the best possible experience to our customers.
 
-> **Place Owners**
-> Owners of Places would ideally have a different set of user permissions and the Update and Contribute sections of navigation would be under a strict workflow, but in the initial phase, I wanted to show off the ability to add, update and delete items from the website's view,so it's not hidden behind permissions or workflow at this point. Place owners are those that have a business or an organization that hosts free events within a community. Examples are a group that wants to play pickup soccer or a bicycle shop that leads group rides once a month.
->
 > **Place Owner Goals:**
->
-> - I want my place to be easily found on the site, so I can get more customers
-> - I want users to share community reviews, so I build trust with future customers
-> - I want to add events to my place, to build a repertoire with my clients
-> - I want users to join my events, so I can track how successful community events are to my bottom line
-> - I want the ability to update my place's details
-> - I want to update events associated with my organization
-> - I want to protect against bloated ratings
-> - I want to protect against accidental deletion of my information
+- I want to ensure that my website is easily found on the website. 
+- I want users to share positive reviews and feedback about their experience with our supplements.
+- I want to add and promote new supplement products to our online store's, to keep our product offering fresh and meet the diverse needs of our customers.
+- I want users to purchase and try our supplement products, so I can track the popularity of each item.
+- I want to have control over the product listings displayed on our store's, allowing us to add new products, update prices, description and delete products. 
+- I want the ability ti easily update and manage my store's details on the website such as contact information, shipping policies and promotions.
+- I want to ensure that ratings and reviews for our supplement products are genuine and reflect real customer experiences, without any misleading information.
+
 >
 > **WebSite Goals**
 > The primary goal of what2do2day is to create a user-friendly app that allows customers to quickly find an event they want to attend. It's a meeting point between business/organizations and kids/parents to improve the likelihood of kids getting off their devices and interacting with others face to face at a low cost with minimal adult supervision.
