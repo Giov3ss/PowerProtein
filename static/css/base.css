@@ -419,6 +419,7 @@ input[name='q']::placeholder {
 
 /* -------------------------------- Media Queries Subscribe Form */
 
+/* Breakpoint: 1100px (Desktop) */
 @media (max-width:1100px) {
     #mc_embed_signup {
         width: 300px;
@@ -429,6 +430,7 @@ input[name='q']::placeholder {
     }
 }
 
+/* Breakpoint: 998px (Tablet) */
 @media (max-width:998px) {
     .footer-content {
         flex-direction: column;
@@ -440,16 +442,7 @@ input[name='q']::placeholder {
     }
 }
 
-@media (max-width:350px) {
-    #mc_embed_signup {
-        width: 270px;
-    }
-
-    .brandingLogo img {
-        width: 150px;
-    }
-}
-
+/* Breakpoint: 425px (Smaller Phones) */
 @media (max-width:425px) {
     #footer h3 {
         font-size: 20px;
@@ -463,8 +456,20 @@ input[name='q']::placeholder {
 
 }
 
+/* Breakpoint: 350px (Smaller Phones) */
+@media (max-width:350px) {
+    #mc_embed_signup {
+        width: 270px;
+    }
+
+    .brandingLogo img {
+        width: 150px;
+    }
+}
+
 /* -------------------------------- Footer Bottom */
 
+/* Breakpoint: 620px (Small Tablets / Larger Smartphones) */
 @media (max-width: 620px) {
     .footer-bottom {
         flex-direction: column-reverse;

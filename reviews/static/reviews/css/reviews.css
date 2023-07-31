@@ -17,19 +17,21 @@ body {
 
 /* -------------------------------- Media Queries */
 
+/* Breakpoint: 991px (Tablet) */
 @media only screen and (max-width: 991px) { 
     .review-img  {
         width: 50%;
     } 
 }
 
-
+/* Breakpoint: 350px (Smaller Phones) */
 @media (max-width:352px) {
     .col-12.text-center h1 {
         font-size: 30px;
     }
 }
 
+/* Breakpoint: 350px (Smaller Phones) */
 @media (max-width:345px) {
     .col-md-8 h2 {
         font-size: 28px;

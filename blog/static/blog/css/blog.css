@@ -110,6 +110,7 @@ a.signup-blog-link {
 
 /* -------------------------------- Media Queries */
 
+/* Breakpoint: 976px - 320px (Smaller Tablets & Large Smartphones) */
 @media (max-width: 976px) and (min-width: 320px) {
     .masthead {
         margin-top: -71px;
@@ -117,6 +118,7 @@ a.signup-blog-link {
     
 }
 
+/* Breakpoint: 769px (Smaller Tablets & Smartphones) */
 @media (max-width: 769px) {
     .masthead-image {
         flex-direction: column;
