@@ -77,7 +77,7 @@ PowerProtein consists of fitness enthusiasts, athletes, gym-goers and health-con
 - <strong>Increase Social Presence:</strong> Engaging blog content and social media promotion are expected to attract more visitors, increasing overall website traffic and brand exposure.
 - <strong>Never Stop Improving:</strong> Through user's feedback and data analysis, we continually enhance our offerings and services to deliver the best possible experience to our customers.
 
-> **Place Owner Goals:**
+**Place Owner Goals:**
 - I want to ensure that my website is easily found on the website. 
 - I want users to share positive reviews and feedback about their experience with our supplements.
 - I want to add and promote new supplement products to our online store's, to keep our product offering fresh and meet the diverse needs of our customers.
@@ -86,18 +86,21 @@ PowerProtein consists of fitness enthusiasts, athletes, gym-goers and health-con
 - I want the ability ti easily update and manage my store's details on the website such as contact information, shipping policies and promotions.
 - I want to ensure that ratings and reviews for our supplement products are genuine and reflect real customer experiences, without any misleading information.
 
->
-> **WebSite Goals**
-> The primary goal of what2do2day is to create a user-friendly app that allows customers to quickly find an event they want to attend. It's a meeting point between business/organizations and kids/parents to improve the likelihood of kids getting off their devices and interacting with others face to face at a low cost with minimal adult supervision.
-> In order to support the maintenance and development of cool features on the site, what2do2day hopes to produce monetary gains through the following means:
-> - Workflow Management Plans for Businesses around:
-    >
-- oversee approval/disapproval of reviews to ensure spamming and bad-mouthing in reviews does not occur
->   - batch event creation to help save time
->   - user account management to help with password recovery and assigning or removing roles as employees change
->   - sharing of user emails that attend events
-> - Affiliate linking - link to at-cost services provided by businesses and receive a kickback
-> - Ads - target online sales related to equipment based on activities a place or event is associated with
+**WebSite Goals:**
+The primary goal of PowerProtein's website is to provide a seamless and user-friendly online platform for selling supplements and fitness products. The website aims to cater to fitness enthusiasts, athletes and health-conscious individuals by offering a wide range of high-quality supplements and nutritional products. In addition to serving customers, PowerProtein has several business-oriented objectives to ensure its success and growth:
+
+1. **User Experience:**
+   - Create an intuitive and visually appealing website design that allows customer to easily navigate and find the products.
+   - Implement a user-friendly search and filtering system to enable customer to quickly locate specific supplements based on their fitness goals and dietary preferences.
+   - Optmize the website for fast loading times and seamless performance across multiple devices to increase user satisfaction and encourage repeat visits.
+
+2. **Trust Building:**
+   - Offer informative and engaging content, such as blogs and expert advice on fitness, nutrition and health-related topics to establish PowerProtein as a reliable source of information.
+   - Encourage customer reviews to build trust and credibility, showcasing the positive experiences of previous buyers.
+
+3. **Segure & Seamless Checkout Process:**
+   - Implement security measures to protect customer data and ensure a safe online shopping experience, intilling confidence in customers to make purchases.
+   - Steamline the checkout process with easy-to-use payments options, fast order processig to provide a seamless shopping experience.
 
 ## User Stories
 🚨**Required**
