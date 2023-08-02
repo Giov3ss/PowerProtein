@@ -4,6 +4,7 @@ from django.http import HttpResponseRedirect
 from django.contrib import messages
 from .models import Post
 
+
 class PostList(generic.ListView):
     """
     A view to display a list of published blog post
@@ -13,9 +14,10 @@ class PostList(generic.ListView):
     template_name = 'blog/blog.html'
     paginate_by = 6
 
+
 class PostDetail(View):
     """
-    A view to display a single blog post and check if the user has liked it 
+    A view to display a single blog post and check if the user has liked it
     """
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
@@ -33,6 +35,7 @@ class PostDetail(View):
             },
         )
 
+
 class PostLike(View):
     """
     A view to handle liking or unliking a blog post
@@ -46,5 +49,5 @@ class PostLike(View):
         else:
             post.likes.add(request.user)
             messages.success(request, 'Blog liked!')
-        
+
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))

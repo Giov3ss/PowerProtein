@@ -19,6 +19,7 @@ class ExpertAdviceView(CreateView):
         return super().form_valid(form)
         messages.success = "Expert Advice request sent!"
 
+
 def success(request):
     """
     A view function to render the success page

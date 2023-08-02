@@ -10,10 +10,10 @@ def reviews(request):
     """
     A view of approved reviews from the database
     """
-    reviews_list = (Reviews.objects.filter(approved=True).order_by('-created_on'))
+    reviews_list = (Reviews.objects.filter(approved=True).order_by('-created_on'))  # noqa
     return render(request, 'reviews/reviews.html', {
         'reviews_list': reviews_list,
-        'edit_review_url': reverse('reviews:edit_review', kwargs={'pk': 0}),
+        'edit_review_url': reverse('reviews:edit_review', kwargs={'pk': 0}),  # noqa
     })
 
 
@@ -27,9 +27,9 @@ def add_review(request):
         if form.is_valid():
             form.instance.name = request.user
             form.save()
-            messages.success(request, 'Your review was sent successfully and is now awaiting approval!')
+            messages.success(request, 'Your review was sent successfully and is now awaiting approval!')  # noqa
             return redirect('reviews:reviews')
-    else: 
+    else:
         form = ReviewsForm()
     return render(request, 'reviews/add_edit_review.html', {'form': form})
 
@@ -53,7 +53,7 @@ def edit_review(request, pk):
     else:
         form = ReviewsForm(instance=review)
         messages.info(request, f"You are editing {review.name} review's")
-    return render(request, 'reviews/add_edit_review.html', {'form': form, 'review': review})
+    return render(request, 'reviews/add_edit_review.html', {'form': form, 'review': review})  # noqa
 
 
 @login_required
@@ -65,6 +65,3 @@ def delete_review(request, review_id):
     reviews.delete()
     messages.success(request, 'Your review was deleted successfully')
     return redirect('reviews:reviews')
-
-
-

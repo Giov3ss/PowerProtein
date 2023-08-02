@@ -10,13 +10,13 @@ class ExpertAdviceAddFrom(forms.ModelForm):
     class Meta:
         model = ExpertAdvice
         fields = ['name', 'email', 'message']
-        
+
         # Customize the widgets for each field to add CSS classes and attr.
         widgets = {
-        'name': forms.TextInput(attrs={'class': 'form-control'}),
-        'email': forms.EmailInput(attrs={'class': 'form-control'}),
-        'message': forms.Textarea(attrs={'class': 'message-field'}),
-    }
+            'name': forms.TextInput(attrs={'class': 'form-control'}),
+            'email': forms.EmailInput(attrs={'class': 'form-control'}),
+            'message': forms.Textarea(attrs={'class': 'message-field'}),
+        }
 
     # Define the clean() method to add custom from validation.
     def clean(self):
@@ -24,7 +24,7 @@ class ExpertAdviceAddFrom(forms.ModelForm):
         name = cleaned_data.get('name')
         email = cleaned_data.get('email')
         message = cleaned_data.get('message')
-        
+
         if not name:
             raise forms.ValidationError('Please enter your name.')
         if not email:
@@ -39,5 +39,5 @@ class ExpertAdviceAddFrom(forms.ModelForm):
         self.fields['name'].label = 'Your Name'
         self.fields['email'].label = 'Your Email'
         self.fields['message'].label = 'Message'
-        self.fields['email'].widget.attrs['placeholder'] = 'example@example.com'
+        self.fields['email'].widget.attrs['placeholder'] = 'example@example.com'  # noqa
         self.fields['message'].widget.attrs['rows'] = 4

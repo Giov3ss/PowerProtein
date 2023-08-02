@@ -1,7 +1,6 @@
 from django.contrib import admin
 from .models import Product, Category
 
-# Register your models here.
 
 class ProductAdmin(admin.ModelAdmin):
     """
@@ -18,6 +17,7 @@ class ProductAdmin(admin.ModelAdmin):
 
     ordering = ('sku',)
 
+
 class CategoryAdmin(admin.ModelAdmin):
     """
     Custom Admin configuration for the Category Model
@@ -26,6 +26,7 @@ class CategoryAdmin(admin.ModelAdmin):
         'friendly_name',
         'name',
     )
+
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
