@@ -137,21 +137,28 @@ The primary goal of PowerProtein's website is to provide a seamless and user-fri
 - As a Admin I want to have access from Mailchimp website to the list of subscribed users so that I will be able to manage the newsletter subscriptions.
 
 ## Feasibility vs Importance
-🚀 **merit & beyhond**
 
-To scope the project for a MVP (minimally viable product) a feasibility analysis was done.
-
-The features in the table below have been taken from the user stories above. Generic features found in most websites
-will also be implemented such as nav-bar, footer, obvious website purpose etc.
-
-| Opportunity/Feature | Feasibility/Viability (score out of 5) | PurposeLevel of Importance (score out of 5) | In Or Out |
-|---------------------|----------------------------------------|---------------------------------------------|-----------|
-|                     |                                        |                                             |           |
-|                     |                                        |                                             |           |
-|                     |                                        |                                             |           |
-|                     |                                        |                                             |           |
-
-> You should discuss the outcome of what you will be dropping based on the outcome. Making a scatter plot of the scores and coloring the dot
+| **Opportunity/Feature**           | **Feasibility/Viability** | **_PurposeLevel of Importance _** | **In Or Out** |
+|-----------------------------------|---------------------------|-----------------------------------|---------------|
+| User Registration and Login       | 4                         | 5                                 | In            |
+| Product Catalog                   | 5                         | 5                                 | In            |
+| Product Search Functionality      | 4                         | 4                                 | In            |
+| Product Details Page              | 5                         | 4                                 | In            |
+| Add to Bag Functionality          | 4                         | 5                                 | In            |
+| Shopping Bag (View & Edit)        | 4                         | 5                                 | In            |
+| Checkout & Payment Processing     | 5                         | 5                                 | In            |
+| Order Confirmation                | 5                         | 4                                 | In            |
+| User Profile & Account Management | 4                         | 4                                 | In            |
+| User Reviews & Rating             | 4                         | 4                                 | In            |
+| Blog Section                      | 4                         | 3                                 | In            |
+| Expert Advice Section             | 3                         | 4                                 | In            |
+| Privacy Policy Page               | 5                         | 3                                 | In            |
+| Affiliate Liking                  | 2                         | 4                                 | Out           |
+| Advertisement Integration         | 3                         | 3                                 | Out           |
+| Mobile App Development            | 3                         | 5                                 | Out           |
+| Social Media Integration          | 4                         | 3                                 | Out           |
+| User Wishlist                     | 3                         | 3                                 | Out           |
+| Live Chat Support                 | 3                         | 4                                 | Out           |
 
 ## Scope
 🚀 **merit & beyhond**
