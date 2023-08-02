@@ -138,7 +138,7 @@ The primary goal of PowerProtein's website is to provide a seamless and user-fri
 
 ## Feasibility vs Importance
 
-| **Opportunity/Feature**           | **Feasibility/Viability** | **_PurposeLevel of Importance _** | **In Or Out** |
+| **Opportunity/Feature**           | **Feasibility/Viability** | **PurposeLevel of Importance** | **In Or Out** |
 |-----------------------------------|---------------------------|-----------------------------------|---------------|
 | User Registration and Login       | 4                         | 5                                 | In            |
 | Product Catalog                   | 5                         | 5                                 | In            |
@@ -159,6 +159,17 @@ The primary goal of PowerProtein's website is to provide a seamless and user-fri
 | Social Media Integration          | 4                         | 3                                 | Out           |
 | User Wishlist                     | 3                         | 3                                 | Out           |
 | Live Chat Support                 | 3                         | 4                                 | Out           |
+
+***Explanation:**
+- Features with high feasibility and high importance (scored 4 or 5 in both categories) are essential for the MVP and will be included.
+- Features with high feasibility but lower importance (score 4 or 5 in feasibility and 3 in importance) will be considered for inclusion in the MVP but may be prioritized lower than other features.
+- Features with lower feasibility (scored 2 or 3 in feasibility) will be dropped from the MVP as thet may required signifant resources.
+- The "In" features represent opportunities that have a high feasibility or importance score and will be included in the MVP of the PowerProtein website.
+- The "out" features represent opportunities that have a lower feasibility or importance score and will not be included in the MVP of the PowerProtein website.
+- Advertisement Integration is considered "out" due to lower feasivility score 3 and complexity that might be involved, the importance level of 3 suggest is not a to priority for the MVP.
+- Mobile App Development is considered "out" due to higher complexity and resource requirements it demands. As an MVP, the focus will be only the website.
+- Live Chat Support is considered "out" due to relatively lower importance compared to other core features. It may be considered in the future iterations.
+- Social Medial Integration and User Wishlist are considered "out" as they are additional features that are not critical for the initial release. It may be considered in the future iterations.
 
 ## Scope
 🚀 **merit & beyhond**
