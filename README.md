@@ -159,7 +159,7 @@ The primary goal of PowerProtein's website is to provide a seamless and user-fri
 | User Wishlist                     | 3                         | 3                                 | Out           |
 | Live Chat Support                 | 3                         | 4                                 | Out           |
 
-***Explanation:**
+**Explanation:**
 - Features with high feasibility and high importance (scored 4 or 5 in both categories) are essential for the MVP and will be included.
 - Features with high feasibility but lower importance (score 4 or 5 in feasibility and 3 in importance) will be considered for inclusion in the MVP but may be prioritized lower than other features.
 - Features with lower feasibility (scored 2 or 3 in feasibility) will be dropped from the MVP as thet may required signifant resources.
@@ -171,21 +171,27 @@ The primary goal of PowerProtein's website is to provide a seamless and user-fri
 - Social Medial Integration and User Wishlist are considered "out" as they are additional features that are not critical for the initial release. It may be considered in the future iterations.
 
 ## Scope
-🚀 **merit & beyhond**
-
-Now you have to talk about the scope to reduce things more, you don't necessarily need all the bells and whistles, they
-could be beyond your skill set. Think basic stuff.
+To align the project goals with the available resources and skill set, the scope has been refined to focus on delivering a MVP that prioritizes essential features and functionality.
+1. **Product Catalog:** A well-organized product catalog will be at the heart of the website, allowing users to browse and search for various supplements based on categories, brands and specific health goals.
+2. **User Accounts:** The website will support user accounts, enabling customers to create profiles, manage their orders and see their orders history.
+3. **Shopping Bag & Checkout:** Shoppers will be able to add products to their shopping bag and proceed to a smooth and secure checkout process, ensuring a seamless buying experience.
+4. **Product Reviews:** A review page will be implemented, enabling customers to provide feedback and ratings for products they have purchased. This feature will help build trust and guide future customers in their purchasing decisions.
+5. **User-Friendly & Responsive Design:** The website will be optimized for various devices, ensuring a consistent and user-friendly experience for both desktop and mobile users.
 
 ## Design Choices
-🚀 **merit & beyhond**
-
-Now that you have let the assessors know about the target audience and users, you can go into the design choices
-
 ### Colors
-🚀 **merit & beyhond**
 
-- Discuss your color pallet choices and how it ties into users' emotions or target audience.
-- include a screenshot of your pallet using a tool like coolors.co
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/8428f0b8-4245-4849-a75c-a4142908e60f)
+
+The color palette chosen for the PowerProtein website is carefully selected to resonate with the target audience and evoke specific emotion related health, vitality and fitness. The colors aim to create a visually appealing and inviting atmosphere while maintaining a professional and trustworthy image.
+- **#261F1D(Dark Brown):**  This color was taken from the hero-image, is represents stability and reliability. It provides a strong foundation for the website, portraying PowerProtein as a dependable source for fitness products.
+- **#FEFEFE(White):** White is utilized for the main navigation background, ensuring clarity and simplicity. It complements the other colors and gives a clean and modern appearance, enhancing readability.
+- **#182C2A(Dark Green):**  This color was taken from the hero-image, dark green signifies growth, health and balance. It adds vibrancy to the design, drawing attention to important elements and encouranging users to take action.
+- **#E1D6D0(Light Beige):** Light Beige complements the other colors and provides a sense of calmness, creating a welcoming and approachable feel.
+- **#CD8F73(Light Brown):** It brings warmth to the overall design and encourages user to engange with our website.
+- **#000(Black):** The black color is used strategically to provide contrast and emphasize certain elements, such as buttons, brand name and headings. It creates a sense of sophistication and elegance.
+  
+Together, these colors work cohesively to create a visually appealing and user-friendly interface, where users can confidently explore our range of fitness products and embark on their journey to a helthier and fitter lifestyle.
 
 ### Typography
 🚀 **merit & beyhond**
