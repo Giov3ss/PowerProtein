@@ -153,7 +153,6 @@ The primary goal of PowerProtein's website is to provide a seamless and user-fri
 | Blog Section                      | 4                         | 3                                 | In            |
 | Expert Advice Section             | 3                         | 4                                 | In            |
 | Privacy Policy Page               | 5                         | 3                                 | In            |
-| Affiliate Liking                  | 2                         | 4                                 | Out           |
 | Advertisement Integration         | 3                         | 3                                 | Out           |
 | Mobile App Development            | 3                         | 5                                 | Out           |
 | Social Media Integration          | 4                         | 3                                 | Out           |
