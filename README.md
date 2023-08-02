@@ -103,23 +103,38 @@ The primary goal of PowerProtein's website is to provide a seamless and user-fri
    - Steamline the checkout process with easy-to-use payments options, fast order processig to provide a seamless shopping experience.
 
 ## User Stories
-🚨**Required**
-
-User stories evolve over a project's lifetime. Start with a wish list, do a feasibility analysis then move the ones you
-will work on into gitHub, so you can track their progress.
-
-## Initial Stories
-🚨**Required**
-
-To start the agile process this section kicks off with a bullet list/brainstorming dump about features you'd like to
-have. EVERYTHING write them out in bullet form:
-
-- As a 'user type' I 'to perform an action' so that I can 'achieve a goal'
-
-**Examples**
-
-- [radiology booking](https://github.com/DeannaCarina/ELHTRadiology#user-stories)
-- [places/events searching site](https://github.com/maliahavlicek/what2do2day#user-stories)
+- As a new customer I want to create an account in the website so that I can easily manage my profile.
+- As a registered user I want to login and logout of the website so that I can access my account securely and protect my information when I'm done using the site.
+- As a User I want to recover my password so that I can regain access to my account if I forget my login credentials.
+- As a new user I want to receive an email to verify my account after registering so that I can ensure the security of my account and access all the features of the website.
+- As a registered user I want to have a personalized user profile so that I can update my personal information and view my order history.
+- As a Shopper I want to view individual products details on the website so that I can make informed purchasing decisions, as being able to see product images, descriptions, prices and product rating.
+- As a Shopper I want to view the total of my purchase on the website so that I can see the cost of all the item in my shopping bag.
+- As a Shopper I want to sort products by price, rating or category so that I can easily find products that meet my preference and needs.
+- As a Shopper I want to search for products on the website so that I can quickly find specific items I am interested in.
+- As a Shopper I want to view all products on the Products page so that I can explore the entire range of available products in one place.
+- As a Shopper/Visitor I want to be able to navigate the website easily by using the navbar to choose specific products categories so that I can quickly find products that match my interests.
+- As a Shopper I want to adjust the quantity of individual items in my shopping bag so that I can easily make changes to my purchase before proceeding to checkout.
+- As a Shopper I want to have a Shopping bag feature on the website so that I can easily add and manage the items I wish to purchase before checkout.
+- As a Shopper I want to be able to remove items from my shopping bag so that I can easily adjust my purchase and remove any item that I don't want.
+- As a Shopper I want to be able to fill the form details and securely provide my payments details so that I can complete my purchase.
+- As a Shopper I want to view the order summary, including the selected products, their quantities and grand total so that I can double-check my purchase and ensure everything is correct before finalizing the transaction.
+- As a Shopper-Authorized User I want to be able to write and submit product reviews so that I can share my experiences and opinions.
+- As a Shopper-Authorized User user I want to be able to update or delete my product reviews so that I can edit my feedback if my opinion changes.
+- As a Shopper I want to access a page that displays all the reviews so that I can read and evaluate the feedback of other users.
+- As a Admin I want to have the capability to add new products to the website so that I can keep the product catalogue up-to-date.
+- As a Admin I want to have the capability to edit and delete products on the website, such as name, description, price, images and category so that I can maintain accurate and relevant product information.
+- As a Admin I want to have control over customers reviews on the website so that I can ensure the reviews are genuine, appropriate and helpful for other users.
+- As a Admin I want to have the capability to edit and delete inappropriate or fake reviews so that I can maintain review integrity and quality of user content.
+- As a Admin I want to have the capability from the panel log admin see and monitor, views customer orders, grand total and products details so that I can ensure a smooth and efficient user experience.
+- As a Shopper/Visitor I want to be able to view blog posts on the website so that I can stay informed and learn valuable information.
+- As a registered user I want to be able to like a blog posts so that I can express and interact with the content.
+- As a Admin I want to have full control over the blog posts such as create, edit, delete, publish and unpublish so that I can manage and curate the content effectively.
+- As a Shopper/Visitor I want to be able to request an expert advice form, fill out the details so that I can seek personalized advice and guidance related to fitness, nutrition or any specific health-related queries.
+- As a Admin I want to have access from the panel log admin to the form submissions so that I can review and send the inquiries to our partners, who will provide personalized expert advice.
+- As a Admin I want to be able to review and delete form submissions so that I can manage the list of inquiries and maintain the relevancy and organization of the data.
+- As a Shopper/Visitor I want to be able to subscribe to the website's newsletter so that I can receive the latest updates, promotion and news.
+- As a Admin I want to have access from Mailchimp website to the list of subscribed users so that I will be able to manage the newsletter subscriptions.
 
 ## Feasibility vs Importance
 🚀 **merit & beyhond**
