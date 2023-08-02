@@ -27,7 +27,7 @@ def add_review(request):
         if form.is_valid():
             form.instance.name = request.user
             form.save()
-            messages.success(request, 'Your review was sent successfully and is now awaiting approval!')  # noqa
+            messages.success(request, 'Your review was sent successfully and is now awaiting approval.')  # noqa
             return redirect('reviews:reviews')
     else:
         form = ReviewsForm()
@@ -41,7 +41,7 @@ def edit_review(request, pk):
     """
     review = get_object_or_404(Reviews, id=pk)
     if review.name != request.user.username:
-        messages.warning(request, 'You can only edit your own appointments!')
+        messages.warning(request, 'You can only edit your own reviews!')
         return render(request, '403.html')
 
     if request.method == 'POST':
