@@ -1,5 +1,6 @@
 # PowerProtein
-![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/99d6984a-f7ea-4761-8eaf-0fc65922e052)
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/3ef1c980-bde6-48d3-aea4-af1ed0debdd8)
+
 ## Suplements E-commerce Store.
 > E-commerce website that provide a high quality products for sale as well as expert advice in your health & nutrition and a blog content to share tips to <strong>Elavate Your Health</strong>.
 
@@ -194,11 +195,7 @@ The color palette chosen for the PowerProtein website is carefully selected to r
 Together, these colors work cohesively to create a visually appealing and user-friendly interface, where users can confidently explore our range of fitness products and embark on their journey to a helthier and fitter lifestyle.
 
 ### Typography
-🚀 **merit & beyhond**
-
-- discuss font size, font types for headers vs buttons vs general text and how it ties into users' emotions or target
-  audience.
-- include screenshots of fonts used and links to the appropriate website ex) https://fonts.google.com/specimen/Raleway
+The typography on the PowerProtein website is carefully chosen to complement the overall design and enhance the user experience. The primary font used is **"Rubik"**, which offers a modern and clean appearance. It ensures readbility and consistency across diferent devices. Headings are set with appropriate font-size to grab the user's attention and guide them through the content effectively. Buttons and importat call-to-action elements have slightly large font sizes to make them stand out.
 
 ### Images
 🚀 **merit & beyhond**
