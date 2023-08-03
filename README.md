@@ -198,9 +198,9 @@ Together, these colors work cohesively to create a visually appealing and user-f
 The typography on the PowerProtein website is carefully chosen to complement the overall design and enhance the user experience. The primary font used is **"Rubik"**, which offers a modern and clean appearance. It ensures readbility and consistency across diferent devices. Headings are set with appropriate font-size to grab the user's attention and guide them through the content effectively. Buttons and importat call-to-action elements have slightly large font sizes to make them stand out.
 
 ### Images
-🚀 **merit & beyhond**
-
-Explain why you used certain icons and images on your site
+- **Hero image:** The image of a woman training in boxning embodies empowerment, strength and determination. We wanted to showcase that women are an integral part of the world of sports and fitness, breaking stereotypes and embracing their inner strength. This aligns with our vision of inclusivity and promoting gender quality in sports and fitness.
+- **Logo:** The word **POWER** in the logo immediately conveys a sense of strength and energy, suggesting that our products are designed to provide a powerful boost their fitness and overall well-being. The **PROTEIN** highlights the primary focus of our brand-fitness and nutrition. It communnicates that our products are protein-based, which is essential for muscle building, recovery and maintaining a healthy lifestyle.
+- **Star Icon:** The star icon is associated with excellence, achievement and recognition. In our context, using the star icon indicates that our products and services are exceptional and of high quality and also serves as a reference for users.
 
 ### Design Elements
 🚀 **merit & beyhond**
@@ -219,8 +219,6 @@ Explain why you used certain icons and images on your site
 > - dropdowns
 > - modals/layers
 > - check boxes
-> - switches
-> - accordions/drawers
 > - pagination
 > - date pickers
 > - maps
@@ -239,16 +237,10 @@ Explain why you used certain icons and images on your site
 - special hover state effects
 
 ### Frameworks
-🚨**Required**
-
-- If you use bootstrap, tailwind, bulma, materialize or some other JS/CSS framework, call it out here and why you made
-  that choice. (Typically I look at the design elements I want and make sure the framework supports them)
+I chose to use Bootstrap for my website because it allowed me to quickly and easily create a responsive design that works well on different devices. the pre-designed templates and components also helped me to save time in the development process.
 
 ### Custom Styles
-🚨**Required**
-
-- call out any overrides you did for bootstrap styles or the framework you used, even if they are fonts and colors,
-  perhaps lead assessors to the file of interest in your repo
+- [Bootstrap Code (modal) - Reviews](reviews/templates/reviews/reviews.html)
 
 ### Custom Javascript
 🚨**Required**
