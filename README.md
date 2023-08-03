@@ -249,18 +249,11 @@ I chose to use Bootstrap for my website because it allowed me to quickly and eas
   A new scroll-to-top button more smooth
 
 ## Wireframes
-🚨**Required**
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/1e2c8427-c12b-413f-b735-052389f95d09)
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/babab4e3-f4ce-4634-8ace-947becb93eb8)
+add review:
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/e03b16ae-b5d6-4145-9d5b-af30772a6693)
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of
-the design process. These files should themselves either be included as a pdf file in the project itself (in a separate
-directory), or hosted elsewhere online and can be in any format that is viewable inside the browser.
-
-- You should minimally have wireframes for desktop and mobile for the pages you are making for you register, login,
-  read(list/detail), add, update, delete functionality. Adding a Tablet view will help you get into merit and
-  distinction.
-
-You can hand draw these, but CI posts a yearly license in the general channel for Balsamiq which is pretty easy to use.
-Here is the [2022 announcement](https://code-institute-room.slack.com/archives/C0L316Z96/p1640099614368000)
 
 
 # Information Architecture
