@@ -243,10 +243,10 @@ I chose to use Bootstrap for my website because it allowed me to quickly and eas
 - [Bootstrap Code (modal) - Reviews](reviews/templates/reviews/reviews.html)
 
 ### Custom Javascript
-🚨**Required**
-
-- call attention to any custom javascript you created to help your User Experience you can organize this by functions or
-  files
+- [JS Code (quantity btn) - Products](products/templates/products/includes/quantity_input_script.html)
+ Decrement and increment buttons fixed and working for both mobile and desktop.
+- [JS Code (scroll-to-top btn) - Products](products/templates/products/products.html)
+  A new scroll-to-top button more smooth
 
 ## Wireframes
 🚨**Required**
