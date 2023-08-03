@@ -65,7 +65,7 @@
                         <input class="star" id="star-{{ rating_value }}" type="radio" 
                         name="{{ form.service_rating.html_name }}" 
                         value="{{ rating_value }}" {% ifequal form.service_rating.value rating_value %}checked{% endifequal %}/>
-                        <label class="star" for="star-{{ rating_value}}" style="font-size: 24px; margin-top: 0.5rem; color: #ffd700;">{{ rating_label }}</label>
+                        <label class="star" for="star-{{ rating_value}}" style="font-size: 24px;">{{ rating_label }}</label>
                      {% endfor %}
                      </div>
                   {% endif %}
@@ -73,7 +73,7 @@
                      {{ field | as_crispy_field }}
                   {% else %}
                      {{ field }}
-                  {% endif %}
+               {% endif %}
                {% endfor %}
                <div class="text-right mt-4">
                   <button class="btn btn-black rounded-0" type="submit" value="Save" aria-label="Submit Review">Submit</button>
