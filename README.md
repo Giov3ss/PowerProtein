@@ -249,10 +249,14 @@ I chose to use Bootstrap for my website because it allowed me to quickly and eas
   A new scroll-to-top button more smooth
 
 ## Wireframes
+**Home Page:**
+
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/1e2c8427-c12b-413f-b735-052389f95d09)
-![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/babab4e3-f4ce-4634-8ace-947becb93eb8)
-add review:
-![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/e03b16ae-b5d6-4145-9d5b-af30772a6693)
+
+**Add Review:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/b6895ac9-9e8f-42dc-9606-461297ec37da)
+
 
 
 
