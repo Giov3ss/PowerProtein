@@ -1,13 +1,14 @@
 from django import forms
 from .models import Reviews
 from .widgets import CustomClearableFileInput
+from django.utils.html import format_html
 
 RATING_CHOICES = [
-    (1, '1 Star'),
-    (2, '2 Stars'),
-    (3, '3 Stars'),
-    (4, '4 Stars'),
-    (5, '5 Stars'),
+    (1, format_html('1 <i class="fas fa-star"></i>')),
+    (2, format_html('2 <i class="fas fa-star"></i>')),
+    (3, format_html('3 <i class="fas fa-star"></i>')),
+    (4, format_html('4 <i class="fas fa-star"></i>')),
+    (5, format_html('5 <i class="fas fa-star"></i>')),
 ]
 
 
@@ -24,5 +25,5 @@ class ReviewsForm(forms.ModelForm):
     service_rating = forms.ChoiceField(
         label='Service Rating',
         choices=RATING_CHOICES,
-        widget=forms.Select,
+        widget=forms.RadioSelect(attrs={'class': 'star'}),
     )

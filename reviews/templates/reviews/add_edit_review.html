@@ -58,11 +58,22 @@
                <!-- FORM FOR ADDING/EDITING REVIEWS -->
                {% csrf_token %}
                {% for field in form %}
-               {% if field.name != 'featured_image' %}
-               {{ field | as_crispy_field }}
-               {% else %}
-               {{ field }}
-               {% endif %}
+                  {% if field.label_tag == 'Service Rating*' %}
+                     <label for="{{ field.id_for_label }}" class="text-black">{{ field.label_tag }}</label>
+                     <div class="stars">
+                        {% for rating_value, rating_label in form.service_rating.field.choices %}
+                        <input class="star" id="star-{{ rating_value }}" type="radio" 
+                        name="{{ form.service_rating.html_name }}" 
+                        value="{{ rating_value }}" {% ifequal form.service_rating.value rating_value %}checked{% endifequal %}/>
+                        <label class="star" for="star-{{ rating_value}}" style="font-size: 24px; margin-top: 0.5rem; color: #ffd700;">{{ rating_label }}</label>
+                     {% endfor %}
+                     </div>
+                  {% endif %}
+                  {% if field.name != 'featured_image' %}
+                     {{ field | as_crispy_field }}
+                  {% else %}
+                     {{ field }}
+                  {% endif %}
                {% endfor %}
                <div class="text-right mt-4">
                   <button class="btn btn-black rounded-0" type="submit" value="Save" aria-label="Submit Review">Submit</button>
