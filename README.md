@@ -257,7 +257,13 @@ I chose to use Bootstrap for my website because it allowed me to quickly and eas
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/b6895ac9-9e8f-42dc-9606-461297ec37da)
 
+**Edit Review:**
 
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/34e084a3-5fab-4894-a4b0-a10d87c69fbb)
+
+**Product List:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/951fcdad-f692-40db-b3c2-42d6c4e4c70d)
 
 
 # Information Architecture
