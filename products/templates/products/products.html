@@ -87,6 +87,9 @@
                                         {% else %}
                                             <small class="text-muted">No Rating</small>
                                         {% endif %}
+                                        <div>
+                                            <a href="{% url 'add_to_bag' product.id %}" aria-label="Add {{ product.name }} to Bag" class="btn btn-black rounded-0 mt-2">Quick Buy</a>
+                                        </div>
                                         {% if request.user.is_superuser %}
                                             <small class="ml-3">
                                                 <a href="{% url 'edit_product' product.id %}">Edit</a>
