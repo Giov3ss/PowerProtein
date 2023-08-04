@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from products.models import Product
 
 
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -19,6 +20,9 @@ class Post(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
+    cross_sell=models.ForeignKey(
+        Product, on_delete=models.CASCADE, related_name="product", blank=True, null=True
+    )
 
     class Meta:
         ordering = ['-created_on']
