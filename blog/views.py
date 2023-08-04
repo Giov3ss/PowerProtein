@@ -26,12 +26,15 @@ class PostDetail(View):
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
 
+        cross_sell_product = post.cross_sell
+
         return render(
             request,
             'blog/post_detail.html',
             {
                 'post': post,
-                'liked': liked
+                'liked': liked,
+                'cross_sell_product': cross_sell_product,
             },
         )
 
