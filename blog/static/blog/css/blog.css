@@ -108,6 +108,25 @@ a.signup-blog-link {
     text-decoration: none !important;
 }
 
+/* -------------------------------- Cross Sell Products */
+.related-product-title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.related-product-image {
+    max-width: 300px;
+    margin-top: 1rem;
+}
+
+.related-product-description {
+    font-size: 16px;
+}
+
+.custom-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* -------------------------------- Media Queries */
 
 /* Breakpoint: 976px - 320px (Smaller Tablets & Large Smartphones) */
@@ -134,4 +153,17 @@ a.signup-blog-link {
         height: auto;
     }
     
+}
+
+/* Breakpoint: 769px (Smaller Tablets & Smartphones) */
+@media (max-width: 768px) {
+    .cross-sell-container {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 455px) {
+    .cross-sell-container {
+        max-width: 90%;
+    }
 }

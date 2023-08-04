@@ -80,6 +80,29 @@
         </div>
     </div>
 </div>
+{% if cross_sell_product %}
+<div class="container cross-sell-container mt-3">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
+            <div class="card custom-card">
+                <div class="card-body">
+                    <h2 class="related-product-title text-black">Related Product</h2>
+                    <hr>
+                    {% if cross_sell_product.image %}
+                        <img src="{{ cross_sell_product.image.url }}" alt="{{ cross_sell_product.name }}" class="img-fluid mx-auto d-block mb-3 related-product-image">
+                    {% endif %}
+                    <h3 class="related-product-title text-black">{{ cross_sell_product.name }}</h3>
+                    <p class="related-product-price text-center">Price: ${{ cross_sell_product.price }}</p>
+                    <div class="text-center">
+                        <a href="{% url 'add_to_bag' cross_sell_product.id %}" aria-label="Add {{ cross_sell_product.name }} to Bag" class="btn btn-black rounded-0 mt-2">Quick Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
 <!-- BACK-TO-TOP BUTTON -->
 <div class="btt-button shadow-sm rounded-0 border border-black">
     <a class="btt-link d-flex h-100">
