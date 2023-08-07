@@ -265,6 +265,17 @@ I chose to use Bootstrap for my website because it allowed me to quickly and eas
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/951fcdad-f692-40db-b3c2-42d6c4e4c70d)
 
+**Product Details:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/211f5d61-5007-4bad-9850-189938a30c22)
+
+**Expert Advice:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/9b5dbb00-efc9-4268-a40a-794b33dee778)
+
+
+
+
 
 # Information Architecture
 As part of the requirements for this project you need to have at **least 3 custom data models**.  It's still under discussion what that means, but I'd make 1 original and then update the products to be custom to what you are selling and create another new one. It's this section that discusses your data and how each piece relates to another and draws out the CRUD functionality you built. You must have CREATE, READ, UPDATE & DELETE for at least one model.
