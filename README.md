@@ -285,6 +285,10 @@ I chose to use Bootstrap for my website because it allowed me to quickly and eas
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/ac0a0019-4777-4f6b-98e0-492e5ba4eb00)
 
+**Product List (Tablet View):**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/f2c7d22c-1d2e-40f1-a792-391052563f81)
+
 
 
 
