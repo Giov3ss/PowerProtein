@@ -248,7 +248,11 @@ I chose to use Bootstrap for my website because it allowed me to quickly and eas
 - [JS Code (scroll-to-top btn) - Products](products/templates/products/products.html)
   A new scroll-to-top button more smooth
 
+
 ## Wireframes
+<details>
+<summary>Wireframes Details</summary>
+  
 **Home Page:**
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/1e2c8427-c12b-413f-b735-052389f95d09)
@@ -288,9 +292,8 @@ I chose to use Bootstrap for my website because it allowed me to quickly and eas
 **Product List (Tablet View):**
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/f2c7d22c-1d2e-40f1-a792-391052563f81)
-
-
-
+</details>
+<hr>
 
 # Information Architecture
 As part of the requirements for this project you need to have at **least 3 custom data models**.  It's still under discussion what that means, but I'd make 1 original and then update the products to be custom to what you are selling and create another new one. It's this section that discusses your data and how each piece relates to another and draws out the CRUD functionality you built. You must have CREATE, READ, UPDATE & DELETE for at least one model.
