@@ -273,6 +273,17 @@ I chose to use Bootstrap for my website because it allowed me to quickly and eas
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/9b5dbb00-efc9-4268-a40a-794b33dee778)
 
+**Blog:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/4c05ad62-d2f1-4eaf-9387-976563ccb580)
+
+**Post Detail:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/d6abad5a-922a-498d-8a4e-85d8a1c7a4dc)
+
+**Post Detail(with like - mobile view):**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/ac0a0019-4777-4f6b-98e0-492e5ba4eb00)
 
 
 
