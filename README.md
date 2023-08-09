@@ -64,7 +64,9 @@ PowerProtein is an e-commerce website designed to provide a seamless and empower
 PowerProtein consists of fitness enthusiasts, athletes, gym-goers and health-conscious individuals of all levels. Whether they are beginners seeking guidance or seasoned athletes looking for high quality products, the website caters to a diverse audience looking to elevate their fitness journey. 
 
 ## Goals
-
+<details>
+<summary>Goals Details</summary>
+  
 **Customer Goals:**
 - <strong>Top-Quality Products:</strong> Users should easily find a wide selection of top-quality gym supplements, sports nutrition and health supplements, all carefully curated to meet their specific fitness needs.
 - <strong>Shopping Experience:</strong> User should enjoy a user-friendly and intuitive shopping experience, with simple navigation, clear product descriptions and secure payment options.
@@ -102,8 +104,13 @@ The primary goal of PowerProtein's website is to provide a seamless and user-fri
 3. **Segure & Seamless Checkout Process:**
    - Implement security measures to protect customer data and ensure a safe online shopping experience, intilling confidence in customers to make purchases.
    - Steamline the checkout process with easy-to-use payments options, fast order processig to provide a seamless shopping experience.
+</details>
+<hr>
 
 ## User Stories
+<details>
+<summary>User Stories Details</summary>
+
 - As a new customer I want to create an account in the website so that I can easily manage my profile.
 - As a registered user I want to login and logout of the website so that I can access my account securely and protect my information when I'm done using the site.
 - As a User I want to recover my password so that I can regain access to my account if I forget my login credentials.
@@ -136,8 +143,12 @@ The primary goal of PowerProtein's website is to provide a seamless and user-fri
 - As a Admin I want to be able to review and delete form submissions so that I can manage the list of inquiries and maintain the relevancy and organization of the data.
 - As a Shopper/Visitor I want to be able to subscribe to the website's newsletter so that I can receive the latest updates, promotion and news.
 - As a Admin I want to have access from Mailchimp website to the list of subscribed users so that I will be able to manage the newsletter subscriptions.
+</details>
+<hr>
 
 ## Feasibility vs Importance
+<details>
+<summary>Feasibility vs Importance Details</summary>
 
 | **Opportunity/Feature**           | **Feasibility/Viability** | **PurposeLevel of Importance** | **In Or Out** |
 |-----------------------------------|---------------------------|-----------------------------------|---------------|
@@ -170,6 +181,8 @@ The primary goal of PowerProtein's website is to provide a seamless and user-fri
 - Mobile App Development is considered "out" due to higher complexity and resource requirements it demands. As an MVP, the focus will be only the website.
 - Live Chat Support is considered "out" due to relatively lower importance compared to other core features. It may be considered in the future iterations.
 - Social Medial Integration and User Wishlist are considered "out" as they are additional features that are not critical for the initial release. It may be considered in the future iterations.
+</details>
+<hr>
 
 ## Scope
 To align the project goals with the available resources and skill set, the scope has been refined to focus on delivering a MVP that prioritizes essential features and functionality.
@@ -180,6 +193,9 @@ To align the project goals with the available resources and skill set, the scope
 5. **User-Friendly & Responsive Design:** The website will be optimized for various devices, ensuring a consistent and user-friendly experience for both desktop and mobile users.
 
 ## Design Choices
+<details>
+<summary>Design Choices Details</summary>
+  
 ### Colors
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/8428f0b8-4245-4849-a75c-a4142908e60f)
@@ -201,6 +217,8 @@ The typography on the PowerProtein website is carefully chosen to complement the
 - **Hero image:** The image of a woman training in boxning embodies empowerment, strength and determination. We wanted to showcase that women are an integral part of the world of sports and fitness, breaking stereotypes and embracing their inner strength. This aligns with our vision of inclusivity and promoting gender quality in sports and fitness.
 - **Logo:** The word **POWER** in the logo immediately conveys a sense of strength and energy, suggesting that our products are designed to provide a powerful boost their fitness and overall well-being. The **PROTEIN** highlights the primary focus of our brand-fitness and nutrition. It communnicates that our products are protein-based, which is essential for muscle building, recovery and maintaining a healthy lifestyle.
 - **Star Icon:** The star icon is associated with excellence, achievement and recognition. In our context, using the star icon indicates that our products and services are exceptional and of high quality and also serves as a reference for users.
+</details>
+<hr>
 
 ### Design Elements
 🚀 **merit & beyhond**
@@ -295,7 +313,10 @@ I chose to use Bootstrap for my website because it allowed me to quickly and eas
 </details>
 <hr>
 
-# Information Architecture
+## Information Architecture
+<details>
+<summary>Information Architecture Details</summary>
+  
 For the Powerprotein website, I have implemented models for Blog, Expert Advice and Reviews in Django to provide engaging and informative content to users. Here is how the data model is structured:
 1. **Blog Model:**
    - Title(CharField): The title of the blog post(max length: 200 characters).
@@ -325,9 +346,13 @@ For the Powerprotein website, I have implemented models for Blog, Expert Advice 
    - Service Rating(IntegerField): The rating assigned to the service, ranging from 1 to 5. 
    - Approved(BooleanField): Indicates whether the review has been approved.
    - Carousel Review(BooleanField): Indicates whether the review should be featured in a carousel. 
+</details>
+<hr>
 
 ## Entity Relationship Diagram
-
+<details>
+<summary>Entity Relationship Diagram Details</summary>
+  
 1. **Blog Model:**
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/7cd25dc2-c090-4189-85ff-450fe25c887c)
@@ -339,12 +364,16 @@ For the Powerprotein website, I have implemented models for Blog, Expert Advice 
 3. **Reviews:**
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/0cecb240-6ee1-4a1e-8545-a616eb7c8e83)
-
+</details>
+<hr>
 
 ## Database Choice
 I used PostgreSQL as the database for this project. Hosting the application on Heroku allows for easy deployment and scalability, and PostgreSQL is one of the supported and recommemdede databases on the Heroku platform.
 
 ## Data Models
+<details>
+<summary>Data Models Details</summary>
+  
 ### Activities Model
 1. **Blog Model:**
 The Blog model represents individual blog post authored by administrators. Each blog post contains information such as Title, Author, Content, Feature Image, Excerpt, Status, Likes and Cross-Sell reference.
@@ -401,16 +430,26 @@ The Reviews model stores user-submitted service reviews, including the review ti
 - [x] Read - Reviews are retrieved and displayed for user to view. Approved reviews are displayed on the website.
 - [x] Update - Authorized users can update their own reviews. Administrators can also update reviews.
 - [x] Delete -  Authorized users can delete their own reviews. Administrators can delete any reviews.
+</details>
+<hr>
 
 ### CRUD Diagrams
-🚀 **merit & beyhond**
+<details>
+<summary>CRUD Diagrams Details</summary>
 
-This is if you want to go for distinction.  You can also have CRUD diagrams to show them visually how the model is used in your site.
+- **Bag:**
+  
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/54669ea0-8432-41b3-85d8-b09f609ce52f)
 
-I used [draw.io](https://app.diagrams.net/) and hooked it up to my google drive to create the screenshot below
+- **Products:**
 
-![image](https://user-images.githubusercontent.com/23039742/154406188-c9beb57a-2fd1-4f26-a8ed-bee320e46e3d.png)
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/b48c4a09-d15c-4769-9865-5ed8a2af2049)
 
+- **Reviews:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/81658532-0083-4797-821b-ae518e3e8bad)
+</details>
+<hr>
 
 # Agile Process
 
