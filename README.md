@@ -296,7 +296,25 @@ I chose to use Bootstrap for my website because it allowed me to quickly and eas
 <hr>
 
 # Information Architecture
-As part of the requirements for this project you need to have at **least 3 custom data models**.  It's still under discussion what that means, but I'd make 1 original and then update the products to be custom to what you are selling and create another new one. It's this section that discusses your data and how each piece relates to another and draws out the CRUD functionality you built. You must have CREATE, READ, UPDATE & DELETE for at least one model.
+For the Powerprotein website, I have implemented models for Blog, Expert Advice and Reviews in Django to provide engaging and informative content to users. Here is how the data model is structured:
+1. **Blog Model:**
+   - Title(CharField): The title of the blog post(max length: 200 characters).
+   - Slug(SlugField): A URL-friendly version of the title used for the post's URL.
+   - Author(ForeignKey): A reference to the user model, indicating the Author.
+   - Updated On(DateTimeField): The date and time when the blog post was updated. 
+   - Content(TextField): The main content of the blog post.
+   - Featured image(ImageField): An optional image associated with the blog post.
+   - Excerpt(TextField): A short excerpt or summary of the blog post.
+   - Created On(DateTimeField): The date and time when the blog post was created.
+   - Status(IntegerField): Indicates whether the post is a draft or published (0: Draft, 1: Published).
+   - Likes(ManyToManyField): A relationship with user model, allowing users to like the post.
+   - Cross-Sell(ForeignKey to Product): A reference to the Product model, allowing cross-selling related products in the blog post.
+
+2. **Expert Advice:**
+   - Name(CharField): The name of the user submitting the expert advice inquiry.
+   - Email(EmailField): The email address of the user.
+   - Message(TextField): The user's message to our nutritionist.
+   - Created At(DateTimeField): The date and time when the expert advice inquiry was submitted. 
 
 ## Entity Relationship Diagram
 🚨**Required**
