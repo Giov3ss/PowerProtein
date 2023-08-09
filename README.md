@@ -507,31 +507,18 @@ https://github.com/maliahavlicek/go-hrvatska/issues/labels
 - include links and/or screenshots of your story template(s)
 
 ### Product Backlog
-🚨**Required**
+I used Gitpod to track user stories that I prioritized. Here is the link to my project board with those stories:
 
-https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+AG101+2021_T1/courseware/a4e548ca70a3473aa890ba2ab9bf612c/085f3a8e344a4cf28b5b5355399abcc1/?child=last
-This is the MILESTONE where you grab stories from the issues or USER stories you created and prioritize them and order
-them, leave the epics out.
+- [Product Backlog](https://github.com/users/Giov3ss/projects/4)
 
-**What to keep in this section**
-Include a link to your Product Catalog Milestone,
-
-an initial screenshot, mid-point and final will help document the agile process.
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/47ebb87c-6f27-4e67-9336-03d63888e759)
 
 ## Iterations
-🚀 **merit & beyhond**
-
-https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+AG101+2021_T1/courseware/a4e548ca70a3473aa890ba2ab9bf612c/71fe6c52cccf477688e924c9889f5fec/?child=first
-
-Add links to iteration milestones (most people have ONE iteration since they are the solo worker, just state that here),
-it could be that you won't have all your product backlog worked in the end, and that is ok, hte MVP might morph, you
-might find other stories you want instead, it's OK.
+I only did one iteration as I act as the product owner and developer for this project.
+- [Iterations](https://github.com/users/Giov3ss/projects/4)
 
 ## Progress Boards
-🚀 **merit & beyhond**
-
-https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+AG101+2021_T1/courseware/a4e548ca70a3473aa890ba2ab9bf612c/7ad7f487cc6148ecb182d77feaeda269/?child=first
-Add links to Progress boards
+- [Iterations](https://github.com/users/Giov3ss/projects/4)
 
 # Features
 🚨**Required**
