@@ -314,12 +314,32 @@ For the Powerprotein website, I have implemented models for Blog, Expert Advice 
    - Name(CharField): The name of the user submitting the expert advice inquiry.
    - Email(EmailField): The email address of the user.
    - Message(TextField): The user's message to our nutritionist.
-   - Created At(DateTimeField): The date and time when the expert advice inquiry was submitted. 
+   - Created At(DateTimeField): The date and time when the expert advice inquiry was submitted.
+
+3. **Reviews:**
+   - Review Title(CharField): The title of review.
+   - Name(CharField): The name of the user who submitted the review.
+   - Featured Image(ImageField):  An optional image associated with the review.
+   - Created On(DateTimeField): The date and time when the blog post was created.
+   - Service Review(TextField): The text content of the review, allowinf users to share their experiences with us.
+   - Service Rating(IntegerField): The rating assigned to the service, ranging from 1 to 5. 
+   - Approved(BooleanField): Indicates whether the review has been approved.
+   - Carousel Review(BooleanField): Indicates whether the review should be featured in a carousel. 
 
 ## Entity Relationship Diagram
-🚨**Required**
 
-Wade Williams wrote a great blog about how to add a django extension to auto create an ERD. https://wadewilliams.com/technology-software/generating-erd-for-django-applications/ You can always draw one out by hand or google sheets. You can also draw this up by hand if you want or use a spreadsheet to show your data model.
+1. **Blog Model:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/7cd25dc2-c090-4189-85ff-450fe25c887c)
+
+2. **Expert Advice:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/5287ad70-1e26-434b-97f9-e95cc99f0a75)
+
+3. **Reviews:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/0cecb240-6ee1-4a1e-8545-a616eb7c8e83)
+
 
 ## Database Choice
 🚀 **merit & beyhond**
