@@ -321,7 +321,7 @@ For the Powerprotein website, I have implemented models for Blog, Expert Advice 
    - Name(CharField): The name of the user who submitted the review.
    - Featured Image(ImageField):  An optional image associated with the review.
    - Created On(DateTimeField): The date and time when the blog post was created.
-   - Service Review(TextField): The text content of the review, allowinf users to share their experiences with us.
+   - Service Review(TextField): The text content of the review, allowing users to share their experiences with us.
    - Service Rating(IntegerField): The rating assigned to the service, ranging from 1 to 5. 
    - Approved(BooleanField): Indicates whether the review has been approved.
    - Carousel Review(BooleanField): Indicates whether the review should be featured in a carousel. 
@@ -342,38 +342,65 @@ For the Powerprotein website, I have implemented models for Blog, Expert Advice 
 
 
 ## Database Choice
-🚀 **merit & beyhond**
-
-Just state you used postgres as the database because the data is relational and heroku serves this up realitvely easily with no cost.
+I used PostgreSQL as the database for this project. Hosting the application on Heroku allows for easy deployment and scalability, and PostgreSQL is one of the supported and recommemdede databases on the Heroku platform.
 
 ## Data Models
-🚨**Required**
+### Activities Model
+1. **Blog Model:**
+The Blog model represents individual blog post authored by administrators. Each blog post contains information such as Title, Author, Content, Feature Image, Excerpt, Status, Likes and Cross-Sell reference.
 
-Show the accessors you know your data. If you end up using some data models from an example project, call that out and don't be as detailed about writing those up unless you added to them.
+| **DB Key**     | **Data Type**         | **Purpose**                                                                   | **Form Validation**                       | **DB Processing** |
+|----------------|-----------------------|-------------------------------------------------------------------------------|-------------------------------------------|-------------------|
+| title          | CharField             | Title of the blog post                                                        | Required, Max length:200 characters       | Trim              |
+| slug           | SlugField             | URL-friendly version of the  title                                            | Required, Max length:200 characters       | Trim, lowercase   |
+| author         | ForeignKey(User)      | A reference to the user model,  indicating the Author.                        | Reference to User Model                   | -                 |
+| update_on      | DateTimeField         | The date and time when the blog  post was updated.                            | Auto-generated on update                  | -                 |
+| content        | TextField             | The main content of the blog post.                                            | Required                                  | -                 |
+| featured_image | ImageField            | An optional image associated with  the blog post.                             | Optional                                  | -                 |
+| excerpt        | TextField             | A short excerpt or summary of the  blog post.                                 | Optional                                  | -                 |
+| created_on     | DateTimeField         | The date and time when the blog post  was created.                            | Auto-generated on  creation               | -                 |
+| status         | IntegerField          | Indicates whether the post is a draft  or published (0: Draft, 1: Published). | Default: 0 (draft)                        | -                 |
+| likes          | ManyToManyField(User) | A relationship with user model, allowing  users to like the post.             | Reference to User model                   | -                 |
+| cross_sell     | ForeignKey(Product)   | Related product for cross-selling                                             | Optional,  Reference to the Product model | -                 |
 
-Each data model that you created yourself should have its Fields, Field Type and any validation documented.  You should also cross-reference any code in your repository that relate to CREATE, READ, UPDATE, DELETE operations for these models.
+- [x] Create - Blog posts are created by administrators when drafting new content.
+- [x] Read - Blog posts are read and displayed to users visiting the blog section of the website.
+- [x] Update - Administrators can update existing blog posts to make changes or improvements.
+- [x] Delete - Administrators can delete blog posts that are no longer needed.
 
-*Below is an example of a write up for an Activities Data Model*
+2. **Expert Advice:**
+The ExpertAdvice model stores user-submitted inquiries seeking expert advice from nutritionist. Each inquiry contains the user's name, email, message and the date and time when the inquiry was submitted.
 
-> ### Activities Model
-> Activities is a table to hold a unique icon image and name values that users have associated with events and places. It helps with sorting events and prevents the need from carrying around two data objects in the larger Events and Places data structures. The purpose of an Activities object is to provide an imagery association to a category.
-> 
-> | DB Key 	| Data Type 	|          Purpose          	| Form Validation                        	| DB processing    	|
-> |--------	|:---------:	|:-------------------------:	|----------------------------------------	|------------------	|
-> | _id    	| ObjectId  	| unique identifier         	| None                                   	| n/a              	|
-> | name   	| String    	| Name of Activity          	| Required<br>Min 1 char<br>Max 50 chars 	| trim<br>to lower 	|
-> | icon   	| String    	| system path to image file 	| Required                               	|                  	|
-> 
-> Activity entries are used by events, places and filtering.
-> 
-> - [x] Create - An activity is potentially created when a user successfully creates a place, creates an event, updates an event, or updates a place.
-> - [x] Read - The Activities table is read when a user is adding an event, updating an event, adding a place or updating a place, to determine if a new value should be created or not. The activities table is queried for using the name and icon pair, if it is found, the ObjectId is passed to the event and places. If no match is found, a new Activity is created and that ObjectID is passed to the the place or event.
-> - [ ] Update
-> - [ ] Delete
-> 
->  This table has no deletion or updates associated with it. It's strictly create and read. Eventually, maintenance scripts should be written to delete unused/deprecated entries.
+| **DB Key** | **Data Type** | **Purpose**                                                      | **Form Validation**                 | **DB Processing** |
+|------------|---------------|------------------------------------------------------------------|-------------------------------------|-------------------|
+| name       | CharField     | The name of the user submitting  the expert advice inquiry.      | Required, Max length:100 characters | Trim              |
+| email      | EmailField    | The email address of the user.                                   | Required, Valid email format        |  lowercase        |
+| message    | TextField     | The user's message to our nutritionist.                          | Required                            | -                 |
+| created_at | DateTimeField | The date and time when the expert advice  inquiry was submitted. | Auto-generated on creation          | -                 |
 
-> The reading/writing of the activities table is housed in the [what2do2day/activities/views.py](what2do2day/activities/views.py) file.
+- [x] Create - Users submit inquiries, which are then stored as expert advice inquiries.
+- [x] Read - Expert Advice are read and processed by administrators or nutritionits to provide responses.
+- [ ] Update - Expert Advice inquiries are not typically updated, but could be marked as "answered" by administrators.
+- [x] Delete - Expert Advice inquiries can be deleted by administrators if needed.
+
+3. **Reviews:**
+The Reviews model stores user-submitted service reviews, including the review title, username, feature image, content, service rating and approval status.  
+
+| **DB Key**      | **Data Type** | **Purpose**                                                                        | **Form Validation**                 | **DB Processing** |
+|-----------------|---------------|------------------------------------------------------------------------------------|-------------------------------------|-------------------|
+| review_title    | CharField     | Title of the review                                                                | Required, Max length:100 characters | Trim              |
+| name            | CharField     | The name of the user who  submitted the review.                                    | Max length:20 characters            | Trim              |
+| featured_image  | ImageField    | An optional image associated with  the review                                      | Optional                            | -                 |
+| created_on      | DateTimeField | The date and time of the  review creation.                                         | Auto-generated on creation          | -                 |
+| service_review  | TextField     | The text content of the review, allowing users to share their experiences with us. | Max length:400 characters           | -                 |
+| service_rating  | IntegerField  | The rating assigned to the service.                                                | Range: 1 to 5 starts                | -                 |
+| approved        | BooleanField  | Indicates whether the review has been approved.                                    | Default: False                      | -                 |
+| carousel_review | IntegerField  | Indicates whether the review should be featured  in a carousel.                    | Default: False                      | -                 |
+
+- [x] Create - Users can submit reviews which are stored in the Reviews section. The review include a title, username, content, image and rating.
+- [x] Read - Reviews are retrieved and displayed for user to view. Approved reviews are displayed on the website.
+- [x] Update - Authorized users can update their own reviews. Administrators can also update reviews.
+- [x] Delete -  Authorized users can delete their own reviews. Administrators can delete any reviews.
 
 ### CRUD Diagrams
 🚀 **merit & beyhond**
