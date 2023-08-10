@@ -732,8 +732,17 @@ I only did one iteration as I act as the product owner and developer for this pr
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/e99f6f30-789a-4fb7-b336-777a61a3e550)
 
+<hr>
 
-- Facebook Business page
+- **Facebook Business page:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/26b4edf6-a6de-45f4-9881-fe6ae6d1685e)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/73c02841-fad0-43b2-a1a4-c9188085cdcd)
+
+<hr>
 
 - **Newsletter signup Form:**
 
