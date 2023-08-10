@@ -520,12 +520,176 @@ I only did one iteration as I act as the product owner and developer for this pr
 ## Progress Boards
 - [Iterations](https://github.com/users/Giov3ss/projects/4)
 
-# Features
-🚨**Required**
+## Features
+**Navigation:**
+<details>
+<summary>Navigation Details</summary>
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so and how they tie into  your user stories.
+- **Desktop**
+  
+  ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/54fe8e8e-37df-4ae5-adbf-cfb8ebbd94cb)
+  
+- **Tablet**
+  
+  ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/5b521e64-6aee-40e7-950e-290126979c4e)
 
-## Implemented Features
+
+- **Mobile**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/981c8010-93d1-4347-8228-6718ecdbc33c)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/e998736c-d089-49d3-b603-bea2ca8346f6)
+
+</details>
+<hr>
+
+**Sign in/ Sign up:**
+<details>
+<summary>Sign in/ Sign up Details</summary>
+  
+- ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/5feaf0f5-d13b-4567-8aeb-12c45f51b1c6)
+
+<hr>
+
+- ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/aebcca1c-3f59-4978-885a-4ab856c7112c)
+</details>
+<hr>
+
+**Products Page:**
+<details>
+<summary>Products Page Details</summary>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/4cc2ba54-7a68-4140-b5bd-66f8cc0fd099)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/73f7f12d-c848-4163-8550-1e0b58dfc379)
+
+</details>
+<hr>
+
+**Bag & Checkout:**
+<details>
+<summary>Bag & Checkout Details</summary>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/fc4e4215-9099-492b-8796-9932023b950b)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/adc838fd-2705-4ccf-9793-d16f8f3e069d)
+
+</details>
+<hr>
+
+**Profile:**
+<details>
+<summary>Profile Details</summary>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/6d97a49f-016f-4811-b028-3e4c992cefd2)
+
+</details>
+<hr>
+
+**Blog:**
+<details>
+<summary>Blog Details</summary>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/3ce7ebcd-939f-4215-82a1-1dff15de0df3)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/feac25df-f30c-4fc5-b9e3-3e3b8487ce41)
+
+</details>
+<hr>
+
+**Contact Nutritionist Page:**
+<details>
+<summary>Contact Nutritionist Page Details</summary>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/e5719b87-4a7f-4a8e-8c5b-47173c9277e8)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/f55baca9-40dd-438a-bd45-06464e72f98c)
+
+</details>
+<hr>
+
+**Reviews:**
+<details>
+<summary>Reviews Details</summary>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/e609cb76-162c-4c32-a69b-27953d53d4e7)
+
+<hr>
+
+- **(Authorized User - Update)**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/0048c067-28fa-4e60-b334-668e90f8483b)
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/bb4e15fa-69eb-49c2-ba9c-e0e971a9d888)
+
+<hr>
+
+- **(Authorized User - Delete)**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/acde3dd4-89b6-4151-befb-51b027217450)
+
+</details>
+<hr>
+
+**Messages Notifications:**
+<details>
+<summary>Messages Notifications Details</summary>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/c4b77f3d-0143-4afe-bd7f-cb3cf0e109ec)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/c122a361-753b-4831-83a9-6bf72d0877e8)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/ab76629b-102c-43aa-a429-bf15f2700cf1)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/ffba0d32-da47-464a-b295-565bab1188d8)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/881be305-3ff4-4dea-9325-625df69194d4)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/f66340dd-39b7-46fa-81b8-7cff3261bd33)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/08cd10aa-f30a-45f4-9ae7-f74e4fc964ad)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/9ea811f1-d527-4aa6-bfef-56bbd7debc96)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/52d6993f-8bc4-4161-98a8-f18ca80fcb68)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/7cded3d3-c1f6-47c8-9feb-b579e5f19f85)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/c82ca60c-b8c3-407a-be38-6f98da133e41)
+
+</details>
+<hr>
+
+### Implemented Features
 
 For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
