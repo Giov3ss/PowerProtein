@@ -656,6 +656,11 @@ I only did one iteration as I act as the product owner and developer for this pr
 
 <hr>
 
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/37bef96d-3184-4b8b-839f-6a70d1a89cbc)
+
+
+<hr>
+
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/ffba0d32-da47-464a-b295-565bab1188d8)
 
 <hr>
@@ -689,17 +694,54 @@ I only did one iteration as I act as the product owner and developer for this pr
 </details>
 <hr>
 
+**Admin Permissions:**
+<details>
+<summary>Admin Permissions Details</summary>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/8de72ba3-76e1-4c6a-a489-a396c0b1387b)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/b6d90868-d41d-4560-9c75-011509ffc0e2)
+
+<hr>
+
+- **(As Admin we have the permission to Edit/Delete any review)**
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/99c347a2-c9d6-430c-8a35-5c65c17a40e8)
+
+</details>
+<hr>
+
 ### Implemented Features
+<details>
+<summary>Implemented Features Details</summary>
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+- **404 Error Page:**
+  
+  ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/4ab2ca63-b045-424c-86e4-62d72e3d562b)
 
-It's easiest to break this section down into the header, footer, and each page/layer of your website. Call out any differences for mobile vs desktop presentations, **include a screenshot of the implemented feature** and **at least 2 bullet points of their importance**.
+<hr>
 
-**Required for passing**
-- Authentication Process
-- Custom 404 
+- **403 Error Page:**
+
+  ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/cdf4a535-5fb8-4b49-9a74-2a3386750410)
+
+<hr>
+
+- **500 Error Page:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/e99f6f30-789a-4fb7-b336-777a61a3e550)
+
+
 - Facebook Business page
-- Newsletter signup Form
+
+- **Newsletter signup Form:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/2390c537-f4b6-41b2-b36a-56e80bcae96e)
+
+
+</details>
+<hr>
 
 ## Future Features
 🚀 **merit & beyhond**
