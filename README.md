@@ -753,26 +753,18 @@ I only did one iteration as I act as the product owner and developer for this pr
 <hr>
 
 ## Future Features
-🚀 **merit & beyhond**
 
-Use this section to discuss plans for additional features to be implemented in the future:
-
-If you end up not developing some features you hoped to implement, you can include those in this section.
+- **Wishlist & Favorites:** Implementing a feature that will allows users to favorite products for later with a wishlist, ensuring they never miss out on products.
+- **Customer Support-LiveChat:** Implementing a live chat support system to provide instant assistance and answer any queries.
+- **Personalized Discounts:** Offer personalized discounts based on user preferences and purchasing behavior.
+- **Mobile App:** Create a mobile app to PowerProtein, providing users with convenient access to our website and other features on their smartphone.
+- **Language Support:** Support to cater to a wider user base, allowing users from different regions and languages preferences to access and use the PowerProtein platform.
 
 # Testing
 🚨**Required**
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that
-the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and
-ensure that they all work as intended, with the project providing an easy and straightforward way for the users to
-achieve their goals.
-
-
-**At this point, you should use gitHub Issues Templates and Test Case** to track test cases and defects. Here's
-a [document](https://docs.google.com/document/d/1nDS5tZeMO77Dfq85IZGMSV6C41XaPm9FwcpR3k-UTVc/edit#heading=h.3kdbr3tqbzi)
-I put together for this process.
-
-You should make sure your test cases cover the following: 
+In the Testing section of the README, I extensively conducted manual testing to ensure the functionality and usability of the iHealthy website. The manual testing process involved following predefined scenarios and documenting the results using a custom issue template on GitHub. To view the detailed testing results, please CLICK HERE.
+ 
 ## Cross Browser and Cross Device Testing
 🚨**Required**
 
