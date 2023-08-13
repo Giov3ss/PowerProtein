@@ -53,24 +53,24 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="expert-advice-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Expert Advice
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+            <div class="dropdown-menu border-0" aria-labelledby="expert-advice-link">
                 <a href="{% url 'blog' %}" class="dropdown-item">Blog</a>
                 <a href="{% url 'expert_advice:expert_advice' %}" class="dropdown-item">Contact Nutritionist</a>
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="more-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 More
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+            <div class="dropdown-menu border-0" aria-labelledby="more-link">
                 <a href="{% url 'reviews:reviews' %}" class="dropdown-item">Reviews</a>
+                <a href="https://www.privacypolicygenerator.info/live.php?token=ZtykSMYjYAnBqise6ESk0WTY4XhzfmnO" class="dropdown-item" target="_blank" rel="noopener">Privacy Policy</a>
                 <a href="{% url 'home' %}" class="dropdown-item">Home</a>
                 {% if user.is_authenticated or user.is_superuser %}
                 <a href="{% url 'reviews:add_review' %}" class="dropdown-item">Add Review</a>
-                <a href="https://www.privacypolicygenerator.info/live.php?token=ZtykSMYjYAnBqise6ESk0WTY4XhzfmnO" class="dropdown-item" target="_blank" rel="noopener">Privacy Policy</a>
                 {% endif %}
             </div>
         </li>
