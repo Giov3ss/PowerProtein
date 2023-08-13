@@ -454,53 +454,12 @@ The Reviews model stores user-submitted service reviews, including the review ti
 # Agile Process
 
 ## GitHub User Stories
-🚨**Required**
-
-Now you are ready to start using Git Hub Issues to write your user stories. To get to merit levels you need to show you
-have refined stories from Epics to Generic User stories.
-
 ### User Story Templates
-🚨**Required**
 
-[Here's the lesson](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+AG101+2021_T1/courseware/a4e548ca70)
-on how to create a User Story Templates.
-
-If you want a chance at **DISTINCTION**, I'd suggest the following:
-
-- Create an Epic Story template, this would have a title, the story and children stories
-- Create a User Story template, this would initially have the title, the story, and a link to the Epic. Then you'd come
-  back when you are prioritizing it to include the acceptance criteria, and story points, then again when you are
-  working on it and fill in the tasks and adjust the story points if needed.
-- Name your stories in a way that it's easy to tie the children to the EPICS by name.
-
-Example:
-EPIC: Navigation As a user, I want to have easy to see navigation on the page, so I can intuitively interact with the
-site without getting frustrated.
-
-USER STORY: Navigation: Create Template As a developer, I don't want to have copy and paste my navigation on every page.
-I want to use a template to house this information, so my code is easier to maintain.
-
-USER STORY: Navigation: Desktop As a user I want clear navigation that is up to industry standards for my desktop
-experience, so I can easily find what I need on a website.
-
-USER STORY: Navigation: Mobile As a user I want clear navigation that is up to industry standards for my mobile
-experience, so I can easily find what I need on a website without the
-
-[Here is a quick link](https://github.com/maliahavlicek/go-hrvatska/tree/master/.github/ISSUE_TEMPLATE) to some templates I set up for these
-[Here is the UX for those templates where you choose a new type of issue](https://github.com/maliahavlicek/go-hrvatska/issues/new/choose)
-
-screenshot of EPIC new issue using template
-![image](https://user-images.githubusercontent.com/23039742/165651624-7ff6c839-1824-48df-81a3-fda444f2d7f5.png)
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/0c63c8c4-3d97-4523-8d4b-39f3f6c35f9a)
 
 
-screenshot of USER_STORY new issue using template
-![image](https://user-images.githubusercontent.com/23039742/165651758-beac7bc6-f62f-42e5-b8a0-feeefafcd5b4.png)
-
-
-Note: You can play around with the labels to add an EPIC one and a USER_STORY one or even ones for each MAJOR epic you have or page
-https://github.com/maliahavlicek/go-hrvatska/issues/labels 
-![image](https://user-images.githubusercontent.com/23039742/165651335-46ab8ff3-4014-4e55-a29d-35e1d998fb42.png)
-
+- [**LINK TO THE TEMPLATE**](https://github.com/Giov3ss/PowerProtein/issues/new/choose)
 
 **What to keep in this section**
 
