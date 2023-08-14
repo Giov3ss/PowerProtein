@@ -5,9 +5,31 @@
 ## Accessibility Testing
 To ensure our website is accessible, I have conducted extensive testing to ensure that it caters for users with disabilities.
 
-| **PAGE**                               | **TEST CASE LINK**                                | **RESULT** |
-|----------------------------------------|---------------------------------------------------|------------|
-| Home Page - Lighthouse Audit (Desktop) | https://github.com/Giov3ss/PowerProtein/issues/55 | 100        |
+| **PAGE**                                                         | **TEST CASE LINK**                                | **RESULT** |
+|------------------------------------------------------------------|---------------------------------------------------|------------|
+| Home Page - Lighthouse Audit (Desktop)                           | https://github.com/Giov3ss/PowerProtein/issues/55 | 100        |
+| Home Page - Lighthouse Audit (Mobile)                            | https://github.com/Giov3ss/PowerProtein/issues/56 | 100        |
+| Products Page - Lighthouse Audit (Desktop)                       | https://github.com/Giov3ss/PowerProtein/issues/57 | 100        |
+| Products Page - Lighthouse Audit (Mobile)                        | https://github.com/Giov3ss/PowerProtein/issues/58 | 100        |
+| Blog Page - Lighthouse Audit (Desktop)                           | https://github.com/Giov3ss/PowerProtein/issues/59 | 100        |
+| Blog Page - Lighthouse Audit (Mobile)                            | https://github.com/Giov3ss/PowerProtein/issues/60 | 100        |
+| Blog Post Details - Lighthouse Audit (Desktop)                   | https://github.com/Giov3ss/PowerProtein/issues/61 | 100        |
+| Blog Post Details - Lighthouse Audit (Mobile)                    | https://github.com/Giov3ss/PowerProtein/issues/62 | 100        |
+| Contact Nutritionist - Lighthouse Audit (Desktop)                | https://github.com/Giov3ss/PowerProtein/issues/63 | 100        |
+| Contact Nutritionist - Lighthouse Audit (Mobile)                 | https://github.com/Giov3ss/PowerProtein/issues/64 | 100        |
+| Contact Nutritionist (Success Page) - Lighthouse Audit (Desktop) | https://github.com/Giov3ss/PowerProtein/issues/65 | 100        |
+| Contact Nutritionist (Success Page) - Lighthouse Audit (Mobile)  | https://github.com/Giov3ss/PowerProtein/issues/66 | 100        |
+| Reviews - Lighthouse Audit (Desktop)                             | https://github.com/Giov3ss/PowerProtein/issues/67 | 100        |
+| Reviews - Lighthouse Audit (Mobile)                              | https://github.com/Giov3ss/PowerProtein/issues/68 | 100        |
+| Reviews (Add/Edit Reviews) - Lighthouse Audit (Desktop)          | https://github.com/Giov3ss/PowerProtein/issues/69 | 100        |
+| Reviews (Add/Edit Reviews) - Lighthouse Audit (Mobile)           | https://github.com/Giov3ss/PowerProtein/issues/70 | 100        |
+| My Profile - Lighthouse Audit (Desktop)                          | https://github.com/Giov3ss/PowerProtein/issues/71 | 97         |
+| My Profile - Lighthouse Audit (Mobile)                           | https://github.com/Giov3ss/PowerProtein/issues/72 | 97         |
+| Products Details - Lighthouse Audit (Desktop)                    | https://github.com/Giov3ss/PowerProtein/issues/73 | 100        |
+| Products Details - Lighthouse Audit (Mobile)                     | https://github.com/Giov3ss/PowerProtein/issues/74 | 100        |
+
+**NOTES**
+- For the test case 71/72 I notice that I got a 97 with a false positive on a contrast issue around the Order Number. When I further inspected with [webaim](https://webaim.org/resources/contrastchecker/), I determined that a 20px font-size with those colors is considered large text, which actually passes WCAG AA standards of accessibility
 
 ## Validation Testing
 🚨**Required**
