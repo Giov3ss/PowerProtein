@@ -3,26 +3,11 @@
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/3ef1c980-bde6-48d3-aea4-af1ed0debdd8)
 
 ## Accessibility Testing
-🚨**Required**
+To ensure our website is accessible, I have conducted extensive testing to ensure that it caters for users with disabilities.
 
-You should have test cases for accessibility and links to them here. Start with a brief paragraph and then link to the
-test cases. If you are ambitious you can record the screen of you using the keyboard, convert it to a gif and upload it
-to the test case too.
-
-**example**
-> To ensure that the site was accessible to people with visual impairments, I used chrome's dev tools, lighthouse audits to ensure I had a score in the green for accessibility and that I could keyboard navigate through the page.
->
-> Here are links to the test cases for each which contains the screenshot for the lighthouse audit.
-> - [home page accessibility test](https://github.com/maliahavlicek/ci_mentor_insights/issues/12)
-> - [experience page accessibility test](https://github.com/maliahavlicek/ci_mentor_insights/issues/13)
-> - [skills page accessibility test](https://github.com/maliahavlicek/ci_mentor_insights/issues/14)
-> - [recommendations page accessibility test](https://github.com/maliahavlicek/ci_mentor_insights/issues/15)
->
-> To ensure the site was accessibility to people with physical impairments, I tried to navigate the site using tabbed navigation:
-> - [site tabbed navigation test](https://github.com/maliahavlicek/ci_mentor_insights/issues/10)
-
-You can totally combine the tabbed navigation in the accessibility test and have 2 expected criteria, it's all up to
-you!
+| **PAGE**                               | **TEST CASE LINK**                                | **RESULT** |
+|----------------------------------------|---------------------------------------------------|------------|
+| Home Page - Lighthouse Audit (Desktop) | https://github.com/Giov3ss/PowerProtein/issues/55 | 100        |
 
 ## Validation Testing
 🚨**Required**
