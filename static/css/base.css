@@ -11,6 +11,10 @@ body {
 
 }
 
+ul.mobile-nav {
+    display: contents;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -22,6 +26,11 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+}
+
+.logo-font-free {
+    text-transform: uppercase;
+    font-size: 1.325rem;
 }
 
 .main-logo-link {
@@ -482,5 +491,14 @@ input[name='q']::placeholder {
 
     .footer-bottom .copyright {
         margin-top: 1.5rem;
+    }
+}
+
+/* -------------------------------- Mobile Nav */
+
+@media (max-width:469px) {
+    .logo-font-free {
+        text-transform: uppercase;
+        font-size: 1rem;
     }
 }
