@@ -718,9 +718,6 @@ I only did one iteration as I act as the product owner and developer for this pr
 - **Personalized Discounts:** Offer personalized discounts based on user preferences and purchasing behavior.
 - **Mobile App:** Create a mobile app to PowerProtein, providing users with convenient access to our website and other features on their smartphone.
 - **Language Support:** Support to cater to a wider user base, allowing users from different regions and languages preferences to access and use the PowerProtein platform.
-
-## Testing
-In the Testing section of the README, I extensively conducted manual testing to ensure the functionality and usability of the PowerProtein website. The manual testing process involved following predefined scenarios and documenting the results using a custom issue template on GitHub. To view the detailed testing results, please [CLICK HERE](https://github.com/Giov3ss/PowerProtein/issues).
  
 ## Compatibility and Responsive Testing
 I ensure my site was worked well, and looked nice on a variety of devices & browsers as noted in the table below:
