@@ -35,17 +35,48 @@ To ensure our website is accessible, I have conducted extensive testing to ensur
 In the Testing section of the README, I extensively conducted manual testing to ensure the functionality and usability of the PowerProtein website. The manual testing process involved following predefined scenarios and documenting the results using a custom issue template on GitHub. To view the detailed testing results, please [CLICK HERE](https://github.com/Giov3ss/PowerProtein/issues).
 
 ## Validation Testing
-🚨**Required**
-
-You should try to ensure you code is valid and follows proper indentation. In this section you should write up any
-websites you used to validate your code so there is credit given to those sites. Then add links to the test cases you
-put into GitHub for the validation. You can copy your validation success to those tests.
-
+<details>
+<summary>Validation Testing</summary>
 The following site were used to aid in validation testing:
 
 - **[CSS Validator](https://jigsaw.w3.org/css-validator/)**
 
-> If you only have one CSS file, you can just run the validator through one deployed page URL, if you have custom CSS for diffent pages, make sure you hit those different URLS
+**BLOG.CSS:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/ca4c51d8-f505-4286-916a-0ecb14590416)
+
+<hr>
+
+**CHECKOUT.CSS:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/586b2df2-fc4f-49d4-be38-dd8b6b9e0f9b)
+
+<hr>
+
+**EXPERT_ADVICE.CSS:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/e96aa23d-16cf-419e-8a23-b4aab6a6a7c7)
+
+<hr>
+
+**PROFILE.CSS:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/2329837b-b087-4ac4-b772-60c14dd2818a)
+
+<hr>
+
+**REVIEWS.CSS:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/2f4bffb6-b34e-4532-a4ea-3b217bc4bcb8)
+
+<hr>
+
+**BASE.CSS:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/a860d504-7955-44e6-b689-d7df91f4e911)
+</details>
+<hr>
+
 
 - **[HTML Validator](https://validator.w3.org/)**
 
