@@ -279,6 +279,10 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+.form-label-qnty {
+    font-weight: 700 !important;
+}
+
 /* -------------------------------- Footer */
 
 #footer {
