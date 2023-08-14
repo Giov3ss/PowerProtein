@@ -287,8 +287,8 @@ input[name='q']::placeholder {
     padding: 20px 20px 10px 20px;
 }
 
-.footer h3 {
-    font-size: 1.45rem;
+#footer h1 {
+    font-size: 1.55rem;
 }
 
 .footer-content {

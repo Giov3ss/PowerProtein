@@ -27,3 +27,12 @@ class ReviewsForm(forms.ModelForm):
         choices=RATING_CHOICES,
         widget=forms.RadioSelect(attrs={'class': 'star'}),
     )
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['featured_image'].label = 'Review Image'
+        self.fields['featured_image'].widget.attrs['placeholder'] = 'Image:'  # noqa
+        self.fields['featured_image'].widget.attrs['class'] = 'custom-file-input'  # noqa
+        self.fields['featured_image'].widget.attrs['accept'] = 'image/*'  # noqa
+        self.fields['featured_image'].widget.attrs['aria-describedby'] = 'filename'  # noqa
+        self.fields['featured_image'].widget.attrs['onchange'] = "$('filename').text(this.files[0].name)"  # noqa

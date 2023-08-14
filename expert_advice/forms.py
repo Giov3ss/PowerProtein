@@ -39,5 +39,7 @@ class ExpertAdviceAddFrom(forms.ModelForm):
         self.fields['name'].label = 'Your Name'
         self.fields['email'].label = 'Your Email'
         self.fields['message'].label = 'Message'
+        self.fields['name'].widget.attrs['placeholder'] = 'Your Name'  # noqa
         self.fields['email'].widget.attrs['placeholder'] = 'example@example.com'  # noqa
+        self.fields['message'].widget.attrs['placeholder'] = 'Leave your message here...'  # noqa
         self.fields['message'].widget.attrs['rows'] = 4
