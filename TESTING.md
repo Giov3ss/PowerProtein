@@ -31,6 +31,9 @@ To ensure our website is accessible, I have conducted extensive testing to ensur
 **NOTES**
 - For the test case 71/72 I notice that I got a 97 with a false positive on a contrast issue around the Order Number. When I further inspected with [webaim](https://webaim.org/resources/contrastchecker/), I determined that a 20px font-size with those colors is considered large text, which actually passes WCAG AA standards of accessibility
 
+## Manual Testing
+In the Testing section of the README, I extensively conducted manual testing to ensure the functionality and usability of the PowerProtein website. The manual testing process involved following predefined scenarios and documenting the results using a custom issue template on GitHub. To view the detailed testing results, please [CLICK HERE](https://github.com/Giov3ss/PowerProtein/issues).
+
 ## Validation Testing
 🚨**Required**
 
