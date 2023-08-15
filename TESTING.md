@@ -37,6 +37,7 @@ In the Testing section of the README, I extensively conducted manual testing to 
 ## Validation Testing
 <details>
 <summary>Validation Testing</summary>
+
 The following site were used to aid in validation testing:
 
 - **[CSS Validator](https://jigsaw.w3.org/css-validator/)**
@@ -164,6 +165,30 @@ The following site were used to aid in validation testing:
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/f8b75a02-ab2b-44f9-8a4b-d48ad06b4b5c)
 
 <hr>
+
+**403 PAGE**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/f8c78654-6dbb-4cd5-b2cd-82313941a6f9)
+
+<hr>
+
+**404 PAGE**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/cdd0c655-7914-423f-942c-cc7262e24992)
+
+<hr>
+
+**500 PAGE**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/0c282358-1c8c-4863-892b-3ffb3b56e2d9)
+
+<hr>
+
+The following site were used to aid in validation testing:
+
+**[JS validation](https://jshint.com)**
+
+
 
 </details>
 <hr>
