@@ -64,11 +64,7 @@
                         <label for="{{ form.service_rating.id_for_label }}" class="text-black">{{ form.service_rating.label_tag }}</label>
                      </div>
                   {% endif %}
-                  {% if field.name != 'featured_image' %}
-                     {{ field | as_crispy_field }}
-                  {% else %}
-                     {{ field }}
-               {% endif %}
+                  {{ field | as_crispy_field }}
                {% endfor %}
                <div class="text-right mt-4">
                   <button class="btn btn-black rounded-0" type="submit" value="Save" aria-label="Submit Review">Submit</button>
