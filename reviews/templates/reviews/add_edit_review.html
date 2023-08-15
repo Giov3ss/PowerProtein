@@ -60,13 +60,8 @@
                {% for field in form %}
                   {% if field.label_tag == 'Service Rating*' %}
                      <label for="{{ field.id_for_label }}" class="text-black">{{ field.label_tag }}</label>
-                     <div class="stars">
-                        {% for rating_value, rating_label in form.service_rating.field.choices %}
-                        <input class="star" id="star-{{ rating_value }}" type="radio" 
-                        name="{{ form.service_rating.html_name }}" 
-                        value="{{ rating_value }}" {% ifequal form.service_rating.value rating_value %}checked{% endifequal %}/>
-                        <label class="star" for="star-{{ rating_value}}" style="font-size: 24px;">{{ rating_label }}</label>
-                     {% endfor %}
+                     <div>
+                        <label for="{{ form.service_rating.id_for_label }}" class="text-black">{{ form.service_rating.label_tag }}</label>
                      </div>
                   {% endif %}
                   {% if field.name != 'featured_image' %}
@@ -89,10 +84,11 @@
 {% block postloadjs %}
    <!-- CUSTOM JAVASCRIPT FOR THE SELECT IMAGE FILE -->
     {{ block.super }}
-    <script type="text/javascript">
-        $('#new-image').change(function() {
-            var file = $('#new-image')[0].files[0];
-            $('#filename').text(`Image will be set to: ${file.name}`);
-        });
-    </script>
+    <script>
+      // Add new image
+      $('#new-image').change(function() {
+          var file = $('#new-image')[0].files[0];
+          $('#filename').text(`Image will be set to: ${file.name}`);
+      });
+   </script>
 {% endblock %}

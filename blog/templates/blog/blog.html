@@ -53,7 +53,7 @@
     </div>
     {% if is_paginated %}
     <!-- PAGINATION FOR BLOG POST -->
-    <nav arial-label="Page navigation">
+    <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
             {% if page_obj.has_previous %}
             <li><a href="?page={{ page_obj.previous_page_number}}" class="page-link mt-5">&laquo; PREV</a>
@@ -78,7 +78,7 @@
 {% block postloadjs %}
     <!-- CUSTOM JS FOR BACK-TO-TOP BUTTON -->
     {{ block.super }}
-    <script type="text/javascript">
+    <script>
         $('.btt-link').click(function(e) {
             e.preventDefault();
             $('html, body').animate({
