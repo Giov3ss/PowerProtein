@@ -74,6 +74,19 @@ The following site were used to aid in validation testing:
 **BASE.CSS:**
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/a860d504-7955-44e6-b689-d7df91f4e911)
+
+<hr>
+
+The following site were used to aid in validation testing:
+
+- **[HTML Validator](https://validator.w3.org/)**
+
+**HOME PAGE:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/14974565-cfd7-4f1d-a643-745cc14d7830)
+
+<hr>
+
 </details>
 <hr>
 
