@@ -87,6 +87,84 @@ The following site were used to aid in validation testing:
 
 <hr>
 
+**PRODUCTS PAGE:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/b09adbb6-b5ed-4923-93b9-ef59c713259c)
+
+<hr>
+
+**PRODUCTS DETAILS PAGE:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/45bec81e-85c2-4edb-90fa-67bab94239ed)
+
+<hr>
+
+**BLOG PAGE:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/70eaeea5-9812-401b-9cc0-76447e7bcf09)
+
+<hr>
+
+**CONTACT NUTRITIONIST PAGE:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/4b3329ae-8077-465a-94b8-5407b2611ced)
+
+<hr>
+
+**REVIEWS PAGE:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/52be60e0-cd66-4dae-9625-6ebef6c7013c)
+
+<hr>
+
+**LOGOUT PAGE**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/bd97ead0-8b29-42c8-a3a9-d6f49287b37d)
+
+<hr>
+
+**LOGIN PAGE**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/1c500cbe-0958-4086-906d-5f80afedfa19)
+
+<hr>
+
+**REGISTER PAGE**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/829eeab9-4849-4ea6-bf46-b63fd6716b43)
+
+<hr>
+
+**RECOVER PASSWORD PAGE**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/7cf83021-db40-43ba-92ec-0c09fad85e45)
+
+<hr>
+
+**MY PROFILE PAGE**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/49d7bc2d-42aa-464f-94e5-3e21510ae2c3)
+
+**SHOPPING BAG PAGE**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/f2fea239-5c2d-421c-8bb4-268f923aa548)
+
+<hr>
+
+**CHECKOUT PAGE**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/db52ccfb-a475-45f9-805c-eb07f92b3bdd)
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/6fad4d53-0a3c-4f4f-a0d9-787d6ea0b0f7)
+
+<hr>
+
+**CHECKOUT SUCCESS PAGE**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/f8b75a02-ab2b-44f9-8a4b-d48ad06b4b5c)
+
+<hr>
+
 </details>
 <hr>
 
