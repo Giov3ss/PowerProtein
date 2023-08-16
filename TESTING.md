@@ -194,7 +194,23 @@ The following site were used to aid in validation testing:
 
 **[JS validation](https://jshint.com)**
 
+**STRIPE_ELEMENT.JS**
 
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/b0e9a422-9137-457e-8a7a-59e8e46906e0)
+
+<hr>
+
+**QUANTITY_INPUT_SCRIPT**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/a50e1ad9-f9dc-4eab-af43-bb03c7f4c894)
+
+<hr>
+
+**COUNTRYFIELD.JS** 
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/4cc6946f-c96e-4db3-8071-ee5873610b24)
+
+<hr>
 
 </details>
 <hr>
