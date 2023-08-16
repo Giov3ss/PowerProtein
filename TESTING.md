@@ -108,7 +108,7 @@ The following site were used to aid in validation testing:
 
 **BLOG PAGE DETAILS:**
 
-![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/48075dfa-da47-480e-8cd1-de4d49c723c1)
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/cbd1f762-5530-4cb7-9a8b-049dcdf82521)
 
 <hr>
 
@@ -121,6 +121,12 @@ The following site were used to aid in validation testing:
 **REVIEWS PAGE:**
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/52be60e0-cd66-4dae-9625-6ebef6c7013c)
+
+<hr>
+
+**REVIEWS PAGE DETAILS:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/876b26ab-9bfb-42b9-9da3-da0485ce80ed)
 
 <hr>
 
