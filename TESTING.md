@@ -106,6 +106,12 @@ The following site were used to aid in validation testing:
 
 <hr>
 
+**BLOG PAGE DETAILS:**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/48075dfa-da47-480e-8cd1-de4d49c723c1)
+
+<hr>
+
 **CONTACT NUTRITIONIST PAGE:**
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/4b3329ae-8077-465a-94b8-5407b2611ced)
