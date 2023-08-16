@@ -475,19 +475,8 @@ The following site were used to aid in validation testing:
 - The examination of each app's views will be carried out using Django unittest module in the upcoming iteration.
 
 ## Defects
-🚨**Required**
-
-At this point you really should be using GITHUB's Issues to track these as it helps you with the AGILE process
-requirement as it's really easy to copy/paste screenshots in and then write up how you closed them.
-
-[Here's a brief overview](https://docs.google.com/document/d/1nDS5tZeMO77Dfq85IZGMSV6C41XaPm9FwcpR3k-UTVc/edit#heading=h.542xzc8ufx4x)
-I put together on how to do this.
-
-is what my custom tempalte looks like in the UX
-![image](https://user-images.githubusercontent.com/23039742/165650359-a352d64e-b128-473d-ab60-7df0568a44df.png)
-
-
-
+**DEFECTS** were documented in github using a custom issue template. 
+- Here is my [DEFECT Template](https://github.com/Giov3ss/PowerProtein/blob/main/.github/ISSUE_TEMPLATE/bug_report.md)
 
 ## Defects of Note
 🚀 **merit & beyhond**
