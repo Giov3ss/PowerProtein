@@ -1,53 +1,34 @@
-{% extends "base.html" %} 
-{% load static %} 
-
-{% block extra_css %}
+{% extends "base.html" %} {% load static %} {% block extra_css %}
 <!-- INCLUDE CUSTOM CSS FOR THE REVIEWS PAGE -->
-<link rel="stylesheet" href="{% static 'reviews/css/reviews.css' %}">
-{% endblock %}
-
-{% block page_header %}
+<link rel="stylesheet" href="{% static 'reviews/css/reviews.css' %}"> {% endblock %} {% block page_header %}
 <!-- BLOCK PAGE HEADER -->
 <div class="container header-container">
    <div class="row">
       <div class="col"></div>
    </div>
-</div>
-{% endblock %}
-
-{% block content %}
+</div> {% endblock %} {% block content %}
 <!-- CONTENT BLOCK FOR ADDING/EDITING REVIEWS -->
 <div id="add-review" class="edit-comments">
    <div class="container">
       <div class="row p-3">
-         <div class="col-12 text-center">
-            {% if review %}
+         <div class="col-12 text-center"> {% if review %}
             <!-- DISPLAY 'EDIT REVIEW' HEADER IF EDITING EXISTING REVIEW -->
             <h1 class="subtitle mt-3 text-black">Edit Review As:</h1>
-            <p><i class="fas fa-user"></i> {{ user.username | slice:":10" }}</p>
-            {% else %}
+            <p>
+               <i class="fas fa-user"></i> {{ user.username | slice:":10" }}
+            </p> {% else %}
             <!-- DISPLAY 'ADD REVIEW' HEADER IF EDITING EXISTING REVIEW -->
             <h1 class="subtitle mt-3 text-black">Add Review As:</h1>
-            <p><i class="fas fa-user"></i> {{ user.username | slice:":10" }}</p>
-            {% endif %}
+            <p>
+               <i class="fas fa-user"></i> {{ user.username | slice:":10" }}
+            </p> {% endif %}
          </div>
          <div class="col-md-6 mt-5 p-2">
-            <div class="mr-3">
-               {% if reviews %}
+            <div class="mr-3"> {% if reviews %}
                <!-- DISPLAY INFO ABOUT LEAVING A REVIEW -->
-               <h2 class="subtitle text-black">Your Opinion Matters!</h2>
-               {% endif %}
-               <p class="p-1 text-justify">
-                  At <strong class="text-black">PowerProtein</strong>, we strive to provide the best products and services to our customers.
-                  Your opnion matters greatly to us as it helps us understand how we can improve and better meet your needs.
-               </p>
-               <p class="p-1 text-justify">
-                  Please take a moment to share your thoughts about our company and products by leaving a Review. Your value
-                  feedback will guide us in enhancing the quality of our services and delivering an even better experience for you.
-               </p>
-               <p class="p-1">
-                  Thank you for being a part of our journey to excellence!
-               </p>
+               <h2 class="subtitle text-black">Your Opinion Matters!</h2> {% endif %} <p class="p-1 text-justify"> At <strong class="text-black">PowerProtein</strong>, we strive to provide the best products and services to our customers. Your opnion matters greatly to us as it helps us understand how we can improve and better meet your needs. </p>
+               <p class="p-1 text-justify"> Please take a moment to share your thoughts about our company and products by leaving a Review. Your value feedback will guide us in enhancing the quality of our services and delivering an even better experience for you. </p>
+               <p class="p-1"> Thank you for being a part of our journey to excellence! </p>
                <p class="p-1">
                   <strong class="text-black">PowerProtein</strong>
                </p>
@@ -55,18 +36,27 @@
          </div>
          <div class="col-md-6 mt-5 p-2">
             <form method="post" enctype="multipart/form-data">
-               <!-- FORM FOR ADDING/EDITING REVIEWS -->
-               {% csrf_token %}
-               {% for field in form %}
-                  {% if field.label_tag == 'Service Rating*' %}
-                     <label for="{{ field.id_for_label }}" class="text-black">{{ field.label_tag }}</label>
-                     <div>
-                        <label for="{{ form.service_rating.id_for_label }}" class="text-black">{{ form.service_rating.label_tag }}</label>
+               <!-- FORM FOR ADDING/EDITING REVIEWS --> {% csrf_token %} {% for field in form %} {% if field.label_tag == 'Service Rating*' %} <label for="{{ field.id_for_label }}" class="text-black">{{ field.label_tag }}</label>
+               <div>
+                  <label for="{{ form.service_rating.id_for_label }}" class="text-black">{{ form.service_rating.label_tag }}</label>
+               </div> {% endif %} {% if field.name != 'featured_image' %} {{ field | as_crispy_field }} {% else %} <div id="div_id_featured_image" class="form-group">
+                  <label for="id_featured_image" class=""> Image </label>
+                  <div class=" mb-2">
+                     <div class="form-control custom-file" style="border:0">
+                        <input type="file" name="featured_image" class="custom-file-input" accept="image/*" id="id_featured_image">
+                        <label class="custom-file-label text-truncate" for="id_featured_image">---</label>
+                        <script id="script-id_featured_image">
+                           document.getElementById("script-id_featured_image").parentNode.querySelector('.custom-file-input').onchange = function(e) {
+                              var filenames = "";
+                              for (let i = 0; i < e.target.files.length; i++) {
+                                 filenames += (i > 0 ? ", " : "") + e.target.files[i].name;
+                              }
+                              e.target.parentNode.querySelector('.custom-file-label').textContent = filenames;
+                           }
+                        </script>
                      </div>
-                  {% endif %}
-                  {{ field | as_crispy_field }}
-               {% endfor %}
-               <div class="text-right mt-4">
+                  </div>
+               </div> {% endif %} {% endfor %} <div class="text-right mt-4">
                   <button class="btn btn-black rounded-0" type="submit" value="Save" aria-label="Submit Review">Submit</button>
                   <a href="{% url 'reviews:reviews' %}" class="btn btn-danger rounded-0">Cancel</a>
                </div>
@@ -74,17 +64,13 @@
          </div>
       </div>
    </div>
-</div>
-{% endblock %}
-
-{% block postloadjs %}
-   <!-- CUSTOM JAVASCRIPT FOR THE SELECT IMAGE FILE -->
-    {{ block.super }}
-    <script>
-      // Add new image
-      $('#new-image').change(function() {
-          var file = $('#new-image')[0].files[0];
-          $('#filename').text(`Image will be set to: ${file.name}`);
-      });
-   </script>
-{% endblock %}
+</div> {% endblock %} {% block postloadjs %}
+<!-- CUSTOM JAVASCRIPT FOR THE SELECT IMAGE FILE -->
+{{ block.super }}
+<script>
+   // Add new image
+   $('#new-image').change(function() {
+      var file = $('#new-image')[0].files[0];
+      $('#filename').text(`Image will be set to: ${file.name}`);
+   });
+</script> {% endblock %}
