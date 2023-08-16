@@ -104,8 +104,10 @@ body {
 }
 
 a.signup-blog-link {
+    display: inline-block;
     color: #000 !important;
     text-decoration: none !important;
+    margin-bottom: 2.5rem;
 }
 
 /* -------------------------------- Cross Sell Products */

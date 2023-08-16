@@ -43,37 +43,34 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <strong>
-                            <!-- LIKE BTN AND NUMBER OF LIKES FOR THE BLOG POST -->
-                            {% if user.is_authenticated %}
-                                <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
-                                    {% csrf_token %}
-                                    {% if liked %}
-                                    <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="btn-like">
-                                        <i class="fas fa-heart"></i>
-                                    </button>
-                                    {% else %}
-                                    <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="btn-like">
-                                        <i class="far fa-heart"></i>
-                                    </button>
-                                    {% endif %}
-                                </form>
-                            {% else %}
-                            <span class="text-secondary-blog">
-                                <!-- DISPLAY HEART ICON FOR UNAUTHENTICATED USERS -->
-                                <i class="far fa-heart"></i>
-                            </span>
-                            {% endif %}
-                            <!-- DISPLAY THE NUMBER OF LIKES FOR THE BLOG POST -->
-                            <span class="text-secondary-blog">{{ post.number_of_likes }}</span>
-                            <p class="small text-muted mt-2">Only logged in users can like blog post, 
-                                <a class="signup-blog-link" href="{% url 'account_signup' %}"><strong>sign up now!</strong></a>
-                            </p>
-                            <div>
-                                <!-- LINK TO GO BACK TO THE BLOG POST LIST -->
-                                <a class="btn btn-outline-black rounded-0" href="{% url 'blog' %}">Back to blogs</a>
-                            </div>
-                        </strong>
+                        <!-- LIKE BTN AND NUMBER OF LIKES FOR THE BLOG POST -->
+                        {% if user.is_authenticated %}
+                            <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
+                                {% csrf_token %}
+                                {% if liked %}
+                                <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="btn-like">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                {% else %}
+                                <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="btn-like">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                {% endif %}
+                            </form>
+                        {% else %}
+                        <span class="text-secondary-blog">
+                            <!-- DISPLAY HEART ICON FOR UNAUTHENTICATED USERS -->
+                            <i class="far fa-heart"></i>
+                        </span>
+                        {% endif %}
+                        <!-- DISPLAY THE NUMBER OF LIKES FOR THE BLOG POST -->
+                        <span class="text-secondary-blog">{{ post.number_of_likes }}</span>
+                        <p class="small text-muted mt-2">Only logged in users can like blog post. </p>
+                        <a class="signup-blog-link" href="{% url 'account_signup' %}"><strong>sign up now!</strong></a>
+                        <div>
+                            <!-- LINK TO GO BACK TO THE BLOG POST LIST -->
+                            <a class="btn btn-outline-black rounded-0" href="{% url 'blog' %}">Back to blogs</a>
+                        </div>
                     </div>
                 </div>
             </div>
