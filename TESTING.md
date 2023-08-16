@@ -471,14 +471,8 @@ The following site were used to aid in validation testing:
 <hr>
 
 ## Automated Testing
-🚀 **merit & beyhond**
-
-**NOTE: If you want MERIT or Higher, you MUST have some automated testing**
-If you managed to write jasmine tests or some django tests, note those files out here and how to run them.
-
-https://github.com/maliahavlicek/ms4_challenger/blob/master/documentation/TESTING.md is my write up about my automated testing and how I ran them, but a simple test I'd recommend is a views test that tests authentication and any views you limit to superusers or logged in users.
-
-https://github.com/maliahavlicek/ms4_challenger/blob/master/challenges/tests/test_views.py
+- Manual Testing was conducted due to time constrains.
+- The examination of each app's views will be carried out using Django unittest module in the upcoming iteration.
 
 ## Defects
 🚨**Required**
