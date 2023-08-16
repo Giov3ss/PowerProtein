@@ -39,7 +39,7 @@ class StripeWH_Handler:
         subject = 'Thank you for buy to our site'
         message = ' it  means a world to us '
         email_from = settings.EMAIL_HOST_USER
-        recipient_list = ['receiver@gmail.com',]
+        recipient_list = ['receiver@gmail.com', ]
         send_mail(subject, message, email_from, recipient_list)
         return redirect(reverse('home'))
 

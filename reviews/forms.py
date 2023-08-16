@@ -14,11 +14,11 @@ class ReviewsForm(forms.ModelForm):
         fields = ('review_title', 'service_review', 'service_rating', 'featured_image')  # noqa
 
     featured_image = forms.ImageField(
-        label='Image', required=False, 
+        label='Image', required=False,
         widget=CustomClearableFileInput,
     )
     service_rating = forms.ChoiceField(
         label='Service Rating',
-        choices=[(i, str(i)) for i in range (1, 6)],
+        choices=[(i, str(i)) for i in range(1, 6)],
         widget=forms.Select(attrs={'class': 'review-rating-dropdown'}),
     )
