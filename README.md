@@ -277,11 +277,11 @@ I chose to use Bootstrap for my website because it allowed me to quickly and eas
 
 **Add Review:**
 
-![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/b6895ac9-9e8f-42dc-9606-461297ec37da)
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/9a68b3c1-21a1-42bf-8b45-52040851b316)
 
 **Edit Review:**
 
-![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/34e084a3-5fab-4894-a4b0-a10d87c69fbb)
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/6d7aac70-4005-489f-a92f-321424971c04)
 
 **Product List:**
 
