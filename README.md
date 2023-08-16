@@ -761,70 +761,116 @@ The choices in the table are base on the browser market share data provided by [
 **Browser Market Share Worldwide - July 2023**
 
 # E-commerce Business Model
-🚨**Required**
-
-In this section discuss your business model, how you use  SEO to get users to your site and how you hope to generate more traffic and get sponsors to back link to your site. 
-
 ## Facebook Business Page
-🚨**Required**
 
-- copy a screenshot of the FB page
-- add a couple of bulletpoints about the goals of what this fills for building out followers & special content
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/26b4edf6-a6de-45f4-9881-fe6ae6d1685e)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/73c02841-fad0-43b2-a1a4-c9188085cdcd)
+
+
+- **Audience Engagement:** The Facebook Page serves as a platform to engage with our audience directly.
+- **Products Updates:** Keeping our followers informed about new product launches, restocks and upcoming collections.
+- **Educational Content:** Sharing informative and educational content related to our products or industry establishes our brand as an authority in the field.
+- **Feedback & Insights:** The Facebook page can be a valuable source of feedback, understanding what customers like and dislike helps us improve our products and services.
 
 ## Newsletter Signup
-🚨**Required**
 
-- copy a screenshot of the signup 
-- add a couple of bullet oints outlining the goals of what this functionality provides for building out followers
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/2390c537-f4b6-41b2-b36a-56e80bcae96e)
 
-## Links
-- sponsored links are flagged with rel="sponsored"
-- social links and other links that go outside domain have `rel="nofollower"` to signal to search engines that those links are not associated with our specific domain
-
+- **Audience Expansion:** The Newsletter Signup feature expands our reach beyond existing customers and allows us to engage with a wider audience.
+- **Direct Communication:** Subscribers who sign up for the newsletter have explicity shown in our brand. Provide us with a direct and targeted communication channel to becomes a valuable asset for future marketing efforts. 
+- **Product & Updates:** Subscribers stay informed about the latest product releases, company news and updates.
+- **Relationship Building:** Regular newsletter provide an opportunity to establish a relationship with subscribers.
+  
 ## SEO Strategy
-🚨**Required**
-
-In this section write out the process you used to come up with short tailed and long tailed results to help refine the keywords you came up with. You should call out attention to the following:
+In our SEO strategy, I worked on optimizing our website to increase its visibility in search engines. I took specific steps to refine our keyword selection, optimize descriptions and titles, and intentionally incorporate keywords into our content.
 
 ### Keywords
-Describe the process you went through identifiying keywords that you want Google and other search engines to relate to your site.
+- I dug deep into our industry to identify the key themes, products, and services that "match" our target audience. 
+- Through a comprehensive analysis of our competitors' websites, we gained insight into the keywords they target, which helped me refine our own keyword list.
+- Our approach covered both short-tailed and long-tailed keywords to cater to varios search queries.
+
+**Short-tail:** gym supplements, fitness supplements, muscle building supplements, weight loss supplements, workout supplements, pre-workout supplements, post-workout supplements, protein supplements, sports nutrition, whey protein, creatine, bcaa, pre-workout, vitamins, men's health supplements, women's health supplements, health supplements, nutritionist, expert advice, affordable prices, fitness tips, workout advice, health guidance, welness insights, nutrition advice, fitness experts, health coaching, workout strategies.
+
+**Long-tail:** Shop high-quality gym supplements designed to enhance your workout, Elevating fitness with finest supplements in Europe, aid in muscle building, weight loss and overall fitness, Browse out extensive selection of high-quality supplements at affordable prices to achieve your fitness goals effectively, Best gym supplements for muscle building, Affordable high-quality workout supplements, Top fitness supplements for men and women, Achieve your fitness goals with quality supplements, Finest sports nutrition supplements in Europe, High-quality protein supplements for athletes, Trusted brand for gym and workout supplements.
 
 ### Description
-Note that you have a the meat description tag and if any of the content changes based on the page.
+I paid special attention to the description meta tag. These descriptions serve as a concise introduction to our content, incorporating the identified keywords. Additionally, I remain flexible in updating these descriptions whenever the content on a particular page changes.
 
 ### Title
-Call out that you have this set in your base.html so it can be changed per page
+Our website's base.html template houses the title tag, allowing us to customize titles for each page. This dynamic approach to titles enhances our SEO efforts.
 
 ### Relevant Content
-Call out how you purposefully incorporated keywords into your content, H1, meta data etc. 
+I have purposefully integrated our selected keywords into various elements of our content, including H1 tags, meta data, texts, name of the products, descriptions and more. This strategic integration ensures that our content is not only optmized for search engines but also remains relevant and valuable to our users. 
 
 ### Sitemap
-🚨**Required**
-
-- [sitemap.xml file]() call out files that exist so browsers can easily crawl site
+I've created a sitemap for the website, ensuring that when it's fully prepared, search engines like Google can efficiently crawl and index its content.
+- [sitemap.xml file](https://github.com/Giov3ss/PowerProtein/blob/main/sitemap.xml)
 
 ### Robots.txt
-🚨**Required**
-
-- [robots.txt file]() to restrict pages that are should be searched by google, authentication and others are blocked to only allow relevant pages to be searched by google
+To restrict pages that are should be searched by google, authentication and others are blocked to only allow relevant pages to be searched by google.
+- [robots.txt file](https://github.com/Giov3ss/PowerProtein/blob/main/robots.txt) 
 
 # Deployment
-🚨**Required** 
-
 ## Prerequisits
-🚀 **merit & beyond**
+To run this project, you need a ElephantSQL & AWS Amazon account:
 
-If the user is required to have certain keys and credentials you should include this section with directions on how to get the necessary information. ex)
+**ElephantSQL Set Up Account:**
+1. Visit the [ElephantSQL](https://www.elephantsql.com/) website.
+2. Sign up for an account if you don't have one.
+3. After signing in, you will be redirected to the ElephantSQL dashboard.
+4. Click on "Create New Instance" to create a new PostgreSQL database instance.
+5. Choose a suitable plan for your needs.
+6. Configure the database settings, such as the region and database name.
+7. Click on "Create" to create the database instance.
+8. Once the instance is created, you will see the details of your database, including the hostname, port, username and password.
+**Retrieve the Database URL:**
+1. In the ElephantSQL dashboard, locate your newly created database instance.
+2. Click on the instance to view its details.
+3. In the "Details" tab, you will find the connection details for your database, including the URL.
+**Set Environmental Variables:**
+1. After obtaining the database URL, you need to set it as an environmental variable in your development environment.
+2. The specific steps to set environmental variables depend on your operating system and development environment.
+3. In general, you can set the environmental variable by adding the following line to your **'env.py'** file or the environment configuration of your development enviroment: **DATABASE_URL=<YOUR_DATABASE_URL>**
+4. Replace **"<YOUR_DATABASE_URL>"** with the actual database URL you obtained from ElephantSQL.
 
-1. **Gmail Account:** In order to have verification and forgot password emails sent to registered users you need a
-   google account. 
-  - [create a gmail accoount](https://accounts.google.com/signup) 
-  - [downgrade to less secure](https://myaccount.google.com/lesssecureapps?pli=1) after you are signed into the gmail account, downgrade to less secure
-2. **Couldinary URL**
-  - [create an account](https://cloudinary.com/)
-  - go to the dashboard and copy your API environmental variable
-   
-    <img width="1230" alt="image" src="https://user-images.githubusercontent.com/23039742/213839829-b4f349b3-419d-4ea2-bbca-90cf3c663bba.png">     
+**AWS Amazon Set Up Account/ AWS S3 Bucket:**
+1. Create an [account](https://aws.amazon.com/) on AWS Amazon if you don't have one.
+2. Login to your account and within the search bar type in 'S3'.
+3. Within the S3 page click on the "Create Bucket".
+4. Put the name that you want (i'd recommend naming your bucket to match your Heroku app name) on the bucket and select the region which is closest to you.
+5. Uncheck "Block Public Access" and acknowledge that the bucket will be made public. Click on "Create Bucket"
+6. Inside the bucket click on "Properties" tab. Below "Static Website Hosting" click "Edit" and change the "Static Website Hosting" hosting option to "Enabled". Copy the default values for the index and error documents and click "Save".
+7. Underneath "Object Ownership" select "ACLs enabled".
+10. Click on the "Permissions" tab, paste that into the Cross-origin resource sharing (CORS) section:
+  ```
+    [
+        {
+            "AllowedHeaders": [
+            "Authorization"
+            ],
+            "AllowedMethods": [
+            "GET"
+            ],
+            "AllowedOrigins": [
+            "*"
+            ],
+            "ExposeHeaders": []
+        }
+    ]
+  ```
+10. Within the "Bucket Policy" section. Click "Edit" and then "Policy Generator".
+11. Click the "Select Type of Policy" dropdown and selet "S3 Bucket Policy" and within "Pricipal" type "*" to allow all principals. In "Actions" section select "GetObject".
+12. Copy the "ARN" that is located in the previous tab.
+13. Back to AWS policy generator, paste it into the "Amazon Resource Name (ARN)" box at the bottom. Click on the "Add Statement" button, then "Generate Policy".
+14. Copy the policy that's been generated and paste into the "Bucket Policy Editor".
+15. Before saving, add /* at the end of your "Resource Key", this will allow access to all resources within the bucket.
+16. Once saved, scroll down to the "Access Control List (ACL)" and click "Edit".
+17. Next to "Everyone (public access)", check the "list" checkbox and save your changes.
+
+ 
  
 ## Fork and Clone the Repository
 🚀 **merit & beyond**
