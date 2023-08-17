@@ -220,40 +220,6 @@ The typography on the PowerProtein website is carefully chosen to complement the
 </details>
 <hr>
 
-### Design Elements
-🚀 **merit & beyhond**
-
-- list out the type of elements you want to use on your site, this will help you when choosing a framework and goes hand
-  in hand when doing the wireframes. If you did something out of the ordinary, or think something was particularly
-  clever, add a sentence and a screenshot or reference the file the code or css is in.
-
-> - desktop navigation
-> - mobile navigation
-> - footer
-> - containers/cards
-> - buttons
-> - text input
-> - textarea inputs
-> - dropdowns
-> - modals/layers
-> - check boxes
-> - pagination
-> - date pickers
-> - maps
-> - images
-> - tooltips
-> - icons
-> - tabbed content
-> - file pickers
-> - video players
-> - audio players
-
-### Animations and Transitions
-🚀 **merit & beyhond**
-
-- discuss any special animations or transitions you've programmed
-- special hover state effects
-
 ### Frameworks
 I chose to use Bootstrap for my website because it allowed me to quickly and easily create a responsive design that works well on different devices. the pre-designed templates and components also helped me to save time in the development process.
 
@@ -265,7 +231,6 @@ I chose to use Bootstrap for my website because it allowed me to quickly and eas
  Decrement and increment buttons fixed and working for both mobile and desktop.
 - [JS Code (scroll-to-top btn) - Products](products/templates/products/products.html)
   A new scroll-to-top button more smooth
-
 
 ## Wireframes
 <details>
@@ -501,6 +466,12 @@ I only did one iteration as I act as the product owner and developer for this pr
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/e998736c-d089-49d3-b603-bea2ca8346f6)
 
+<hr>
+
+- Our website incorporates a user-friendly navigation system to enhance the browsing experience and ensure easy access to important actions and content.
+- Fixed Navigation: The navigation bar remain visible at the top of the page even as users scroll down.
+- Standard Burguer Menu for Mobile: On mobile devices, we utilize a "burguer" menu, simplifying navigation and providing a consistent interface for user accessing the site on smaller screens. 
+
 </details>
 <hr>
 
@@ -513,6 +484,14 @@ I only did one iteration as I act as the product owner and developer for this pr
 <hr>
 
 - ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/aebcca1c-3f59-4978-885a-4ab856c7112c)
+
+<hr>
+
+- Our website offers a streamline and user-centric sign-in and sign-up process that prioritizes convenience and accessibility.
+- Easy Password Recovery: On the sign-in page, users can easily find a link to the "Forgot Password" feature, allowing them to reset their password without unnecessary hassle.
+- Sign-in: For new users who aren't registered yet, the sign-in page provides a prominent link to the sign-up process.
+- Sign-up: Sign up page has link to sign in page in case user is already registered, clear error messages if user name or email is already in system.
+  
 </details>
 <hr>
 
@@ -525,6 +504,13 @@ I only did one iteration as I act as the product owner and developer for this pr
 <hr>
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/73f7f12d-c848-4163-8550-1e0b58dfc379)
+
+<hr>
+
+- Our Products Page provides users with a hassle-free shopping experience, enhancing their journey from browsing to purchasing.
+- Quick Buy Buttons: The product list page showcases "Quick Buy" buttons bellow  each product, allowing users to swiftly add items to their cart without navigations through multiple pages.
+- Product Information: Users can make informed decisions with easily digestible and essential details about each product, ensuring they have the necessary information at a glance.
+- Quantities & Descriptions: The product detail page provides clear information of the product, such as name, prices, rating, category. User can easily select the desired amount of products they want in the quantity section.
 
 </details>
 <hr>
@@ -539,6 +525,12 @@ I only did one iteration as I act as the product owner and developer for this pr
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/adc838fd-2705-4ccf-9793-d16f8f3e069d)
 
+<hr>
+
+- Our Bag & Checkout functionality streamlines the purchase process, ensuring a smooth and efficient transaction for users.
+- Bag Page: On the bag page, users can easily manage their selected products. Each product is displayed with image, name, price, SKU. The user has the convenience of a quantity button to adjust the quantity of items or remove products from the bag, ensuring total control over the order.
+- Checkout Page: Our checkout page is designed for simplicity and security. An easy-to-use checkout form collects essential information, including shipping details and payment card information. The checkout page also features an order summary where users can review their order. This summary increases transparency by helping users confirm their selection before completing their purchase.
+
 </details>
 <hr>
 
@@ -547,6 +539,12 @@ I only did one iteration as I act as the product owner and developer for this pr
 <summary>Profile Details</summary>
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/6d97a49f-016f-4811-b028-3e4c992cefd2)
+
+<hr>
+
+- Our profile feature provides users with a personalized hub to manage their account details and track their order history.
+- My Profile Page: In "My Profile Page", users can easily view and modify their default delivery information. This convenient option ensures that users can easily keep their shipping details up to date, eliminating potential hassles during the checkout process.
+- Order History: Users can access a comprehensive list of their past orders, conveniently organized by order number. With a simple click on the order number, the user can revisit the details of their previous purchases, facilitating reordering or tracking.
 
 </details>
 <hr>
@@ -560,6 +558,13 @@ I only did one iteration as I act as the product owner and developer for this pr
 <hr>
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/feac25df-f30c-4fc5-b9e3-3e3b8487ce41)
+
+<hr>
+
+- Our blog feature offers users a wealth of insightful content related to health, wellness, recipes and more.
+- Informative Content: The blog page serves to help the user with health tips, wellness advice and delicious recipes. The user can easily navigate through the blog post and access a wide range of informative articles that cater to their interests and needs.
+- Post Details: Clicking on a post title opens the post detail view. Here, users can read the entire post, interacting with the content in a focused and immersive way. They can also interact with the post by liking it.
+- Related Products: To provide users with a seamless experience that unites content and commerce, I have integrated related products at the end of the blog post (if applicable). These products are carefully selected to complement the blog theme.
 
 </details>
 <hr>
