@@ -620,6 +620,20 @@ I only did one iteration as I act as the product owner and developer for this pr
 </details>
 <hr>
 
+**Footer:**
+<details>
+<summary>Footer</summary>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/40d9c481-969b-42ae-baa2-d24cd6b6a9f1)
+
+- The footer links directly to the social media of the powerprotein website.
+- There's a ```aria-label``` in the likes for better user experience.
+- All users are able to access the products & services links.
+- if the user wish to sign up to a newsletter, they can do easily by inputting their email address.
+
+</details>
+<hr>
+
 **Messages Notifications:**
 <details>
 <summary>Messages Notifications Details</summary>
