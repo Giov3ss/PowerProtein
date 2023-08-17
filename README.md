@@ -443,8 +443,9 @@ I only did one iteration as I act as the product owner and developer for this pr
 
 ## Progress Boards
 - [Iterations](https://github.com/users/Giov3ss/projects/4)
-
-## Features
+  
+## Implemented Features 
+### Features
 **Navigation:**
 <details>
 <summary>Navigation Details</summary>
@@ -579,7 +580,15 @@ I only did one iteration as I act as the product owner and developer for this pr
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/f55baca9-40dd-438a-bd45-06464e72f98c)
 
+<hr>
+
+- Our Contact Nutritionist Page is designed to connect users with professional nutritionist from our partner website, [iHealthy](https://ihealthy.herokuapp.com/). This features offer user personalized guidance and expert advice on their dietary and nutritional needs.
+- Personalized Nutritional Advice: Through a form, users can easily submit their questions and concerns to an experienced nutritionist.
+- Book an Appointment: For users looking for a more in-depth consultation, the "Schedule Now" button provides an easy way to schedule an appointment with the iHealthy nutritionist. Upon clicking the button, users are redirected to the iHealthy website.
+- Appointment Process: For added transparency and clarity, I've included a GIF video on the page that demonstrates the process of booking an appointment with an iHealthy nutritionist. This video provides a visual guide, making the appointment booking process user-friendly and efficient.
+
 </details>
+
 <hr>
 
 **Reviews:**
@@ -601,6 +610,13 @@ I only did one iteration as I act as the product owner and developer for this pr
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/acde3dd4-89b6-4151-befb-51b027217450)
 
+<hr>
+
+- The reviews page feature allows users to engage with our products and services by sharing their feedback. This feature serves as platform for users to express their thoughts about our products, company and overall experience.
+- User-generated Reviews: This feature lies in the ability for logged-in users to leave reviews. Whether it's about a specific product, our customer service or the overall experience, user can provide detailed feedback to help us improve and assist other potential customers in making informed decisions.
+- Editing and Deletign Reviews: We value autheticity, and to ensure that users have control over their feedback, we allow them to edit or delete their reviews. This user-friendly approach empowers users to modify their reviews if their opinions change over the time.
+- Responsive Design: The reviews page is designed to provide a seamless experience across all devies. Whether users access it from their desktop, tablet or smartphone the page maintains its functionality and readability, ensuring that users can engage with review conveniently.
+
 </details>
 <hr>
 
@@ -608,52 +624,77 @@ I only did one iteration as I act as the product owner and developer for this pr
 <details>
 <summary>Messages Notifications Details</summary>
 
+<hr>
+
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/c4b77f3d-0143-4afe-bd7f-cb3cf0e109ec)
+
+- There's a succes message if the user logged in. 
 
 <hr>
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/c122a361-753b-4831-83a9-6bf72d0877e8)
 
+- There's a succes message if the user added a product to their bag. 
+
 <hr>
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/ab76629b-102c-43aa-a429-bf15f2700cf1)
+
+- There's a success message if the user update their bag. 
 
 <hr>
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/37bef96d-3184-4b8b-839f-6a70d1a89cbc)
 
+- There's an alert message if the superuser/admin edit a product. 
 
 <hr>
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/ffba0d32-da47-464a-b295-565bab1188d8)
 
+- There's a success message if the user remove the product from their bag. 
+
 <hr>
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/881be305-3ff4-4dea-9325-625df69194d4)
+
+- There's a success message if the user like the blog (only authorized user). 
 
 <hr>
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/f66340dd-39b7-46fa-81b8-7cff3261bd33)
 
+- There's a success message if the user unlike the blog (only authorized user). 
+
 <hr>
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/08cd10aa-f30a-45f4-9ae7-f74e4fc964ad)
+
+- There's a succes message if the user send a review (only authorized user).
 
 <hr>
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/9ea811f1-d527-4aa6-bfef-56bbd7debc96)
 
+- There's a alert message if the user edit their review (only authorized user).
+
 <hr>
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/52d6993f-8bc4-4161-98a8-f18ca80fcb68)
+
+- There's a success message if the user update their review (only authorized user).
 
 <hr>
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/7cded3d3-c1f6-47c8-9feb-b579e5f19f85)
 
+- There's a message if the user wants delete their review (only authorized user).
+
 <hr>
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/c82ca60c-b8c3-407a-be38-6f98da133e41)
+
+- There's a message if the user delete their review (only authorized user).
 
 </details>
 <hr>
@@ -664,21 +705,26 @@ I only did one iteration as I act as the product owner and developer for this pr
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/8de72ba3-76e1-4c6a-a489-a396c0b1387b)
 
+- Admin can edit or delete a product in the products page.
+
 <hr>
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/b6d90868-d41d-4560-9c75-011509ffc0e2)
 
+- As a admin we can add a product in the product management post, fill in the form with a valid information.
+
 <hr>
 
-- **(As Admin we have the permission to Edit/Delete any review)**
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/99c347a2-c9d6-430c-8a35-5c65c17a40e8)
+
+- As Admin we have the permission to Edit/Delete any review
 
 </details>
 <hr>
 
-### Implemented Features
+### Error 400/404/403/500
 <details>
-<summary>Implemented Features Details</summary>
+<summary>Error Page Details</summary>
 
 - **404 Error Page:**
   
@@ -696,22 +742,10 @@ I only did one iteration as I act as the product owner and developer for this pr
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/e99f6f30-789a-4fb7-b336-777a61a3e550)
 
-<hr>
-
-- **Facebook Business page:**
-
-![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/26b4edf6-a6de-45f4-9881-fe6ae6d1685e)
+- There are error pages in place in case a user is taken to a restriced area or the page doesn't exist.
+- The customized pages gives information about the error and next steps to take.
 
 <hr>
-
-![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/73c02841-fad0-43b2-a1a4-c9188085cdcd)
-
-<hr>
-
-- **Newsletter signup Form:**
-
-![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/2390c537-f4b6-41b2-b36a-56e80bcae96e)
-
 
 </details>
 <hr>
