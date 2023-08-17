@@ -442,6 +442,7 @@ I only did one iteration as I act as the product owner and developer for this pr
 - [Iterations](https://github.com/users/Giov3ss/projects/4)
 
 ## Progress Boards
+I only did one iteration as I act as the product owner and developer for this project. here is the Progress Board
 - [Iterations](https://github.com/users/Giov3ss/projects/4)
   
 ## Implemented Features 
