@@ -813,6 +813,61 @@ I've created a sitemap for the website, ensuring that when it's fully prepared, 
 To restrict pages that are should be searched by google, authentication and others are blocked to only allow relevant pages to be searched by google.
 - [robots.txt file](https://github.com/Giov3ss/PowerProtein/blob/main/robots.txt) 
 
+## Technologies Used
+Several technologies have been used to enable this website works:
+| Technology               | Description                                                                                                                                          |
+|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Django                   | Django is the framework that has been used in the project, enables efficient development, database interactions and secure authentication.           |
+| Python                   | Python is the core programming language that was used to write all of the code in this application, to make it fully functional.                     |
+| JavaScript               | JavaScript was used to provide dynamic interactivity to the messages and enhancing the functionality of the  timepicker.                             |
+| Bootstrap                | Bootstrap was utilized to ensure a responsive design.                                                                                                |
+| Git                      | Git was utilized as the version control system for tracking changes, and maintaining the project's codebase.                                         |
+| PostgreSQL               | PostgreSQL was employed as the relational database management system to store and manage the project's data.                                         |
+| GitHub                   | Github was used as development environment, code management and tracking of changes.                                                                 |
+| Font Awesome             | Font Awesome was used to obtain the icons of the website, enhancing the overall design.                                                              |
+| Google Developer Tools   | DevTools was the primary toll for bug detection, testing the responsiveness and resolving issues across the website.                                 |
+| Heroku                   | Heroku was used to deploy the website.                                                                                                               |
+| CI's pep8                | CI's pep8 tool was used to validate all the python code.                                                                                             |
+| Jigsaw                   | Jigsaw was used to validate CSS code.                                                                                                                |
+| W3 HTML                  | W3 HTML was used to validate HTML code.                                                                                                              |
+| Jshint                   | Jshint was used to validate JavaScript Code.                                                                                                         |
+| Coloors                  | Coloors was utilized to generate color palette for the website design.                                                                               |
+| AWS Amazon               | AWS Amazon was utilized to store all of my static files and images.                                                                                  |
+| Lighthouse               | Lighthouse was used to test the accessibility of the website.                                                                                        |
+| Balsamiq                 | Balsamiq was utilized as a tool for creating wireframes, providing a visual representation of the website layout and structure.                      |
+| AmIResponsive            | AmIResponsive was used to generate screenshots of the website in various device sizes, allowing for a quick visual assessment of its responsiveness. |
+| Markdown Table Generator | Markdown Table Generator was utilized as a tool to create tables in Markdown format.                                                                 |
+| Gitpod                   | Gitpod was used to write and edit the project code.                                                                                                  |
+| Mermaid                  | Mermaid was used to create all the diagrams.                                                                                                         |                                                                                           
+
+### Languages
+- HTML
+- CSS
+- Python
+- JavaScript 
+
+### Frameworks, Libraries & Programs Used
+- Django
+- Bootstrap
+- Git 
+- PostgreSQL
+- GitHub
+- Font Awesome
+- Google Developer Tools
+- Heroku
+- CI's pep8
+- W3 HTML
+- Jshint
+- Coloors
+- AWS Amazon
+- Lighthouse
+- Balsamiq
+- AmIResponsive
+- Markdown Table Generator
+- Gitpod
+- Mermaid 
+
+
 # Deployment
 ## Prerequisits
 To run this project, you need a ElephantSQL & AWS Amazon account:
@@ -835,6 +890,8 @@ To run this project, you need a ElephantSQL & AWS Amazon account:
 2. The specific steps to set environmental variables depend on your operating system and development environment.
 3. In general, you can set the environmental variable by adding the following line to your **'env.py'** file or the environment configuration of your development enviroment: **DATABASE_URL=<YOUR_DATABASE_URL>**
 4. Replace **"<YOUR_DATABASE_URL>"** with the actual database URL you obtained from ElephantSQL.
+
+<hr>
 
 **AWS Amazon Set Up Account/ AWS S3 Bucket:**
 1. Create an [account](https://aws.amazon.com/) on AWS Amazon if you don't have one.
@@ -870,80 +927,204 @@ To run this project, you need a ElephantSQL & AWS Amazon account:
 16. Once saved, scroll down to the "Access Control List (ACL)" and click "Edit".
 17. Next to "Everyone (public access)", check the "list" checkbox and save your changes.
 
+**Identify and Access Management (IAM) Set Up**
+1. Search for IAM within the AWS navigation bar and select it.
+2. Click "User Groups" that can be seen in the side bar and then click "Create group" and name the group "manage-your-project-name".
+3. Click "Policies" and then "Create Policy". There is now a button to go to the next page to add tags. Tags are
+optional, but you must click it to get to the review policy page.
+4. Navigate to the JSON tab and click "Import Managed Policy", within here search for "S3" and select "AmazonS3FullAccess" followed by "Import".
+5. Follow the exemplo bellow:
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "s3-object-lambda:*"
+            ],
+            "Resource": [
+                "YOUR-ARN-NO-HERE",
+                "YOUR-ARN-NO-HERE/*"
+            ]
+        }
+    ]
+}
+
+```
+1. Ensure the policy has been given a name and a short description, the click "Create Policy".
+2. Click "User Groups". Select your group.
+3. Go to the "permissions" tab, open the "Add permissions" dropdown, and click "Attach policies".
+4. Select the policy and click "Add permissions" at the bottom.
+
+**Retrieve access keys**
+1. Go to IAM and select 'Users'.
+2. Select the user for whom you wish to create a CSV file.
+3. Select the 'Security Credentials' tab
+4. Scroll to 'Access Keys' and click 'Create access key'
+5. Select 'Application running outside AWS', and click next
+6. On the next screen, you can leave the 'Description tag value' blank. Click 'Create Access Key'
+7. Click the 'Download .csv file' button
+
+**Connecting AWS to the Project**
+1. Within your terminal install the following packages:
+
+```
+  pip3 install boto3
+  pip3 install django-storages
+```
+
+2. Freeze the requiremenst by typing:
+
+```
+  pip3 freeze > requirements.txt
+```
+3. Add "storages" to your installed apps within your settings.py file.
+4. At the bottom of the settings.py file add the following code.
+```
+if 'USE_AWS' in os.environ:
+   # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
+  # Bucket Config
+  AWS_STORAGE_BUCKET_NAME = 'bucket-name'
+  AWS_S3_REGION_NAME = 'region-name'
+  AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+  AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+  AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+```
+5. Add the following keys in you Heroku app config Vars: 'AWS_ACCESS_KEY_ID' & 'AWS_SECRET_ACCESS_KEY'. This can be found in your CSV file.
+6. Add the key "USE_AWS", and set to True in your Heroku app.
+7. Remove the "DISABLE_COLLECSTATIC" variable from Heroku.
+8. Inside the settings.py file, add the following code into your Bucket config if statement:
+```
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+```
+
+9. In your root directory create a file called "custom_storages.py". Add the followinfg code:
+```
+  from django.conf import settings
+  from storages.backends.s3boto3 import S3Boto3Storage
+  
+  
+  class StaticStorage(S3Boto3Storage):
+      location = settings.STATICFILES_LOCATION
+  
+  
+  class MediaStorage(S3Boto3Storage):
+      location = settings.MEDIAFILES_LOCATION
+```
+10. Go back to your AWS S3 bucket and click on "Create Folder", name this folder as "Media".
+11. In the "Media" file click "Upload > Add files" and select the images for your site.
+12. Under "Permissions" select the option "Grant public-read access" and click  "Upload".
  
  
 ## Fork and Clone the Repository
-🚀 **merit & beyond**
-To keep the main reposotory for this project clean, please fork the repostiory into your own account. GitHub has [forking directions](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) but here's what you might do:
-1. login to your own gitHub account
-2. navigate to [my repository](URL OF YOUR LIVE REPOSITORY)
-3. In the top right corner of the page, click fork 
+To make a copy or ‘fork’ the repository:
 
-![image](https://user-images.githubusercontent.com/23039742/213840378-e785eaa0-712b-468c-bcda-64fde56eae44.png)
+1. Login to your own GitHub account.
+2. Navigate to [my repository](https://github.com/Giov3ss/PowerProtein).
+3. In the top right corner of the page, click 'fork' option to create and copy of the original.
 
-4. set yourself as the owner
-5. change the name of the repo if you want
-6. add a description if you want
-7. choose what to copy, typicall the main branch only
-8. click the snazy green button
-
-![image](https://user-images.githubusercontent.com/23039742/213840549-5bef12ae-198e-412b-84b6-0cc718b6fa1d.png)
-
-9. To get files to your local environment, you need to clone it: click the code button
-10. Copy the url as needed (here's gitHub instructions)[https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository}
-
-
+## Making a Local Clone
+1. Under the repository name, click on the ‘code’ tab.
+2. In the clone box, HTTPS tab, click on the clipboard icon .
+3. In your IED open GitBash.
+4. Changed the current working directory to the location you want the cloned directory to be made.
+5. Type ‘git clone’ and then paste the URL copied from GitHub.
+6. Press enter and the local clone will be created.
 
 ## Development Deployment 
-🚨**Required** 
+### Running From GitPod or your preferred IDE:
+To get started with local development in GitPod or your preferred IDE, follow these steps:
 
-This section should describe the process someone would have to go through to get the local working in GitPod, or your preferred IDE. Start from installing the chrome extension then clicking the green gitpod button in THEIR FORKED repository, the enumerate the steps to walk them through the process as if they were brand new to this proccess. **Include screenshots** where applicable.
+1. Install the GitPod Chrome extension from the Chrome Web Store.
+- [GitPod Chrome Extension](https://chrome.google.com/webstore/detail/gitpod-always-ready-to-co/dodmmooeoklaejobgleioelladacbeki)
 
-**Key points to cover** 
-- Install required python packages: `pip3 install -r requirements.txt`
-- Create env.py
-- What to put in the env.py, don’t disclose real values
->  - EMAIL_HOST_PASSWORD=<YOUR_VALUE>
->  - DEFAULT_FROM_EMAIL=<YOUR_VALUE>
->  - EMAIL_USERNAME=<YOUR_VALUE>
->  - SECRET_KEY=<YOUR_VALUE>
->  - CLOUDINARY_URL=<YOUR_VALUE>
->  - DEV=True
-- Apply Database Migrations so the database starts up `python3 manage.py migrate`
-- Create a super user so you can add and inspect things via django admin  `python3 manage.py createsuperuser`
-- Preload data: Sometimes you might want to include steps to create data in the admin or preload a data dump [coderwall blog](https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata) has examples on how to dump data and load it which saves a bunch of time when deploying the application from a local database to a hosted database but you don’t  have to do this step
-- Start the server `python3 manage.py runserver`
-
+2. Once the extension is installed, navigate to your forked repository on GitHub.
+3. Click on the green "GitPod" button to open the repository in GitPod.
+4. After the workspace is created, you can start the development process.
+5. Install the Python packages by running the following command in the terminal:
+- **pip3 install -r requirements.txt**
+6. Create an **'env.py** file in the project's root directory to store your environment variables.
+7. In the **'env.py** file, add the following variables:
+```
+  DATABASE_URL=<YOUR_VALUE>
+  DEVELOPMENT=<YOUR_VALUE>
+  SECRET_KEY=<YOUR_VALUE>
+  AWS_ACCESS_KEY_ID=<YOUR_VALUE>
+  AWS_SECRET_ACCESS_KEY=<YOUR_VALUE>
+  EMAIL_HOST_PASS=<YOUR_VALUE>
+  EMAIL_HOST_USER=<YOUR_VALUE>
+```
+8. Apply databse migrations to set up the database by running the following command:
+```
+  python3 manage.py migrate
+```
+9. Create a superuser account that allows you add and inspect data via Django admin by running the following command:
+```
+  python3 manage.py createsuperuser
+```
+10. Start the server by running the following command:
+```
+  python3 manage.py runserver
+```
+11. Now you can access the application by opening the provided URL in your browser.
 
 ## Production Deployment
-🚨**Required** 
+To deploy your application on Heroku, follow the steps bellow:
 
-This section should describe the process you went through to deploy the project to a server where anyone can access the url without your machine running. This is typically Heroku. **Include screenshots** if you think they would make the process easier. Start with getting an heroku account and then setting up databases and other packages.
+1. **Create a Heroku Account:**
+- Visit the [Heroku](https://signup.heroku.com/login) website.
+- Sign up for a free account or log in if you already have one.
 
-If you have project settings required for Heroku, provide a table of the keys and values. Do not share your personal
-keys but either cut them out of the screenshot or say <YOUR_VALUE> and include links on how the user would obtain such
-values.
+2. **Create a New Heroku App:**
+- Once you are logged in to your Heroku account, click on the "New" button and select "Create new app".
+- Choose a unique name for your app. This name will be used in the App's URL.
+- Select the region closest to your location for better performance.
 
-**Key points to cover** 
-- cerating new app
-- setting app name
-- setting region
-- entering dreaded billing info
-- subscribing to a plan
-- setting up db
-- adding environmental values- have a list or table so user has less chance of typos
->  - EMAIL_HOST_PASSWORD
->  - DEFAULT_FROM_EMAIL
->  - EMAIL_USERNAME
->  - SECRET_KEY
->  - CLOUDINARY_URL
->  - COLLECT_STATIC
-- adding build packages
-- deploy
-- gitHub connection
-- auto vs manul deploy
-- monotior logs
+3. **Connect the App to Your Git Repository:**
+- After creating the app, go to the "Deploy" tab in your app's dashboard.
+- Choose the deployment method based on your Git repository: (e.g. GitHub).
+- Connect your app to the appropriate repository and branch.
 
+4. **Configure Environment Variables:**
+- In the "Settings" tab of your heroku app's dashboard, locate the "Config Vars" section.
+- Set the necessary enviroment variables required for your aplication: 
+  - e.g DATABASE_URL,
+  - AWS_ACCESS_KEY_ID,
+  - USE_AWS,
+  - EMAIL_HOST_PASS,
+  - EMAIL_HOST_USER,
+  - SECRET_KEY,
+  - USE_AWS,
+  - COLLECT_STATIC
+- Click on the "Reveal Config Vars" button to add the key-value pairs for your enviroment variables.
+
+5. **Deploy the Application:**
+- In the "Deploy" tab, scroll down to the "Manual Deploy" section.
+- Click on the "Deploy Branch" button to deploy your application.
+- Heroku will start building and deploying your application based on the code from your connected Git repository.
+
+6. **Monitor the Deployment:**
+- Once the deployment process is complete, you can view the deployment logs to ensure everything is working correctly.
+- In the "Activity" tab, you will find the deployment logs, which can help you identify any issues or errors that may have occured during the deployment process.
+
+7. **Access Your Deployed Application:**
+- After a successful deployment, you can access your application by visiting the URL provided in your Heroku app's dashboard.
+- Click on the "Open App" button or open the URL in a web browser to see your application live. 
 
 # Credits
 🚨**Required**
