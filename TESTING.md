@@ -486,7 +486,4 @@ The following site were used to aid in validation testing:
 
 
 ### Outstanding Defects
-
-It's ok to not resolve all the defects you found. If you know of something that isn't quite right, list it out and
-explain why you chose not to resolve it. Again, do this in gitHub and provide a link to the defects you are not closing
-and ensure they have a comment in them.
+I found an issue if invalid HTML was entered in the WYSIWYG blog entries. This happens a lot if you copy/paste line returns in bullet lists. Ideally there would be some HTML validation on the text area input to ensure bad HTML isn't entered, but that is beyond the scope of the MVP project. Editors of the blog will be viewing their entries after publishing and can easily fix any issues copy/paste might encounter.
