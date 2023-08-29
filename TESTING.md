@@ -2,6 +2,63 @@
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/3ef1c980-bde6-48d3-aea4-af1ed0debdd8)
 
+# Table of Contents
+<details>
+<summary>Table of Contents</summary>
+
+- [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
+    - [Most Popular browser & Operating System](#most-popular-browser--operating-system)
+- [Accessibility Testing](#accessibility-testing)
+- [Manual Testing](#manual-testing)
+- [Validation Testing](#validation-testing)
+- [Automated Testing](#automated-testing)
+- [Defects](#defects)
+- [Outstanding Defects](#outstanding-defects)
+
+</details>
+<hr>
+
+## Compatibility and Responsive Testing
+I ensure my site was worked well, and looked nice on a variety of devices & browsers as noted in the table below:
+
+| **TOOL / Device**           | **BROWSER** | **OS**                        | **SCREEN WIDTH** |
+|-----------------------------|-------------|-------------------------------|------------------|
+| iPhone 14 Plus v16.0        | Safari      | iOS, v16.0                    | 1284x2778 px     |
+| iPhone 6S v12.1             | Safari      | iOS, v12.1                    | 375 x 559 px     |
+| Samsung Galaxy A52 v11.0    | Chrome      | Android, v11.0                | 412 x 777 px     |
+| Moto G9 Play v10.0          | Firefox     | Android, v10.0                | 412 x 804 px     |
+| OnePlus 6T v9.0             | Edge        | Android, v9.0                 | 412 x 757 px     |
+| Samsung Galaxy A10 v9.0     | Samsung     | Android, v9.0                 | 412 x 734 px     |
+| Samsung Galaxy Tab S7 v11.0 | Chrome      | Android, v11.0                | 753 x 1037 px    |
+| iPad Mini 4 v11.4           | Safari      | iOS, v11.4                    | 768 x 954 px     |
+| windows 11                  | Firefox     | Browser Version 115.0         | 1920 x 955 px    |
+| Mac Ventura                 | Safari      | Safari 15.6 on macOS Monterey | 1920 x 955 px    |
+| windows 11                  | Yandex      | Yandex & Browser Version=14.12 | 1920 x 955 px   |
+
+### Most Popular browser & Operating System
+
+| Device             | Browser               | Operating System | Description                                              |
+|--------------------|-----------------------|------------------|----------------------------------------------------------|
+| iPhone             | Safari                | iOS              | Popular combination with significant market share        |
+| Android Smartphone | Chrome                | Android          | Widely used browser on the Android platform              |
+| Desktop/Laptop     | Chrome                | Windows          | Popular browser on the Windows operating system          |
+| Desktop/Laptop     | Chrome                | MacOS            | Popular browser on the macOS operating system            |
+| Desktop/Laptop     | Edge                  | Windows          | Microsoft Edge is gaining popularity among users         |
+| Other              | Firefox/Samsung/Opera | Various          | Represents a compromise due to limited testing resources |
+
+The choices in the table are base on the browser market share data provided by [gs.statcounter.com](https://gs.statcounter.com/). Chrome and Safari are the dominant browsers, so they are included for testing on different devices and operating systems. Edge is also included as it has a noticeable market share. Since firefox, Samsung Internet and Opera have smaller market shares, they are grouped under the "Other" category to represent a compromise due to limited testing resources.
+
+| **BROWSER**      | **PERCENTAGE** |
+|------------------|----------------|
+| Chrome           | 63.55%         |
+| Safari           | 19.95%         |
+| Edge             | 5.13%          |
+| Opera            | 2.99%          |
+| Firefox          | 2.79%          |
+| Samsung Internet | 2.38%          |
+
+**Browser Market Share Worldwide - July 2023**
+
 ## Accessibility Testing
 To ensure our website is accessible, I have conducted extensive testing to ensure that it caters for users with disabilities.
 
@@ -484,6 +541,7 @@ The following site were used to aid in validation testing:
 **DEFECTS** were documented in github using a custom issue template. 
 - Here is my [DEFECT Template](https://github.com/Giov3ss/PowerProtein/blob/main/.github/ISSUE_TEMPLATE/bug_report.md)
 
-
 ### Outstanding Defects
 I found an issue if invalid HTML was entered in the WYSIWYG blog entries. This happens a lot if you copy/paste line returns in bullet lists. Ideally there would be some HTML validation on the text area input to ensure bad HTML isn't entered, but that is beyond the scope of the MVP project. Editors of the blog will be viewing their entries after publishing and can easily fix any issues copy/paste might encounter.
+
+[Back to the Main Page](https://github.com/Giov3ss/PowerProtein)

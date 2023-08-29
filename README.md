@@ -17,38 +17,47 @@ Giovani Fonseca
   - [Target Audience](#target-audience)
   - [Goals](#goals)
   - [User Stories](#user-stories)
-  - [Initial Stories](#initial-stories)
   - [Feasibility vs Importance](#feasibility-vs-importance)
   - [Scope](#scope)
   - [Design Choices](#design-choices)
+    - [Frameworks](#frameworks)
+    - [Custom Styles](#custom-styles)
+    - [Custom Javascript](#custom-javascript)
   - [Wireframes](#wireframes)
 - [Information Architecture](#information-architecture)
-  - [Entity Relationship Diagram](#entity-relationship-diagram)
-  - [Database Choice](#database-choice)
-  - [Data Models](#data-models)
+- [Entity Relationship Diagram](#entity-relationship-diagram)
+- [Database Choice](#database-choice)
+- [Data Models](#data-models)
+- [CRUD Diagrams](#crud-diagrams)
 - [Agile Process](#agile-process)
-  - [GitHub User Stories](#github-user-stories)
+  - [User Story Templates](#user-story-templates)
+  - [Product Backlog](#product-backlog)
   - [Iterations](#iterations)
   - [Progress Boards](#progress-boards)
-- [Features](#features)
-  - [Implemented Features](#implemented-features)
+- [Implemented Features](#implemented-features)
+  - [Features](#features)
   - [Future Features](#future-features)
 - [Testing](#testing)
-  - [Cross Browser and Cross Device Testing](#cross-browser-and-cross-device-testing)
-  - [Accessibility Testing](#accessibility-testing)
-  - [Validation Testing](#validation-testing)
-  - [Automated Testing](#automated-testing)
-  - [Defects](#defects)
-  - [Defects of Note](#defects-of-note)
 - [E-commerce Business Model](#e-commerce-business-model)
   - [Facebook Business Page](#facebook-business-page)
   - [Newsletter Signup](#newsletter-signup)
   - [Links](#links)
-  - [SEO Strategy](#seo-strategy)
+- [SEO Strategy](#seo-strategy)
+  - [Keywords](#keywords)
+  - [Description](#description)
+  - [Title](#title)
+  - [Relevant Content](#relevant-content)
+  - [Sitemap](#sitemap)
+  - [Robots.txt](#robotstxt)
+- [Technologies Used](#technologies-used)
+  - [languages](#languages)
+  - [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 - [Deployment](#deployment)
   - [Prerequisits](#prerequisits)
   - [Fork and Clone the Repository](#fork-and-clone-the-repository)
+  - [Making a Local Clone](#making-a-local-clone)
   - [Development Deployment](#development-deployment)
+    - [Running From GitPod or your preferred IDE:](#running-from-gitpod-or-your-preferred-ide)
   - [Production Deployment](#production-deployment)
 - [Credits](#credits)
   - [Content](#content)
@@ -417,9 +426,7 @@ The Reviews model stores user-submitted service reviews, including the review ti
 <hr>
 
 # Agile Process
-
-## GitHub User Stories
-### User Story Templates
+## User Story Templates
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/0c63c8c4-3d97-4523-8d4b-39f3f6c35f9a)
 
@@ -772,47 +779,10 @@ I only did one iteration as I act as the product owner and developer for this pr
 - **Personalized Discounts:** Offer personalized discounts based on user preferences and purchasing behavior.
 - **Mobile App:** Create a mobile app to PowerProtein, providing users with convenient access to our website and other features on their smartphone.
 - **Language Support:** Support to cater to a wider user base, allowing users from different regions and languages preferences to access and use the PowerProtein platform.
- 
-## Compatibility and Responsive Testing
-I ensure my site was worked well, and looked nice on a variety of devices & browsers as noted in the table below:
 
-| **TOOL / Device**           | **BROWSER** | **OS**                        | **SCREEN WIDTH** |
-|-----------------------------|-------------|-------------------------------|------------------|
-| iPhone 14 Plus v16.0        | Safari      | iOS, v16.0                    | 1284x2778 px     |
-| iPhone 6S v12.1             | Safari      | iOS, v12.1                    | 375 x 559 px     |
-| Samsung Galaxy A52 v11.0    | Chrome      | Android, v11.0                | 412 x 777 px     |
-| Moto G9 Play v10.0          | Firefox     | Android, v10.0                | 412 x 804 px     |
-| OnePlus 6T v9.0             | Edge        | Android, v9.0                 | 412 x 757 px     |
-| Samsung Galaxy A10 v9.0     | Samsung     | Android, v9.0                 | 412 x 734 px     |
-| Samsung Galaxy Tab S7 v11.0 | Chrome      | Android, v11.0                | 753 x 1037 px    |
-| iPad Mini 4 v11.4           | Safari      | iOS, v11.4                    | 768 x 954 px     |
-| windows 11                  | Firefox     | Browser Version 115.0         | 1920 x 955 px    |
-| Mac Ventura                 | Safari      | Safari 15.6 on macOS Monterey | 1920 x 955 px    |
-| windows 11                  | Yandex      | Yandex & Browser Version=14.12 | 1920 x 955 px   |
+## Testing
 
-### Most Popular browser & Operating System
-
-| Device             | Browser               | Operating System | Description                                              |
-|--------------------|-----------------------|------------------|----------------------------------------------------------|
-| iPhone             | Safari                | iOS              | Popular combination with significant market share        |
-| Android Smartphone | Chrome                | Android          | Widely used browser on the Android platform              |
-| Desktop/Laptop     | Chrome                | Windows          | Popular browser on the Windows operating system          |
-| Desktop/Laptop     | Chrome                | MacOS            | Popular browser on the macOS operating system            |
-| Desktop/Laptop     | Edge                  | Windows          | Microsoft Edge is gaining popularity among users         |
-| Other              | Firefox/Samsung/Opera | Various          | Represents a compromise due to limited testing resources |
-
-The choices in the table are base on the browser market share data provided by [gs.statcounter.com](https://gs.statcounter.com/). Chrome and Safari are the dominant browsers, so they are included for testing on different devices and operating systems. Edge is also included as it has a noticeable market share. Since firefox, Samsung Internet and Opera have smaller market shares, they are grouped under the "Other" category to represent a compromise due to limited testing resources.
-
-| **BROWSER**      | **PERCENTAGE** |
-|------------------|----------------|
-| Chrome           | 63.55%         |
-| Safari           | 19.95%         |
-| Edge             | 5.13%          |
-| Opera            | 2.99%          |
-| Firefox          | 2.79%          |
-| Samsung Internet | 2.38%          |
-
-**Browser Market Share Worldwide - July 2023**
+Please refer to the [TESTING.MD](TESTING.md) file for all testing performed 
 
 # E-commerce Business Model
 ## Facebook Business Page
@@ -837,6 +807,10 @@ The choices in the table are base on the browser market share data provided by [
 - **Direct Communication:** Subscribers who sign up for the newsletter have explicity shown in our brand. Provide us with a direct and targeted communication channel to becomes a valuable asset for future marketing efforts. 
 - **Product & Updates:** Subscribers stay informed about the latest product releases, company news and updates.
 - **Relationship Building:** Regular newsletter provide an opportunity to establish a relationship with subscribers.
+
+## Links
+- [PowerProtein Business Page](https://www.facebook.com/profile.php?id=61550231692079)
+- [PowerProtein Newsletter Signup](https://powerprotein-cd417ed27158.herokuapp.com/products/) go to the footer website and subscribe to our Newsletter. 
   
 ## SEO Strategy
 In our SEO strategy, I worked on optimizing our website to increase its visibility in search engines. I took specific steps to refine our keyword selection, optimize descriptions and titles, and intentionally incorporate keywords into our content.
@@ -1180,7 +1154,6 @@ To deploy your application on Heroku, follow the steps bellow:
 - After a successful deployment, you can access your application by visiting the URL provided in your Heroku app's dashboard.
 - Click on the "Open App" button or open the URL in a web browser to see your application live. 
 
-# Credits
 ## Credits
 Throughout the process of building the PowerProtein website, I would like to acknowledge the following:
 
@@ -1238,3 +1211,4 @@ Throughout the process of building the PowerProtein website, I would like to ack
 - The Team at Tutor support at Code Insitute - A huge thanks to the team at Tutor Support for their prompt assistance in addressing any bugs and GitPod related issues I encountered along the way.
 - The Code Institute Slack for tips and guidance. 
 
+[Back to the beginning](#table-of-contents)
