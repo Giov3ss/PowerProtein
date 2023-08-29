@@ -23,7 +23,7 @@ Giovani Fonseca
     - [Frameworks](#frameworks)
     - [Custom Styles](#custom-styles)
     - [Custom Javascript](#custom-javascript)
-  - [Wireframes](#wireframes)
+- [Wireframes](#wireframes)
 - [Information Architecture](#information-architecture)
 - [Entity Relationship Diagram](#entity-relationship-diagram)
 - [Database Choice](#database-choice)
@@ -784,8 +784,9 @@ I only did one iteration as I act as the product owner and developer for this pr
 
 Please refer to the [TESTING.MD](TESTING.md) file for all testing performed 
 
-# E-commerce Business Model
-## Facebook Business Page
+
+## E-commerce Business Model
+### Facebook Business Page
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/26b4edf6-a6de-45f4-9881-fe6ae6d1685e)
 
@@ -799,7 +800,7 @@ Please refer to the [TESTING.MD](TESTING.md) file for all testing performed
 - **Educational Content:** Sharing informative and educational content related to our products or industry establishes our brand as an authority in the field.
 - **Feedback & Insights:** The Facebook page can be a valuable source of feedback, understanding what customers like and dislike helps us improve our products and services.
 
-## Newsletter Signup
+### Newsletter Signup
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/2390c537-f4b6-41b2-b36a-56e80bcae96e)
 
@@ -808,9 +809,9 @@ Please refer to the [TESTING.MD](TESTING.md) file for all testing performed
 - **Product & Updates:** Subscribers stay informed about the latest product releases, company news and updates.
 - **Relationship Building:** Regular newsletter provide an opportunity to establish a relationship with subscribers.
 
-## Links
+### Links
 - [PowerProtein Business Page](https://www.facebook.com/profile.php?id=61550231692079)
-- [PowerProtein Newsletter Signup](https://powerprotein-cd417ed27158.herokuapp.com/products/) go to the footer website and subscribe to our Newsletter. 
+- [PowerProtein Newsletter Signup](https://powerprotein-cd417ed27158.herokuapp.com/products/) go to the footer on website to subscribe to our Newsletter. 
   
 ## SEO Strategy
 In our SEO strategy, I worked on optimizing our website to increase its visibility in search engines. I took specific steps to refine our keyword selection, optimize descriptions and titles, and intentionally incorporate keywords into our content.
@@ -896,8 +897,8 @@ Several technologies have been used to enable this website works:
 - Mermaid 
 
 
-# Deployment
-## Prerequisits
+## Deployment
+### Prerequisits
 To run this project, you need a ElephantSQL & AWS Amazon account:
 
 **ElephantSQL Set Up Account:**
@@ -1059,14 +1060,14 @@ if 'USE_AWS' in os.environ:
 12. Under "Permissions" select the option "Grant public-read access" and click  "Upload".
  
  
-## Fork and Clone the Repository
+### Fork and Clone the Repository
 To make a copy or ‘fork’ the repository:
 
 1. Login to your own GitHub account.
 2. Navigate to [my repository](https://github.com/Giov3ss/PowerProtein).
 3. In the top right corner of the page, click 'fork' option to create and copy of the original.
 
-## Making a Local Clone
+### Making a Local Clone
 1. Under the repository name, click on the ‘code’ tab.
 2. In the clone box, HTTPS tab, click on the clipboard icon .
 3. In your IED open GitBash.
