@@ -862,6 +862,7 @@ Several technologies have been used to enable this website works:
 | Jshint                   | Jshint was used to validate JavaScript Code.                                                                                                         |
 | Coloors                  | Coloors was utilized to generate color palette for the website design.                                                                               |
 | AWS Amazon               | AWS Amazon was utilized to store all of my static files and images.                                                                                  |
+| Stripe                   | Stripe payments was used to host/receive all the payments on the website.                                                                                   |
 | Lighthouse               | Lighthouse was used to test the accessibility of the website.                                                                                        |
 | Balsamiq                 | Balsamiq was utilized as a tool for creating wireframes, providing a visual representation of the website layout and structure.                      |
 | AmIResponsive            | AmIResponsive was used to generate screenshots of the website in various device sizes, allowing for a quick visual assessment of its responsiveness. |
