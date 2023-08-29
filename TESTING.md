@@ -484,11 +484,6 @@ The following site were used to aid in validation testing:
 **DEFECTS** were documented in github using a custom issue template. 
 - Here is my [DEFECT Template](https://github.com/Giov3ss/PowerProtein/blob/main/.github/ISSUE_TEMPLATE/bug_report.md)
 
-## Defects of Note
-🚀 **merit & beyhond**
-
-Some defects are more pesky than others. Highlight 3-5 of the bugs that drove you the most nuts and how you finally
-ended up resolving them. Just create a link to the issues/defect of note.
 
 ### Outstanding Defects
 
