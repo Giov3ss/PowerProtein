@@ -1181,24 +1181,60 @@ To deploy your application on Heroku, follow the steps bellow:
 - Click on the "Open App" button or open the URL in a web browser to see your application live. 
 
 # Credits
-🚨**Required**
+## Credits
+Throughout the process of building the PowerProtein website, I would like to acknowledge the following:
 
-To avoid plagiarism amd copyright infringement, you should mention any other projects, stackoverflow, videos, blogs, etc that you used to gather imagery or ideas for your code even if you used it as a starting point and modified things. Giving credit to other people's efforts and ideas that saved you time acknowledges the hard work others did.
+**Online Sources:**
+- [Code Institue Template](https://github.com/Code-Institute-Org/ci-full-template)
+- [Stack Overflow](https://stackoverflow.co/)
+- [Django Documentation](https://docs.djangoproject.com/en/4.2/)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)
 
--[Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)
-    - The Template for the GUI for this project was provided by Code Institute. This allows for the Command line to be shown and used within the browser.
+**Modules and Libraries:**
+- [Django](https://www.djangoproject.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [JavaScript](https://www.javascript.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [jQuery](https://jquery.com/)
+- [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+- [Django allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+- [AWS](https://aws.amazon.com/)
+- [Stripe](https://stripe.com/ie)
+- [Git](https://git-scm.com/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Pexels](https://www.pexels.com/)
+- [Markdown Best Practices](https://www.markdownguide.org/basic-syntax/)
+- [Mermaid](https://mermaid.live/)
 
 ## Content
 
-Use bullet points to list out sites you copied text from and cross-reference where those show up on your site
+- I took some inspiration from the [My Protein](https://www.myprotein.ie/) website.
+- The blog texts content was taken from there:
+  - [Blueberry Protein Yoghurt Clusters](https://www.myprotein.ie/blog/recipe/blueberry-protein-yoghurt-clusters/)
+  - [Running for Anxiety | What You Need to Know](https://www.myprotein.ie/blog/training/running-for-anxiety-what-you-need-to-know/)
+  - [Alleviate Stress With These 5 Nutrition Tips](https://www.myprotein.ie/blog/nutrition/alleviate-stress-with-these-5-nutrition-tips/)
+  - [Best Supplements For Muscle Gain & Fat Loss | Beginner’s Supplement Guide](https://www.myprotein.ie/blog/supplements/build-muscle-burn-fat-beginners-guide-supplements/)
+  - [Your Creatine Questions, Answered](https://www.myprotein.ie/blog/supplements/your-creatine-questions-answered/)
+  - [These Female PTs Will Inspire You To Chase Your Goals](https://www.myprotein.ie/blog/motivation/these-female-pts-will-inspire-you-to-chase-your-goals/)
+  - [Why LGBTQ Fitness Spaces Matter](https://www.myprotein.ie/blog/training/why-lgbtq-fitness-spaces-matter/)
+  - [Why A High-Protein Breakfast Is Important](https://www.myprotein.ie/blog/nutrition/high-protein-breakfast-is-important/)
 
 ## Media
-
-Make a list of sites you used images from. If you used several sites try to match up each image to the correct site. This includes attribution for icons if they came from font awesome or other sites, give them credit.
+- [Pexels](https://www.pexels.com/) - The Hero Image was taken from Pexels. 
+- [Google Fonts](https://fonts.google.com/) - The fonts were sourced using Google Fonts.
+- [Font Awesome](https://fontawesome.com/) - The icons was taken from Font Awesome.
+- [Mermaid](https://mermaid.live/) - The diagrams was created with Mermaid website.
+- [Google Images](https://www.google.com/imghp?hl=en) - Most of the products images & reviews images was taken from google images. 
 
 ## Acknowledgments
 
-This is the section where you refer to code examples, mentors, blogs, stack overflow answers and videos that helped you accomplish your end project. Even if it's an idea that you updated you should note the site and why it was important to your completed project.
+**Tutorials and Inspiration:**
+- The walkthrough project 'Boutique Ado' from Code Institute, has helped me a lot to build the website. 
+- The Template for the GUI for this project was provided by [Code Institue Template](https://github.com/Code-Institute-Org/ci-full-template)
+- [My Protein](https://www.myprotein.ie/) and several other supplements sites helped me a lot to understand more about the fitness universe, and also to pick up and create new ideas.
 
-If you used a CodeInstitute Instructional project as a starting point. Make note of that here too.
+**Peoples:**
+- Malia - A heartfelt appreciation goes to our mentor from Code Institute, whose guidance and support have been invaluable throughout this project.
+- The Team at Tutor support at Code Insitute - A huge thanks to the team at Tutor Support for their prompt assistance in addressing any bugs and GitPod related issues I encountered along the way.
+- The Code Institute Slack for tips and guidance. 
 
