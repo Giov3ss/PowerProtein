@@ -13,7 +13,7 @@
 - [Validation Testing](#validation-testing)
 - [Automated Testing](#automated-testing)
 - [Defects](#defects)
-- [Outstanding Defects](#outstanding-defects)
+    - [Outstanding Defects](#outstanding-defects)
 
 </details>
 <hr>
