@@ -500,18 +500,18 @@ I only did one iteration as I act as the product owner and developer for this pr
 <details>
 <summary>Sign in/ Sign up Details</summary>
   
-- ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/5feaf0f5-d13b-4567-8aeb-12c45f51b1c6)
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/5feaf0f5-d13b-4567-8aeb-12c45f51b1c6)
 
 <hr>
 
-- ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/aebcca1c-3f59-4978-885a-4ab856c7112c)
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/aebcca1c-3f59-4978-885a-4ab856c7112c)
 
 <hr>
 
 - Our website offers a streamline and user-centric sign-in and sign-up process that prioritizes convenience and accessibility.
 - Easy Password Recovery: On the sign-in page, users can easily find a link to the "Forgot Password" feature, allowing them to reset their password without unnecessary hassle.
-- Sign-in: For new users who aren't registered yet, the sign-in page provides a prominent link to the sign-up process.
-- Sign-up: Sign up page has link to sign in page in case user is already registered, clear error messages if user name or email is already in system.
+- Sign-in: Users can log in via name or email. For new users who aren't registered yet, the sign-in page provides a prominent link to the sign-up process.
+- Sign-up: Sign up page has link to sign in page in case user is already registered, clear error messages if user name or email is already in system, username and emails are unique to the system, so a user cannot hack another user's identity or impersonate another user
   
 </details>
 <hr>
@@ -560,6 +560,10 @@ I only did one iteration as I act as the product owner and developer for this pr
 <summary>Profile Details</summary>
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/6d97a49f-016f-4811-b028-3e4c992cefd2)
+
+<hr>
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/49d9e0fe-d538-445e-a8ba-339d7fdb0345)
 
 <hr>
 
@@ -789,7 +793,7 @@ I only did one iteration as I act as the product owner and developer for this pr
 - **Wishlist & Favorites:** Implementing a feature that will allows users to favorite products for later with a wishlist, ensuring they never miss out on products.
 - **Customer Support-LiveChat:** Implementing a live chat support system to provide instant assistance and answer any queries.
 - **Personalized Discounts:** Offer personalized discounts based on user preferences and purchasing behavior.
-- **Mobile App:** Create a mobile app to PowerProtein, providing users with convenient access to our website and other features on their smartphone.
+- **Affiliate Programs:** 
 - **Language Support:** Support to cater to a wider user base, allowing users from different regions and languages preferences to access and use the PowerProtein platform.
 
 ## Testing
