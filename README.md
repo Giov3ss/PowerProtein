@@ -233,7 +233,7 @@ The typography on the PowerProtein website is carefully chosen to complement the
 I chose to use Bootstrap for my website because it allowed me to quickly and easily create a responsive design that works well on different devices. the pre-designed templates and components also helped me to save time in the development process.
 
 ### Custom Styles
-- [Bootstrap Code (modal) - Reviews](reviews/templates/reviews/reviews.html)
+- [Bootstrap Code (modal) - Reviews](reviews/templates/reviews/reviews.html#L129)
 
 ### Custom Javascript
 - [JS Code (quantity btn) - Products](products/templates/products/includes/quantity_input_script.html)
