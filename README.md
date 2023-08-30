@@ -32,8 +32,7 @@ Giovani Fonseca
 - [Agile Process](#agile-process)
   - [User Story Templates](#user-story-templates)
   - [Product Backlog](#product-backlog)
-  - [Iterations](#iterations)
-  - [Progress Boards](#progress-boards)
+  - [Iterations & Progress Boards](#iterations--progress-boards)
 - [Implemented Features](#implemented-features)
   - [Features](#features)
   - [Future Features](#future-features)
@@ -433,10 +432,6 @@ The Reviews model stores user-submitted service reviews, including the review ti
 
 - [**LINK TO THE TEMPLATE**](https://github.com/Giov3ss/PowerProtein/issues/new/choose)
 
-**What to keep in this section**
-
-- include links and/or screenshots of your story template(s)
-
 ### Product Backlog
 I used Gitpod to track user stories that I prioritized. Here is the link to my project board with those stories:
 
@@ -444,12 +439,8 @@ I used Gitpod to track user stories that I prioritized. Here is the link to my p
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/47ebb87c-6f27-4e67-9336-03d63888e759)
 
-## Iterations
+## Iterations & Progress Boards
 I only did one iteration as I act as the product owner and developer for this project.
-- [Iterations](https://github.com/users/Giov3ss/projects/4)
-
-## Progress Boards
-I only did one iteration as I act as the product owner and developer for this project. here is the Progress Board
 - [Iterations](https://github.com/users/Giov3ss/projects/4)
   
 ## Implemented Features 
