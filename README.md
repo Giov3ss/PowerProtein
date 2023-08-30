@@ -452,11 +452,14 @@ I only did one iteration as I act as the product owner and developer for this pr
 - **Desktop**
   
   ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/54fe8e8e-37df-4ae5-adbf-cfb8ebbd94cb)
+
+<hr>
   
 - **Tablet**
   
   ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/5b521e64-6aee-40e7-950e-290126979c4e)
 
+<hr> 
 
 - **Mobile**
 
@@ -465,6 +468,24 @@ I only did one iteration as I act as the product owner and developer for this pr
 <hr>
 
 ![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/e998736c-d089-49d3-b603-bea2ca8346f6)
+
+<hr>
+
+- **Logged in as SuperUser**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/f29de8f0-93e5-454b-b745-299fdbd1dd8a)
+
+<hr>
+
+- **Not logged in**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/89e27375-c7a2-4157-a8e1-658deebebdea)
+
+<hr>
+
+- **Logged in as regular user**
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/4ef0dcf3-a913-4cbf-a46f-0d721b89f970)
 
 <hr>
 
