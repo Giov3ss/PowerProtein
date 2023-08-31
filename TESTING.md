@@ -544,7 +544,9 @@ The following site were used to aid in validation testing:
 
 ### Defects of Note
 
-**Issue with confirmation email**
+**Purchase confirmation email not received**
+- During the final testing phase of store's functionality, I encountered a significant bug related to the purchase confirmation email system. Upon completing a purchase, I expected to receive a confirmation email detailing the order. However, the email failed to be delivered to the test users, leading to concerns about the reliability of the purchase process.
+
 - [Issue Link](https://github.com/Giov3ss/PowerProtein/issues/75)
 
 
