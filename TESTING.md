@@ -13,6 +13,7 @@
 - [Validation Testing](#validation-testing)
 - [Automated Testing](#automated-testing)
 - [Defects](#defects)
+    - [Defects of Note](#defects-of-note)
 - [Outstanding Defects](#outstanding-defects)
 
 </details>
@@ -540,6 +541,12 @@ The following site were used to aid in validation testing:
 ## Defects
 **DEFECTS** were documented in github using a custom issue template. 
 - Here is my [DEFECT Template](https://github.com/Giov3ss/PowerProtein/blob/main/.github/ISSUE_TEMPLATE/bug_report.md)
+
+### Defects of Note
+
+**Issue with confirmation email**
+- [Issue Link](https://github.com/Giov3ss/PowerProtein/issues/75)
+
 
 ### Outstanding Defects
 I found an issue if invalid HTML was entered in the WYSIWYG blog entries. This happens a lot if you copy/paste line returns in bullet lists. Ideally there would be some HTML validation on the text area input to ensure bad HTML isn't entered, but that is beyond the scope of the MVP project. Editors of the blog will be viewing their entries after publishing and can easily fix any issues copy/paste might encounter.
