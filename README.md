@@ -1103,14 +1103,14 @@ You will need a stripe account which you can sign up for [here](https://dashboar
   STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
   ```
  
-### Fork and Clone the Repository
+## Fork and Clone the Repository
 To make a copy or ‘fork’ the repository:
 
 1. Login to your own GitHub account.
 2. Navigate to [my repository](https://github.com/Giov3ss/PowerProtein).
 3. In the top right corner of the page, click 'fork' option to create and copy of the original.
 
-### Making a Local Clone
+## Making a Local Clone
 1. Under the repository name, click on the ‘code’ tab.
 2. In the clone box, HTTPS tab, click on the clipboard icon .
 3. In your IED open GitBash.
@@ -1175,14 +1175,18 @@ To deploy your application on Heroku, follow the steps bellow:
 4. **Configure Environment Variables:**
 - In the "Settings" tab of your heroku app's dashboard, locate the "Config Vars" section.
 - Set the necessary enviroment variables required for your aplication: 
-  - e.g DATABASE_URL,
-  - AWS_ACCESS_KEY_ID,
-  - USE_AWS,
-  - EMAIL_HOST_PASS,
-  - EMAIL_HOST_USER,
-  - SECRET_KEY,
-  - USE_AWS,
-  - COLLECT_STATIC
+
+ | **KEY**           | **VALUE**    |
+|-------------------|--------------|
+| DATABASE_URL,     | <YOUR_VALUE> |
+| AWS_ACCESS_KEY_ID | <YOUR_VALUE> |
+| USE_AWS           | <YOUR_VALUE> |
+| EMAIL_HOST_PASS   | <YOUR_VALUE> |
+| EMAIL_HOST_USER   | <YOUR_VALUE> |
+| SECRET_KEY        | <YOUR_VALUE> |
+| USE_AWS           | <YOUR_VALUE> |
+| COLLECT_STATIC    | 1            |
+
 - Click on the "Reveal Config Vars" button to add the key-value pairs for your enviroment variables.
 
 5. **Deploy the Application:**
