@@ -916,7 +916,7 @@ Several technologies have been used to enable this website works:
 
 ## Deployment
 ### Prerequisits
-To run this project, you need a ElephantSQL, AWS Amazon & STRIPE account:
+To run this project, you need a ElephantSQL, AWS Amazon, Sripe & Gmail account:
 
 **ElephantSQL Set Up Account:**
 1. Visit the [ElephantSQL](https://www.elephantsql.com/) website.
@@ -1102,7 +1102,41 @@ You will need a stripe account which you can sign up for [here](https://dashboar
   STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
   STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
   ```
- 
+
+## Gmail Set up (Sending Real Emails with Django)
+
+- If you've already got a Gmail account you can just log in and go to your settings.
+- If you don't have one just go to [gmail.com](gmail.com) and create an account before starting this.
+
+1. To prepare Gmail, we need to go to the account settings in the upper right. Click accounts and import.
+2. Then other Google account settings.
+3. Go to the security tab and under, signing into Google. Turn on 2-step verification.
+4. This will allow you to create an app password specific to your Django app. That will allow it to authenticate and use our Gmail account to send emails.
+5. To turn it on just click get started, enter your password.
+6. Then you'll have to select a verification method.
+7. You can select to send a verification code via text or you can choose any method you prefer.
+8. Once you've verified and turned on two-step verification. You'll see a new option called app passwords under the signing in to Google heading.
+9. Click on that enter your password again if needed.
+10. Then on the app password screen, select mail for the app. Then under device type, select other and type in Django.
+11. With that done we'll be given a 16 character password which I'll copy.
+12.  then go to my Heroku app to enter it as a config variable.
+13. Call the variable EMAIL_HOST_PASS. And paste it in and click Add. Also need another variable called EMAIL_HOST_USER.
+14. The last step then is just to add a few settings to your settings.py, add the following code:
+
+  ```
+  if 'DEVELOPMENT' in os.environ:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    DEFAULT_FROM_EMAIL = '<your_example_email_here>@example.com'
+else:
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_USE_TLS = True
+    EMAIL_PORT = 587
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
+    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+  ```
+    
 ## Fork and Clone the Repository
 To make a copy or ‘fork’ the repository:
 
