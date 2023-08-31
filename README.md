@@ -793,7 +793,7 @@ I only did one iteration as I act as the product owner and developer for this pr
 - **Wishlist & Favorites:** Implementing a feature that will allows users to favorite products for later with a wishlist, ensuring they never miss out on products.
 - **Customer Support-LiveChat:** Implementing a live chat support system to provide instant assistance and answer any queries.
 - **Personalized Discounts:** Offer personalized discounts based on user preferences and purchasing behavior.
-- **Affiliate Programs:** 
+- **Affiliate Programs:** Introduce an Affiliate Program, giving the opportunity to earn while users shop and refer others to our platform.
 - **Language Support:** Support to cater to a wider user base, allowing users from different regions and languages preferences to access and use the PowerProtein platform.
 
 ## Testing
@@ -916,7 +916,7 @@ Several technologies have been used to enable this website works:
 
 ## Deployment
 ### Prerequisits
-To run this project, you need a ElephantSQL & AWS Amazon account:
+To run this project, you need a ElephantSQL, AWS Amazon & STRIPE account:
 
 **ElephantSQL Set Up Account:**
 1. Visit the [ElephantSQL](https://www.elephantsql.com/) website.
@@ -1075,7 +1075,33 @@ if 'USE_AWS' in os.environ:
 10. Go back to your AWS S3 bucket and click on "Create Folder", name this folder as "Media".
 11. In the "Media" file click "Upload > Add files" and select the images for your site.
 12. Under "Permissions" select the option "Grant public-read access" and click  "Upload".
- 
+
+## Stripe Payments 
+
+- The Stripe Payments is set up as the online payment processing and credit card processing platform for the purchases.
+You will need a stripe account which you can sign up for [here](https://dashboard.stripe.com/register)
+
+### Payments
+- To set up stripe payments you can follow their guid [here](https://stripe.com/ie/guides)
+
+### API Keys
+1. Click on 'Developers' in the navbar-side.
+2. Beside 'Overview' click on the API Keys and you will see your 'Publishable key' & 'Secret key'.
+
+### Adding your Keys to your Heroku app
+
+1. Go to you app in Heroku website, navigate to the config vars section under settings.
+2. Add your generated keys in the config vars:
+  ```
+  STRIPE_PUBLIC_KEY = '<INSERT_YOUR_PUBLISHABLE_KEY>'
+  STRIPE_SECRET_KEY = '<INSERT_YOUR_SECRET_KEY>'
+  ```
+
+3. Finally, back in your settings.py file in django, insert the following keys, near to the bottom of the file:
+  ```
+  STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+  STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+  ```
  
 ### Fork and Clone the Repository
 To make a copy or ‘fork’ the repository:
