@@ -549,6 +549,10 @@ The following site were used to aid in validation testing:
 
 - [Issue Link](https://github.com/Giov3ss/PowerProtein/issues/75)
 
+**Security Vulnerability - Unauthorized Access to User reviews / Order History**
+- While conducting a review in the platform's security, I identified a bug that poses a significant risk to user accounts and their associated reviews. This bug allows unauthorized users to access and edit reviews, also order history that belonging to other user's accounts. Furthermore, the bug enables users to copy links that lead directly to other user's accounts, granting unauthorized access.
+
+- [Issue Link](https://github.com/Giov3ss/PowerProtein/issues/76)
 
 ### Outstanding Defects
 I found an issue if invalid HTML was entered in the WYSIWYG blog entries. This happens a lot if you copy/paste line returns in bullet lists. Ideally there would be some HTML validation on the text area input to ensure bad HTML isn't entered, but that is beyond the scope of the MVP project. Editors of the blog will be viewing their entries after publishing and can easily fix any issues copy/paste might encounter.
