@@ -19,7 +19,7 @@
 <hr>
 
 ## Compatibility and Responsive Testing
-I ensure my site was worked well, and looked nice on a variety of devices & browsers as noted in the table below:
+I ensured my site was worked well, and looked nice on a variety of devices & browsers as noted in the table below:
 
 | **TOOL / Device**           | **BROWSER** | **OS**                        | **SCREEN WIDTH** |
 |-----------------------------|-------------|-------------------------------|------------------|
@@ -544,4 +544,4 @@ The following site were used to aid in validation testing:
 ### Outstanding Defects
 I found an issue if invalid HTML was entered in the WYSIWYG blog entries. This happens a lot if you copy/paste line returns in bullet lists. Ideally there would be some HTML validation on the text area input to ensure bad HTML isn't entered, but that is beyond the scope of the MVP project. Editors of the blog will be viewing their entries after publishing and can easily fix any issues copy/paste might encounter.
 
-[Back to the Main Page](https://github.com/Giov3ss/PowerProtein)
+[Back to the README.md](https://github.com/Giov3ss/PowerProtein/blob/main/README.md)
