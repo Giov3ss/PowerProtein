@@ -20,9 +20,9 @@ Giovani Fonseca
   - [Feasibility vs Importance](#feasibility-vs-importance)
   - [Scope](#scope)
   - [Design Choices](#design-choices)
-    - [Frameworks](#frameworks)
-    - [Custom Styles](#custom-styles)
-    - [Custom Javascript](#custom-javascript)
+  - [Frameworks](#frameworks)
+  - [Custom Styles](#custom-styles)
+  - [Custom Javascript](#custom-javascript)
 - [Wireframes](#wireframes)
 - [Information Architecture](#information-architecture)
 - [Entity Relationship Diagram](#entity-relationship-diagram)
@@ -225,7 +225,14 @@ The typography on the PowerProtein website is carefully chosen to complement the
 - **Hero image:** The image of a woman training in boxning embodies empowerment, strength and determination. We wanted to showcase that women are an integral part of the world of sports and fitness, breaking stereotypes and embracing their inner strength. This aligns with our vision of inclusivity and promoting gender quality in sports and fitness.
 - **Logo:** The word **POWER** in the logo immediately conveys a sense of strength and energy, suggesting that our products are designed to provide a powerful boost their fitness and overall well-being. The **PROTEIN** highlights the primary focus of our brand-fitness and nutrition. It communnicates that our products are protein-based, which is essential for muscle building, recovery and maintaining a healthy lifestyle.
 - **Star Icon:** The star icon is associated with excellence, achievement and recognition. In our context, using the star icon indicates that our products and services are exceptional and of high quality and also serves as a reference for users.
+
+### Favicon
+The website has a Favicon, I chose an icon that is directly related to the website, when users see the favicon they can quickly associate it with fitness, supplements and a healthy lifestyle. The muscular man in the icon is a powerful visual representation of strength and fitness. Muscle images often serve as a source of inspiration and motivation for individuals on fitness journeys.
+
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/5c23f79f-6e64-4e19-8582-d8b323c8682a)
+
 </details>
+
 <hr>
 
 ### Frameworks
