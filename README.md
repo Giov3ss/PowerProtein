@@ -1302,7 +1302,7 @@ Throughout the process of building the PowerProtein website, I would like to ack
 ## Acknowledgments
 
 **Tutorials and Inspiration:**
-- The walkthrough project 'Boutique Ado' also 'I Think Therefore I blog' from Code Institute, It helped me a lot to build the website and also gave me some new ideas to put on my website.  
+- The walkthrough project 'Boutique Ado' from Code Institute, It helped me a lot to build the website and also gave me some new ideas to put on my website.  
 - The Template for the GUI for this project was provided by [Code Institue Template](https://github.com/Code-Institute-Org/ci-full-template)
 - [My Protein](https://www.myprotein.ie/) and several other supplement websites helped me a lot to understand more about the fitness universe, and also to create new ideas.
 
