@@ -4,6 +4,7 @@ from .models import Reviews
 from .forms import ReviewsForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import user_passes_test
 
 
 def reviews(request):
@@ -40,7 +41,7 @@ def edit_review(request, pk):
     A view that allow users to edit their own reviews.
     """
     review = get_object_or_404(Reviews, id=pk)
-    if review.name != request.user.username:
+    if not request.user.is_superuser and review.name != request.user.username:
         messages.warning(request, 'You can only edit your own reviews!')
         return render(request, "errors/403.html")
 
