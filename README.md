@@ -797,11 +797,13 @@ I only did one iteration as I act as the product owner and developer for this pr
 
 ## Future Features
 
-- **Wishlist & Favorites:** Implementing a feature that will allows users to favorite products for later with a wishlist, ensuring they never miss out on products.
-- **Customer Support-LiveChat:** Implementing a live chat support system to provide instant assistance and answer any queries.
-- **Personalized Discounts:** Offer personalized discounts based on user preferences and purchasing behavior.
-- **Affiliate Programs:** Introduce an Affiliate Program, giving the opportunity to earn while users shop and refer others to our platform.
-- **Language Support:** Support to cater to a wider user base, allowing users from different regions and languages preferences to access and use the PowerProtein platform.
+|   | **FEATURES**                                                                                                                                        | **PRIORITY** |
+|---|-----------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| 1 | Implementing a feature that will allows users to favorite products for later with a wishlist,  ensuring they never miss out on products.            | LOW          |
+| 2 | Implementing a live chat support system to provide instant assistance and answer any queries.                                                       | HIGH         |
+| 3 | Offer personalized discounts based on user preferences and purchasing behavior.                                                                     | MEDIUM       |
+| 4 | Introduce an Affiliate Program, giving the opportunity to earn while users shop and refer others to our platform.                                   | MEDIUM       |
+| 5 | Support to cater to a wider user base, allowing users from different regions and languages preferences to access and use the PowerProtein platform. | HIGH         |
 
 ## Testing
 
