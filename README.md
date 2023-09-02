@@ -885,13 +885,14 @@ Several technologies have been used to enable this website works:
 | Jshint                   | Jshint was used to validate JavaScript Code.                                                                                                         |
 | Coloors                  | Coloors was utilized to generate color palette for the website design.                                                                               |
 | AWS Amazon               | AWS Amazon was utilized to store all of my static files and images.                                                                                  |
-| Stripe                   | Stripe payments was used to host/receive all the payments on the website.                                                                                   |
+| Stripe                   | Stripe payments was used to host/receive all the payments on the website.                                                                            |
 | Lighthouse               | Lighthouse was used to test the accessibility of the website.                                                                                        |
 | Balsamiq                 | Balsamiq was utilized as a tool for creating wireframes, providing a visual representation of the website layout and structure.                      |
 | AmIResponsive            | AmIResponsive was used to generate screenshots of the website in various device sizes, allowing for a quick visual assessment of its responsiveness. |
 | Markdown Table Generator | Markdown Table Generator was utilized as a tool to create tables in Markdown format.                                                                 |
 | Gitpod                   | Gitpod was used to write and edit the project code.                                                                                                  |
-| Mermaid                  | Mermaid was used to create all the diagrams.                                                                                                         |                                                                                           
+| Mermaid                  | Mermaid was used to create all the diagrams.                                                                                                         |                                                                                         
+| Favicon                  | Used to create the Icon for the website.                                                                                                             |                                                                                           
 
 ### Languages
 - HTML
@@ -917,6 +918,7 @@ Several technologies have been used to enable this website works:
 - Balsamiq
 - AmIResponsive
 - Markdown Table Generator
+- Favicon
 - Gitpod
 - Mermaid 
 
@@ -1215,20 +1217,27 @@ To deploy your application on Heroku, follow the steps bellow:
 
 4. **Configure Environment Variables:**
 - In the "Settings" tab of your heroku app's dashboard, locate the "Config Vars" section.
-- Set the necessary enviroment variables required for your aplication: 
+- Set the necessary enviroment variables required for your aplication. 
+- Click on the "Reveal Config Vars" button to add the key-value pairs for your enviroment variables:
 
- | **KEY**           | **VALUE**    |
-|-------------------|--------------|
-| DATABASE_URL,     | <YOUR_VALUE> |
-| AWS_ACCESS_KEY_ID | <YOUR_VALUE> |
-| USE_AWS           | <YOUR_VALUE> |
-| EMAIL_HOST_PASS   | <YOUR_VALUE> |
-| EMAIL_HOST_USER   | <YOUR_VALUE> |
-| SECRET_KEY        | <YOUR_VALUE> |
-| USE_AWS           | <YOUR_VALUE> |
-| COLLECT_STATIC    | 1            |
+![image](https://github.com/Giov3ss/PowerProtein/assets/112728772/2bc3b9a8-d95c-4b67-91a5-57d2dc9a8efb)
 
-- Click on the "Reveal Config Vars" button to add the key-value pairs for your enviroment variables.
+e.g.
+
+| **KEY**               | **VALUE**    |
+|-----------------------|--------------|
+| DATABASE_URL,         | <YOUR_VALUE> |
+| AWS_SECRET_ACCESS_KEY | <YOUR_VALUE> |
+| AWS_ACCESS_KEY_ID     | <YOUR_VALUE> |
+| USE_AWS               | <YOUR_VALUE> |
+| EMAIL_HOST_PASS       | <YOUR_VALUE> |
+| EMAIL_HOST_USER       | <YOUR_VALUE> |
+| SECRET_KEY            | <YOUR_VALUE> |
+| USE_AWS               | <YOUR_VALUE> |
+| STRIPE_PUBLIC_KEY     | <YOUR_VALUE> |
+| STRIPE_SECRET_KEY     | <YOUR_VALUE> |
+| STRIPE_WH_SECRET      | <YOUR_VALUE> |
+| COLLECT_STATIC        | 1            |
 
 5. **Deploy the Application:**
 - In the "Deploy" tab, scroll down to the "Manual Deploy" section.
@@ -1291,13 +1300,14 @@ Throughout the process of building the PowerProtein website, I would like to ack
 ## Acknowledgments
 
 **Tutorials and Inspiration:**
-- The walkthrough project 'Boutique Ado' from Code Institute, has helped me a lot to build the website. 
+- The walkthrough project 'Boutique Ado' also 'I Think Therefore I blog' from Code Institute, It helped me a lot to build the website and also gave me some new ideas to put on my website.  
 - The Template for the GUI for this project was provided by [Code Institue Template](https://github.com/Code-Institute-Org/ci-full-template)
-- [My Protein](https://www.myprotein.ie/) and several other supplements sites helped me a lot to understand more about the fitness universe, and also to pick up and create new ideas.
+- [My Protein](https://www.myprotein.ie/) and several other supplement websites helped me a lot to understand more about the fitness universe, and also to create new ideas.
 
 **Peoples:**
 - Malia - A heartfelt appreciation goes to our mentor from Code Institute, whose guidance and support have been invaluable throughout this project.
 - The Team at Tutor support at Code Insitute - A huge thanks to the team at Tutor Support for their prompt assistance in addressing any bugs and GitPod related issues I encountered along the way.
-- The Code Institute Slack for tips and guidance. 
+- The Code Institute Slack for tips and guidance.
+- Also  to everyone who works at Code Institute who helped me on this journey, it was a great experience and I can say now that I am more than prepared to continue the career of my dreams in the Tech Universe.
 
 [Back to the beginning](#table-of-contents)
